@@ -1,0 +1,262 @@
+{
+  "id": "bill-gates",
+  "name": "Bill Gates",
+  "birthYear": 1955,
+  "description": "A journey through the opportunities, calculated risks, and defining decisions that shaped a life of technology and purpose.",
+  "scoring": {
+    "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
+    "risk": "average risk score of selected choices",
+    "independence": "average independence score of selected choices",
+    "scoreRange": {
+      "min": 0,
+      "max": 100
+    }
+  },
+  "ending": {
+    "title": "Your Journey of Ambition",
+    "revealName": true
+  },
+  "events": [
+    {
+      "id": 1,
+      "year": 1968,
+      "chapter": "The Beginning",
+      "title": "The Computer",
+      "playerFact": "Your school gains access to a computer — a rare and expensive machine that almost no one your age has ever touched. You become fascinated by the idea that you can tell this machine what to do through code.",
+      "historicalFact": "As a teenager at a Seattle private school, you gained access to a computer terminal and became deeply interested in programming, spending countless hours learning to write code.",
+      "question": "Your school gives you access to a computer. Will you spend your free time learning how to program?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You become fascinated by programming and spend as much time as possible experimenting with the computer.",
+        "historical": true,
+        "risk": 3,
+        "independence": 6,
+        "nextEvent": 2
+      },
+      "no": {
+        "consequence": "You decide computers are just another school activity and focus elsewhere.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 2
+      }
+    },
+    {
+      "id": 2,
+      "year": 1968,
+      "chapter": "The Beginning",
+      "title": "Paul Allen",
+      "playerFact": "At school, you meet someone who is just as obsessed with computers as you are. The two of you begin spending every possible moment together, writing programs, exploring systems, and dreaming about what computers could become.",
+      "historicalFact": "At school you met a kindred spirit who shared your passion for computers — a friendship that would grow into one of the most important partnerships in technology.",
+      "question": "You meet someone who is just as obsessed with computers as you are. Will you work together?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You and your new friend begin spending countless hours writing programs together.",
+        "historical": true,
+        "risk": 4,
+        "independence": 6,
+        "nextEvent": 3
+      },
+      "no": {
+        "consequence": "You keep your programming projects mostly to yourself.",
+        "historical": false,
+        "risk": 3,
+        "independence": 8,
+        "nextEvent": 3
+      }
+    },
+    {
+      "id": 3,
+      "year": 1972,
+      "chapter": "Early Opportunities",
+      "title": "Real-World Experience",
+      "playerFact": "While still in school, you and your friend find opportunities to work with real computer systems for local organizations. You write actual code that businesses use — an extraordinary experience for someone your age.",
+      "historicalFact": "You and your friend gained early programming experience through real-world projects for local companies, including a payroll system and a traffic-analysis program.",
+      "question": "A local company gives you an opportunity to work with real computer systems. Will you take it?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You gain valuable experience working with real-world computer systems while still a student.",
+        "historical": true,
+        "risk": 4,
+        "independence": 6,
+        "nextEvent": 4
+      },
+      "no": {
+        "consequence": "You decide to focus on school and wait until you are older.",
+        "historical": false,
+        "risk": 2,
+        "independence": 4,
+        "nextEvent": 4
+      }
+    },
+    {
+      "id": 4,
+      "year": 1973,
+      "chapter": "The Decision",
+      "title": "Harvard",
+      "playerFact": "You are accepted into one of the most prestigious universities in the world. Your family expects you to go, and it is a remarkable opportunity — but it means leaving behind the practical computing work you love.",
+      "historicalFact": "You enrolled at Harvard University in 1973, where you studied mathematics and computer science while continuing to think about the future of software.",
+      "question": "You have been accepted into Harvard. Will you leave Seattle and pursue a university education?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You move to Cambridge and begin studying at Harvard while continuing to think about computers.",
+        "historical": true,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 5
+      },
+      "no": {
+        "consequence": "You skip Harvard and immediately pursue opportunities in the computer industry.",
+        "historical": false,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 5
+      }
+    },
+    {
+      "id": 5,
+      "year": 1975,
+      "chapter": "Your Company",
+      "title": "The Altair",
+      "playerFact": "You learn about a new personal computer that has just been announced — a machine for hobbyists. It has no software. You and your friend realize you could write a programming language for it. It is a gamble, but it could be the beginning of something much bigger.",
+      "historicalFact": "You learned about the Altair 8800 — one of the first personal computers — and you and your friend built a version of the BASIC programming language for it, launching your software company.",
+      "question": "A new personal computer has appeared, but it needs software. Will you build it?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You and your partner build a programming language and see an opportunity in the emerging personal-computer market.",
+        "historical": true,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 6
+      },
+      "no": {
+        "consequence": "You decide the machine is too limited and wait for more powerful computers.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 6
+      }
+    },
+    {
+      "id": 6,
+      "year": 1975,
+      "chapter": "Your Company",
+      "title": "Leaving Harvard",
+      "playerFact": "Your software business is growing. You have real customers and real revenue. But you are still enrolled at the most prestigious university in the country. You cannot do both at full capacity.",
+      "historicalFact": "You left Harvard without completing your degree to focus full-time on the software company you had co-founded — a decision that would prove transformative.",
+      "question": "Your software business is gaining traction, but you are still at Harvard. Will you leave university and pursue the company full-time?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You leave Harvard and dedicate yourself completely to building the software company.",
+        "historical": true,
+        "risk": 9,
+        "independence": 10,
+        "nextEvent": 7
+      },
+      "no": {
+        "consequence": "You stay at Harvard and try to build the company while completing your education.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 7
+      }
+    },
+    {
+      "id": 7,
+      "year": 1980,
+      "chapter": "The Big Opportunity",
+      "title": "IBM",
+      "playerFact": "The largest computer company in the world is building a personal computer. They need software — specifically, an operating system. They come to your small company. This is the opportunity of a lifetime.",
+      "historicalFact": "IBM approached your young company about providing software for its new personal computer. You supplied an operating system that would become the foundation of a computing empire.",
+      "question": "The world's largest computer company wants software for its new personal computer. Will you pursue the deal?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You pursue the deal and secure an opportunity to put your software on a major new computer.",
+        "historicalConsequence": "You secured a deal with IBM to provide the operating system for their PC — the deal that would define the personal-computing era.",
+        "historical": true,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 8
+      },
+      "no": {
+        "consequence": "You decide that working with such a large company is too risky.",
+        "historical": false,
+        "risk": 3,
+        "independence": 5,
+        "nextEvent": 8
+      }
+    },
+    {
+      "id": 8,
+      "year": 1981,
+      "chapter": "The Big Opportunity",
+      "title": "Keep the Rights",
+      "playerFact": "The deal is on the table. The large computer company wants your operating system, but they want to license it exclusively. Your instinct tells you something different: keep the ability to sell it to everyone else.",
+      "historicalFact": "You licensed the operating system to the computer giant while retaining the right to license it to other manufacturers — a decision that made your software the industry standard.",
+      "question": "A major computer company wants your operating system. Will you retain the right to license it to others?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You retain the ability to license the operating system to other manufacturers, allowing the software business to expand.",
+        "historical": true,
+        "risk": 8,
+        "independence": 10,
+        "nextEvent": 9
+      },
+      "no": {
+        "consequence": "You give the major manufacturer exclusive control and build your business around one hardware partner.",
+        "historical": false,
+        "risk": 5,
+        "independence": 2,
+        "nextEvent": 9
+      }
+    },
+    {
+      "id": 9,
+      "year": 1985,
+      "chapter": "A New Era",
+      "title": "Windows",
+      "playerFact": "Computers are evolving from text-based machines to something visual. You see that the future of personal computing is graphical — windows, icons, menus, and a mouse. You pour resources into building a graphical system.",
+      "historicalFact": "You bet the company on a graphical operating system, releasing the first version of Windows and laying the foundation for decades of dominance in personal computing.",
+      "question": "Graphical interfaces are becoming the future of personal computing. Will you invest heavily in building one?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You invest heavily in graphical computing and pursue a future of visual operating systems.",
+        "historical": true,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 10
+      },
+      "no": {
+        "consequence": "You continue focusing on text-based software and leave graphical computing to competitors.",
+        "historical": false,
+        "risk": 3,
+        "independence": 5,
+        "nextEvent": 10
+      }
+    },
+    {
+      "id": 10,
+      "year": 2000,
+      "chapter": "A New Mission",
+      "title": "A Different Mission",
+      "playerFact": "You have led your company to extraordinary success. You are one of the wealthiest people in the world. But you increasingly feel that your real impact could be somewhere else — saving lives, improving health, solving problems that technology alone cannot fix.",
+      "historicalFact": "You stepped down as CEO of your company in 2000 and turned your focus to philanthropy, creating one of the largest charitable foundations in the world.",
+      "question": "You have achieved extraordinary financial success. Will you step away from running your company and focus more on philanthropy?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You step back from day-to-day leadership and dedicate much of your time and resources to philanthropy.",
+        "historical": true,
+        "risk": 5,
+        "independence": 7,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You remain focused on technology and continue directing the company yourself.",
+        "historical": false,
+        "risk": 4,
+        "independence": 6,
+        "nextEvent": null
+      }
+    }
+  ]
+}

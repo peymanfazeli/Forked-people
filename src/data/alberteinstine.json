@@ -1,0 +1,262 @@
+{
+  "id": "albert-einstein",
+  "name": "Albert Einstein",
+  "birthYear": 1879,
+  "deathYear": 1955,
+  "description": "A journey through the curiosity, unconventional choices, and scientific risks that shaped a life of profound discovery.",
+  "scoring": {
+    "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
+    "risk": "average risk score of selected choices",
+    "independence": "average independence score of selected choices",
+    "scoreRange": {
+      "min": 0,
+      "max": 100
+    }
+  },
+  "ending": {
+    "title": "Your Journey of Curiosity",
+    "revealName": true
+  },
+  "events": [
+    {
+      "id": 1,
+      "year": 1880,
+      "chapter": "Curiosity",
+      "title": "The Compass",
+      "playerFact": "When you are a young child, you are given a simple compass. The way the needle always points north fascinates you — it is an invisible force you cannot see but you know it is there. This moment awakens something in you.",
+      "historicalFact": "As a young child, you became fascinated by the behavior of a compass and developed an early curiosity about invisible forces in nature — a curiosity that would define your life.",
+      "question": "Your child becomes fascinated by something he cannot explain. Will you encourage him to investigate it?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You encourage his curiosity and let him explore the mystery.",
+        "historical": true,
+        "risk": 2,
+        "independence": 5,
+        "nextEvent": 2
+      },
+      "no": {
+        "consequence": "You tell him to stop worrying about things he cannot understand.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 2
+      }
+    },
+    {
+      "id": 2,
+      "year": 1894,
+      "chapter": "Finding His Path",
+      "title": "Leaving Germany",
+      "playerFact": "As a teenager, you find the rigid educational environment oppressive. You decide to leave and continue your education in a neighboring country where the approach to learning is freer.",
+      "historicalFact": "As a teenager, you left Germany and continued your education in Switzerland, where the educational environment suited your independent thinking.",
+      "question": "You dislike the rigid educational environment around you. Will you leave and seek your education somewhere else?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You leave the environment that frustrates you and search for a different educational path.",
+        "historical": true,
+        "risk": 7,
+        "independence": 9,
+        "nextEvent": 3
+      },
+      "no": {
+        "consequence": "You stay and adapt to the educational system despite your dissatisfaction.",
+        "historical": false,
+        "risk": 3,
+        "independence": 3,
+        "nextEvent": 3
+      }
+    },
+    {
+      "id": 3,
+      "year": 1896,
+      "chapter": "Finding His Path",
+      "title": "The Polytechnic",
+      "playerFact": "You gain admission to a technical institute where you dedicate yourself to mathematics and physics — the sciences that explain the natural world.",
+      "historicalFact": "You entered the Swiss Federal Polytechnic in Zurich, where you studied mathematics and physics with some of the finest minds of the era.",
+      "question": "You have the chance to study mathematics and physics. Will you dedicate yourself to understanding nature?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You immerse yourself in mathematics and physics.",
+        "historical": true,
+        "risk": 3,
+        "independence": 6,
+        "nextEvent": 4
+      },
+      "no": {
+        "consequence": "You choose another academic direction.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 4
+      }
+    },
+    {
+      "id": 4,
+      "year": 1902,
+      "chapter": "The Patent Office",
+      "title": "No Academic Position",
+      "playerFact": "After graduating, you cannot find a university position despite your abilities. You take a job reviewing patent applications while continuing your scientific thinking in every spare moment.",
+      "historicalFact": "After graduating, you struggled to obtain an academic position and eventually found work at the Swiss Patent Office in Bern, where you examined patent applications while developing your theories in secret.",
+      "question": "You cannot find a university job. Will you accept a patent-office position while continuing physics in your spare time?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You take the job and continue thinking about physics outside working hours.",
+        "historical": true,
+        "risk": 5,
+        "independence": 8,
+        "nextEvent": 5
+      },
+      "no": {
+        "consequence": "You refuse the ordinary job and continue searching for an academic position.",
+        "historical": false,
+        "risk": 6,
+        "independence": 6,
+        "nextEvent": 5
+      }
+    },
+    {
+      "id": 5,
+      "year": 1905,
+      "chapter": "The Miracle Year",
+      "title": "Radical Ideas",
+      "playerFact": "In a single extraordinary year, you publish several papers that challenge the foundations of physics. One redefines how we understand space and time. Another describes how light behaves as particles. These ideas are so radical that they could change everything — or be dismissed as nonsense.",
+      "historicalFact": "In 1905 — often called your miracle year — you published groundbreaking papers on special relativity, the photoelectric effect, and Brownian motion, each of which transformed its field.",
+      "question": "You have radical ideas that challenge established physics. Will you publish them despite not being famous?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You publish your ideas and challenge established assumptions in physics.",
+        "historical": true,
+        "risk": 8,
+        "independence": 10,
+        "nextEvent": 6
+      },
+      "no": {
+        "consequence": "You keep your ideas private until you have greater academic recognition.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 6
+      }
+    },
+    {
+      "id": 6,
+      "year": 1915,
+      "chapter": "Changing Physics",
+      "title": "A New Theory of Gravity",
+      "playerFact": "You have been working on an idea that completely reimagines gravity. Instead of a force pulling objects together, you propose that mass actually curves the fabric of space itself. It is the most ambitious idea of your life.",
+      "historicalFact": "You developed general relativity, presenting a revolutionary description of gravity based on the geometry of spacetime — a theory that would reshape modern physics.",
+      "question": "Your theory could completely change humanity's understanding of gravity. Will you present it to the scientific world?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You present your theory and challenge the existing understanding of gravity.",
+        "historical": true,
+        "risk": 8,
+        "independence": 10,
+        "nextEvent": 7
+      },
+      "no": {
+        "consequence": "You abandon the theory because its implications seem too radical.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 7
+      }
+    },
+    {
+      "id": 7,
+      "year": 1919,
+      "chapter": "Fame",
+      "title": "The Eclipse",
+      "playerFact": "Your theory makes a bold prediction: gravity should bend light. During a total solar eclipse, scientists have an opportunity to test it by observing stars near the eclipsed sun. If they see what you predicted, your theory will be confirmed. If not, years of work collapse.",
+      "historicalFact": "Observations during a solar eclipse provided evidence consistent with your prediction that gravity bends starlight, catapulting you to worldwide fame overnight.",
+      "question": "Scientists want to test your prediction publicly. Will you allow your theory to face the experiment?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You allow the prediction to be tested, risking public failure or confirmation.",
+        "historical": true,
+        "risk": 8,
+        "independence": 7,
+        "nextEvent": 8
+      },
+      "no": {
+        "consequence": "You avoid the public test and protect your theory from possible failure.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 8
+      }
+    },
+    {
+      "id": 8,
+      "year": 1933,
+      "chapter": "A New World",
+      "title": "Leaving Germany",
+      "playerFact": "Your country has fallen under the control of a regime that you fundamentally oppose. Your work is denounced, your safety is threatened, and staying means accepting a world you cannot live in. You must decide whether to leave everything behind.",
+      "historicalFact": "With the rise of the Nazi regime, you left Germany permanently and eventually settled in the United States, becoming a refugee from one of history's darkest periods.",
+      "question": "Your country has become dangerous for you. Will you leave your homeland permanently?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You leave your homeland and begin building a new life in a new country.",
+        "historical": true,
+        "risk": 9,
+        "independence": 8,
+        "nextEvent": 9
+      },
+      "no": {
+        "consequence": "You remain in your homeland despite the growing political danger.",
+        "historical": false,
+        "risk": 10,
+        "independence": 4,
+        "nextEvent": 9
+      }
+    },
+    {
+      "id": 9,
+      "year": 1939,
+      "chapter": "The Atomic Age",
+      "title": "The Warning",
+      "playerFact": "You receive word that scientists in your former homeland may be developing a weapon of unimaginable power based on recent discoveries in physics. You have the ear of world leaders. Do you warn them, knowing your warning could lead to the very technology you fear?",
+      "historicalFact": "You signed a letter to President Franklin D. Roosevelt warning that Nazi Germany might pursue nuclear weapons and urging the United States to begin its own research.",
+      "question": "You fear that Nazi Germany could develop an extraordinarily powerful weapon. Will you warn the American government?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You sign a warning urging the government to take the possibility of nuclear weapons seriously.",
+        "historical": true,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 10
+      },
+      "no": {
+        "consequence": "You decide not to become involved and keep your concerns within the scientific community.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 10
+      }
+    },
+    {
+      "id": 10,
+      "year": 1955,
+      "chapter": "The Final Years",
+      "title": "The Unified Theory",
+      "playerFact": "You have achieved everything a scientist could dream of. Yet the deepest questions still elude you. You spend your final years pursuing a single theory that could explain all the forces of nature — a dream that may be impossible, but you cannot let go of it.",
+      "historicalFact": "You spent your later years pursuing a unified field theory that could reconcile gravity and electromagnetism, a goal you pursued relentlessly even though you never achieved it.",
+      "question": "You have already achieved worldwide fame. Will you spend your remaining years pursuing a theory that may never succeed?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You continue pursuing an extraordinarily difficult scientific problem despite the possibility of never solving it.",
+        "historical": true,
+        "risk": 7,
+        "independence": 10,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You stop pursuing the problem and focus your remaining years on more practical work.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": null
+      }
+    }
+  ]
+}

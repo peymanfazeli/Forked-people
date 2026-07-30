@@ -1,0 +1,264 @@
+{
+  "id": "steve-jobs",
+  "name": "Steve Jobs",
+  "birthYear": 1955,
+  "deathYear": 2011,
+  "description": "A journey through the pivotal decisions that shaped a life of innovation and ambition.",
+  "scoring": {
+    "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
+    "risk": "average risk score of selected choices",
+    "independence": "average independence score of selected choices",
+    "scoreRange": {
+      "min": 0,
+      "max": 100
+    }
+  },
+  "ending": {
+    "title": "Your Journey of Innovation",
+    "revealName": true
+  },
+  "events": [
+    {
+      "id": 1,
+      "year": 1955,
+      "chapter": "The Beginning",
+      "title": "An Adopted Child",
+      "playerFact": "You are adopted shortly after birth by a family who raises you in a modest home. From an early age, you show a curious and determined nature.",
+      "historicalFact": "You were born in 1955 and adopted shortly afterward by Paul and Clara Jobs, who raised you in the San Francisco Bay Area.",
+      "question": "You have the opportunity to raise an adopted child. Will you take responsibility for him?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You decide to raise the child and give him a loving home.",
+        "historical": true,
+        "risk": 3,
+        "independence": 2,
+        "nextEvent": 2
+      },
+      "no": {
+        "consequence": "You decide not to raise the child. His life begins with a different family.",
+        "historical": false,
+        "risk": 4,
+        "independence": 3,
+        "nextEvent": 2
+      }
+    },
+    {
+      "id": 2,
+      "year": 1968,
+      "chapter": "The Beginning",
+      "title": "A Curious Young Mind",
+      "playerFact": "As a teenager, you become fascinated by electronics and computers — machines that seem to hold infinite possibility. You encounter someone who shares this obsession completely.",
+      "historicalFact": "As a teenager, you became deeply interested in electronics and computers and met Steve Wozniak, a kindred spirit who became your lifelong collaborator.",
+      "question": "You meet someone who shares your obsession with electronics. Will you work together?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You become close friends and begin building things together.",
+        "historical": true,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 3
+      },
+      "no": {
+        "consequence": "You continue exploring electronics but mostly pursue your interests alone.",
+        "historical": false,
+        "risk": 2,
+        "independence": 7,
+        "nextEvent": 3
+      }
+    },
+    {
+      "id": 3,
+      "year": 1972,
+      "chapter": "Finding Your Path",
+      "title": "Leaving College",
+      "playerFact": "You enroll in a liberal arts college but quickly feel that formal education is not for you. It is expensive and your family's finances are strained.",
+      "historicalFact": "You enrolled at Reed College but dropped out after about six months, partly due to the financial burden on your adoptive parents.",
+      "question": "College doesn't feel right to you. Will you drop out and find your own path?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You leave college and begin exploring life outside the traditional education system.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 4
+      },
+      "no": {
+        "consequence": "You stay in college and continue toward a conventional degree.",
+        "historical": false,
+        "risk": 3,
+        "independence": 3,
+        "nextEvent": 4
+      }
+    },
+    {
+      "id": 4,
+      "year": 1972,
+      "chapter": "Finding Your Path",
+      "title": "The Calligraphy Class",
+      "playerFact": "Even after leaving formal education, you continue attending classes that genuinely interest you. One of them is a course on calligraphy — the art of beautiful writing. It has no obvious practical purpose, but it captivates you.",
+      "historicalFact": "After dropping out of college, you continued auditing classes. A calligraphy course you took later influenced your company's revolutionary approach to typography and design.",
+      "question": "A calligraphy class fascinates you even though it has no obvious practical value. Will you study it?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You study calligraphy simply because you are fascinated by it.",
+        "historical": true,
+        "risk": 4,
+        "independence": 8,
+        "nextEvent": 5
+      },
+      "no": {
+        "consequence": "You decide that calligraphy has little practical value and move on.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 5
+      }
+    },
+    {
+      "id": 5,
+      "year": 1974,
+      "chapter": "Finding Your Path",
+      "title": "A Journey to India",
+      "playerFact": "In your early twenties, you feel drawn to explore Eastern philosophy. An opportunity arises to travel to India in search of spiritual enlightenment.",
+      "historicalFact": "In your early twenties, you traveled to India in search of spiritual enlightenment — a journey that deeply shaped your worldview and aesthetic sensibilities.",
+      "question": "You have the opportunity to travel to India in search of spiritual answers. Will you go?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You travel to India and explore spirituality and different ways of thinking.",
+        "historical": true,
+        "risk": 7,
+        "independence": 9,
+        "nextEvent": 6
+      },
+      "no": {
+        "consequence": "You stay in the United States and continue focusing on technology and your career.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 6
+      }
+    },
+    {
+      "id": 6,
+      "year": 1974,
+      "chapter": "Finding Your Path",
+      "title": "Atari",
+      "playerFact": "After returning from your travels, a young video-game company offers you a job. It is a small but growing company in an industry that barely exists yet.",
+      "historicalFact": "After returning from India, you worked at Atari and became increasingly involved with the emerging personal-computer scene.",
+      "question": "A young video-game company offers you a job. Will you take the opportunity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You join the company and gain experience in the early video-game industry.",
+        "historicalConsequence": "You joined Atari, gaining valuable experience and staying connected to the emerging personal-computer world.",
+        "historical": true,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 7
+      },
+      "no": {
+        "consequence": "You reject the job and search for another direction.",
+        "historical": false,
+        "risk": 5,
+        "independence": 7,
+        "nextEvent": 7
+      }
+    },
+    {
+      "id": 7,
+      "year": 1976,
+      "chapter": "Building Apple",
+      "title": "The Computer",
+      "playerFact": "Your friend has built a working computer in his spare time. It is a simple machine, but you immediately sense that it could be more than a hobby. You see an opportunity to make something that ordinary people could use.",
+      "historicalFact": "Steve Wozniak had designed a personal computer, and you saw the potential to turn it into a commercial product — a machine anyone could use, not just hobbyists.",
+      "question": "Your friend has built a working computer. Will you turn his invention into a business together?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You decide the computer could become a real product and start a company with your friend.",
+        "historical": true,
+        "risk": 8,
+        "independence": 8,
+        "nextEvent": 8
+      },
+      "no": {
+        "consequence": "You decide the computer is an interesting hobby rather than a business opportunity.",
+        "historical": false,
+        "risk": 2,
+        "independence": 4,
+        "nextEvent": 8
+      }
+    },
+    {
+      "id": 8,
+      "year": 1977,
+      "chapter": "Building Apple",
+      "title": "Apple II",
+      "playerFact": "Your computer is gaining attention. It is still mostly a machine for enthusiasts, but you believe it can reach a much wider audience. You want to make it polished, accessible, and beautiful — something people would want in their homes.",
+      "historicalFact": "The Apple II became a major success and helped establish your company as an important force in personal computing. It set a new standard for what a personal computer could be.",
+      "question": "Your computer is becoming successful. Will you invest heavily in making it a polished consumer product?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You focus on making the computer accessible, attractive, and commercially successful.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 9
+      },
+      "no": {
+        "consequence": "You keep the company focused mainly on technology and enthusiasts.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 9
+      }
+    },
+    {
+      "id": 9,
+      "year": 1985,
+      "chapter": "Starting Again",
+      "title": "Forced Out",
+      "playerFact": "Tensions have been building within the company you helped create. The leadership you brought in sees things differently than you do. Eventually, you are pushed out of the very organization you founded.",
+      "historicalFact": "After conflicts with the company's leadership, you were removed from the business you had co-founded — a painful but ultimately liberating turning point.",
+      "question": "You have lost control of the company you helped build. Will you leave and start something new?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You leave the company and decide that your next chapter will be built somewhere else.",
+        "historical": true,
+        "risk": 9,
+        "independence": 10,
+        "nextEvent": 10
+      },
+      "no": {
+        "consequence": "You remain determined to regain your influence inside the company.",
+        "historical": false,
+        "risk": 7,
+        "independence": 7,
+        "nextEvent": 10
+      }
+    },
+    {
+      "id": 10,
+      "year": 1986,
+      "chapter": "Starting Again",
+      "title": "A New Beginning",
+      "playerFact": "You have the freedom to build from scratch. You start a new company focused on powerful computers for professionals. Separately, you invest in a small computer graphics team working on something entirely new — telling stories with machines.",
+      "historicalFact": "After leaving the company you co-founded, you started NeXT, a company building advanced workstations, and acquired what became Pixar Animation Studios.",
+      "question": "You have the freedom to start again. Will you build a new computer company and invest in computer animation?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You start a new computer company and back a graphics project that will change both industries.",
+        "historicalConsequence": "You founded NeXT and acquired Pixar, creating the foundation for your return to Apple and revolutionizing both computing and animation.",
+        "historical": true,
+        "risk": 9,
+        "independence": 10,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You choose a quieter path and avoid building another major technology company.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": null
+      }
+    }
+  ]
+}

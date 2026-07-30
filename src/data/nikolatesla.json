@@ -1,0 +1,266 @@
+{
+  "id": "nikola-tesla",
+  "name": "Nikola Tesla",
+  "birthYear": 1856,
+  "deathYear": 1943,
+  "description": "A journey through the discoveries, risks, and ambitions that shaped a life of extraordinary vision.",
+  "scoring": {
+    "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
+    "risk": "average risk score of selected choices",
+    "independence": "average independence score of selected choices",
+    "scoreRange": {
+      "min": 0,
+      "max": 100
+    }
+  },
+  "ending": {
+    "title": "Your Journey of Invention",
+    "revealName": true
+  },
+  "events": [
+    {
+      "id": 1,
+      "year": 1856,
+      "chapter": "The Beginning",
+      "title": "A Curious Child",
+      "playerFact": "From the earliest age, you have an extraordinary ability to picture machines in your mind. You can visualize complex inventions in complete detail before ever building them. This gift both fascinates and isolates you.",
+      "historicalFact": "You were born in Smiljan in 1856. From an early age, you showed an extraordinary memory and a fascination with machines, often visualizing inventions in your mind with remarkable clarity.",
+      "question": "You have a child who spends most of his time imagining machines. Will you encourage his unusual curiosity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You encourage the child to explore his imagination and fascination with machines.",
+        "historical": true,
+        "risk": 3,
+        "independence": 5,
+        "nextEvent": 2
+      },
+      "no": {
+        "consequence": "You push the child toward more conventional interests.",
+        "historical": false,
+        "risk": 2,
+        "independence": 2,
+        "nextEvent": 2
+      }
+    },
+    {
+      "id": 2,
+      "year": 1875,
+      "chapter": "The Inventor",
+      "title": "The Polytechnic",
+      "playerFact": "You enroll in a technical university and dedicate yourself to understanding electricity — a force that few people truly comprehend. You become obsessed with the behavior of electrical machines and begin imagining ways to improve them.",
+      "historicalFact": "You studied electrical engineering at the Austrian Polytechnic in Graz, where you became deeply interested in the problems of electrical machines and their limitations.",
+      "question": "You have the opportunity to study electrical engineering. Will you dedicate yourself to understanding electricity?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You immerse yourself in electrical engineering and begin thinking about improving electrical machines.",
+        "historical": true,
+        "risk": 4,
+        "independence": 6,
+        "nextEvent": 3
+      },
+      "no": {
+        "consequence": "You choose another direction and leave electrical engineering behind.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 3
+      }
+    },
+    {
+      "id": 3,
+      "year": 1882,
+      "chapter": "The Inventor",
+      "title": "The Rotating Magnetic Field",
+      "playerFact": "While walking in a city park, a vision comes to you fully formed: a way to make an electric motor work using a rotating magnetic field instead of the inefficient methods of today. The solution is so clear in your mind that you draw it in the dirt with a stick.",
+      "historicalFact": "While working in Budapest, you conceived the idea of a rotating magnetic field — a breakthrough that would become the foundation for alternating-current motors and change the world.",
+      "question": "You suddenly imagine a completely different way to make an electric motor work. Will you pursue the idea?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You become obsessed with the idea and begin developing a new approach to electric motors.",
+        "historical": true,
+        "risk": 7,
+        "independence": 9,
+        "nextEvent": 4
+      },
+      "no": {
+        "consequence": "You dismiss the idea as impractical and continue working with existing technology.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 4
+      }
+    },
+    {
+      "id": 4,
+      "year": 1884,
+      "chapter": "America",
+      "title": "A New Country",
+      "playerFact": "You receive an opportunity to move to America and work for a famous inventor who has already changed the world with his inventions. It means leaving everything you know behind, but America is where the future is being built.",
+      "historicalFact": "You moved to the United States in 1884 and began working for Thomas Edison, hoping to collaborate on electrical innovation with the most famous inventor in America.",
+      "question": "You are offered an opportunity to move to America and work for a major inventor. Will you go?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You leave Europe and travel to America to pursue your future in electrical engineering.",
+        "historicalConsequence": "You arrived in New York in 1884 and began working for Thomas Edison, though the partnership would not last.",
+        "historical": true,
+        "risk": 8,
+        "independence": 8,
+        "nextEvent": 5
+      },
+      "no": {
+        "consequence": "You remain in Europe and continue developing your ideas there.",
+        "historical": false,
+        "risk": 3,
+        "independence": 6,
+        "nextEvent": 5
+      }
+    },
+    {
+      "id": 5,
+      "year": 1884,
+      "chapter": "America",
+      "title": "Working for Edison",
+      "playerFact": "Your new employer prefers direct current — electricity that flows in one direction. Your vision involves alternating current, which can travel much farther. The two of you have fundamentally different philosophies, and your relationship grows strained.",
+      "historicalFact": "You worked for Thomas Edison, but the two of you had fundamentally different approaches to electrical systems. Edison championed DC while you believed AC was the future.",
+      "question": "Your employer strongly disagrees with your ideas. Will you leave and pursue your own vision?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You leave your employer and decide to pursue your own ideas independently.",
+        "historicalConsequence": "You left Edison's company after disputes over payment and your vision for alternating current.",
+        "historical": true,
+        "risk": 9,
+        "independence": 10,
+        "nextEvent": 6
+      },
+      "no": {
+        "consequence": "You remain with the company and adapt your ideas to your employer's approach.",
+        "historical": false,
+        "risk": 4,
+        "independence": 3,
+        "nextEvent": 6
+      }
+    },
+    {
+      "id": 6,
+      "year": 1887,
+      "chapter": "The War of Currents",
+      "title": "Alternating Current",
+      "playerFact": "You perfect a system of alternating current that can transmit electrical power over vast distances — something direct current cannot do. You develop motors, transformers, and the entire infrastructure for a new kind of electrical world.",
+      "historicalFact": "You developed and patented alternating-current technologies, including induction motors and polyphase systems that made long-distance electrical distribution possible.",
+      "question": "You believe alternating current can transform electrical distribution. Will you dedicate your career to it?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You focus on alternating current and develop technologies for large-scale electrical distribution.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 7
+      },
+      "no": {
+        "consequence": "You abandon the idea and focus your research elsewhere.",
+        "historical": false,
+        "risk": 3,
+        "independence": 5,
+        "nextEvent": 7
+      }
+    },
+    {
+      "id": 7,
+      "year": 1888,
+      "chapter": "The War of Currents",
+      "title": "Westinghouse",
+      "playerFact": "A powerful industrialist recognizes the potential of your electrical system. He offers to license your technology and back it with his resources. It would mean your ideas could reach the world — but you would share control.",
+      "historicalFact": "George Westinghouse acquired the rights to your AC patents and provided the resources to develop and deploy your technology on a massive scale.",
+      "question": "A powerful industrialist believes in your electrical system. Will you work with him?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You allow your technology to become part of a much larger electrical system.",
+        "historicalConsequence": "Westinghouse licensed your AC patents, giving you funding and a partner who could challenge Edison's DC empire.",
+        "historical": true,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 8
+      },
+      "no": {
+        "consequence": "You refuse the partnership and attempt to develop the technology independently.",
+        "historical": false,
+        "risk": 8,
+        "independence": 10,
+        "nextEvent": 8
+      }
+    },
+    {
+      "id": 8,
+      "year": 1893,
+      "chapter": "The War of Currents",
+      "title": "The World's Fair",
+      "playerFact": "There is an opportunity to demonstrate your electrical system at a world exhibition — the biggest stage imaginable. Millions will see your technology illuminate an entire fairground. It could prove once and for all that your system works.",
+      "historicalFact": "Your alternating-current system, backed by Westinghouse, lit the 1893 World's Columbian Exposition in Chicago — a stunning public demonstration that proved AC's superiority.",
+      "question": "You can demonstrate your electrical system to millions of people. Will you take the risk?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You demonstrate the technology publicly and help prove that AC can power an entire exhibition.",
+        "historical": true,
+        "risk": 7,
+        "independence": 7,
+        "nextEvent": 9
+      },
+      "no": {
+        "consequence": "You avoid the public demonstration and keep your technology in development.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 9
+      }
+    },
+    {
+      "id": 9,
+      "year": 1899,
+      "chapter": "The Dream",
+      "title": "Colorado Springs",
+      "playerFact": "You become convinced that electricity can be transmitted through the air itself — no wires needed. You build a laboratory in a remote location and conduct experiments with voltages so high that lightning crackles across the landscape for miles.",
+      "historicalFact": "You conducted high-voltage experiments in Colorado Springs, generating artificial lightning and investigating the wireless transmission of electrical power across distances.",
+      "question": "You believe electricity can travel without wires. Will you spend your fortune investigating the idea?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You dedicate yourself to wireless power and high-voltage experiments.",
+        "historical": true,
+        "risk": 10,
+        "independence": 10,
+        "nextEvent": 10
+      },
+      "no": {
+        "consequence": "You abandon the risky experiments and focus on technologies that can generate reliable income.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 10
+      }
+    },
+    {
+      "id": 10,
+      "year": 1901,
+      "chapter": "The Dream",
+      "title": "Wardenclyffe",
+      "playerFact": "You have one last chance to build the dream that has consumed you: a tower that can transmit wireless power and communication around the world. It requires everything you have — your money, your reputation, your future. One last gamble.",
+      "historicalFact": "You began constructing Wardenclyffe Tower on Long Island — an ambitious facility designed to demonstrate wireless communication and power transmission on a global scale.",
+      "question": "You have one final opportunity to build a system for wireless communication and power. Will you risk everything on the dream?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You dedicate enormous resources to the tower and pursue your vision of a wireless future.",
+        "historicalConsequence": "You poured your remaining fortune into Wardenclyffe Tower, a visionary project that was never completed.",
+        "historical": true,
+        "risk": 10,
+        "independence": 10,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You abandon the project before it consumes more of your resources.",
+        "historical": false,
+        "risk": 2,
+        "independence": 5,
+        "nextEvent": null
+      }
+    }
+  ]
+}
