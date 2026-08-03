@@ -1,16 +1,30 @@
-import { useReducer, useCallback } from 'react'
+import { useReducer, useCallback, useEffect } from 'react'
 import { getCharacter, getRandomCharacter } from './data/characters'
 import { initialGameState, gameReducer } from './engine/gameState'
+import { audio } from './engine/audio'
 import RiveBackground from './components/RiveBackground'
 import SplashScreen from './components/SplashScreen'
 import GameIntro from './components/GameIntro'
 import GameView from './components/GameView'
 import IdentityReveal from './components/IdentityReveal'
 import ResultsView from './components/ResultsView'
+import SettingsMenu from './components/SettingsMenu'
 import './styles/game.css'
 
 export default function App() {
   const [state, dispatch] = useReducer(gameReducer, initialGameState)
+
+  useEffect(() => {
+    audio.load('click', '/click.mp3')
+    audio.startBackground()
+    const handlePress = (e: PointerEvent) => {
+      if (e.target instanceof Element && e.target.closest('button')) {
+        audio.play('click')
+      }
+    }
+    document.addEventListener('pointerdown', handlePress)
+    return () => document.removeEventListener('pointerdown', handlePress)
+  }, [])
 
   const character = state.characterId ? getCharacter(state.characterId) ?? null : null
   const currentEvent =
@@ -92,6 +106,7 @@ export default function App() {
           }
         })()}
       </div>
+      <SettingsMenu />
     </>
   )
 }
