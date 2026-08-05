@@ -8,12 +8,18 @@ import faStevejobs from './fa/stevejobs.json'
 import faNikolatesla from './fa/nikolatesla.json'
 import faBillgates from './fa/billgates.json'
 import faAlbertEinstein from './fa/alberteinstine.json'
+import sadeghhedayat from './sadeghhedayat.json'
+import faSadeghHedayat from './fa/sadeghhedayat.json'
+import fyodordostoevsky from './fyodordostoevsky.json'
+import fafyodordostoevsky from './fa/fyodordostoevsky.json'
 
 export const characters: Character[] = [
   stevejobs as Character,
   nikolatesla as Character,
   billgates as Character,
   alberteinstine as Character,
+  sadeghhedayat as Character,
+  fyodordostoevsky as Character,
 ]
 
 interface LocalizedChoice {
@@ -45,6 +51,8 @@ const faCharacters: Record<string, LocalizedCharacter> = {
   'nikola-tesla': faNikolatesla as LocalizedCharacter,
   'bill-gates': faBillgates as LocalizedCharacter,
   'albert-einstein': faAlbertEinstein as LocalizedCharacter,
+  'sadegh-hedayat': faSadeghHedayat as LocalizedCharacter,
+  'fyodor-dostoevsky': fafyodordostoevsky as LocalizedCharacter,
 }
 
 function pickText(source: string | undefined, fallback: string): string {

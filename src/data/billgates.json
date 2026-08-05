@@ -2,7 +2,7 @@
   "id": "bill-gates",
   "name": "Bill Gates",
   "birthYear": 1955,
-  "description": "A journey through the opportunities, calculated risks, and defining decisions that shaped a life of technology and purpose.",
+  "description": "A journey through opportunities, calculated risks, and defining decisions that shaped a life of technology and purpose — but every choice can lead you to a completely different fate.",
   "scoring": {
     "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
     "risk": "average risk score of selected choices",
@@ -13,7 +13,7 @@
     }
   },
   "ending": {
-    "title": "Your Journey of Ambition",
+    "title": "Your Fate: Ambitious or Cautious",
     "revealName": true
   },
   "events": [
@@ -21,34 +21,34 @@
       "id": 1,
       "year": 1968,
       "chapter": "The Beginning",
-      "title": "The Computer",
-      "playerFact": "Your school gains access to a computer — a rare and expensive machine that almost no one your age has ever touched. You become fascinated by the idea that you can tell this machine what to do through code.",
-      "historicalFact": "As a teenager at a Seattle private school, you gained access to a computer terminal and became deeply interested in programming, spending countless hours learning to write code.",
-      "question": "Your school gives you access to a computer. Will you spend your free time learning how to program?",
+      "title": "The Computing Machine",
+      "playerFact": "Your school gains access to a rare computing machine — an expensive device that almost no one your age has ever touched. You become fascinated by the idea that you can tell this machine what to do through code.",
+      "historicalFact": "As a teenager, you gained access to a computer terminal and became deeply interested in programming, spending countless hours learning to write code.",
+      "question": "Your school gives you access to a computing machine. Will you spend your free time learning how to program?",
       "weight": 3,
       "yes": {
-        "consequence": "You become fascinated by programming and spend as much time as possible experimenting with the computer.",
+        "consequence": "You become fascinated by programming and spend as much time as possible experimenting with the machine.",
         "historical": true,
         "risk": 3,
         "independence": 6,
         "nextEvent": 2
       },
       "no": {
-        "consequence": "You decide computers are just another school activity and focus elsewhere.",
+        "consequence": "You decide these machines are just a hobby and focus your attention on regular studies.",
         "historical": false,
-        "risk": 2,
+        "risk": 1,
         "independence": 3,
-        "nextEvent": 2
+        "nextEvent": 20
       }
     },
     {
       "id": 2,
       "year": 1968,
       "chapter": "The Beginning",
-      "title": "Paul Allen",
-      "playerFact": "At school, you meet someone who is just as obsessed with computers as you are. The two of you begin spending every possible moment together, writing programs, exploring systems, and dreaming about what computers could become.",
+      "title": "The Companion",
+      "playerFact": "At school, you meet someone who is just as obsessed with computing machines as you are. The two of you begin spending every possible moment together, writing programs, exploring systems, and dreaming about what these machines could become.",
       "historicalFact": "At school you met a kindred spirit who shared your passion for computers — a friendship that would grow into one of the most important partnerships in technology.",
-      "question": "You meet someone who is just as obsessed with computers as you are. Will you work together?",
+      "question": "You meet someone who is just as obsessed with these machines as you are. Will you work together?",
       "weight": 4,
       "yes": {
         "consequence": "You and your new friend begin spending countless hours writing programs together.",
@@ -58,11 +58,11 @@
         "nextEvent": 3
       },
       "no": {
-        "consequence": "You keep your programming projects mostly to yourself.",
+        "consequence": "You keep your programming projects mostly to yourself and work alone.",
         "historical": false,
         "risk": 3,
         "independence": 8,
-        "nextEvent": 3
+        "nextEvent": 22
       }
     },
     {
@@ -70,130 +70,129 @@
       "year": 1972,
       "chapter": "Early Opportunities",
       "title": "Real-World Experience",
-      "playerFact": "While still in school, you and your friend find opportunities to work with real computer systems for local organizations. You write actual code that businesses use — an extraordinary experience for someone your age.",
-      "historicalFact": "You and your friend gained early programming experience through real-world projects for local companies, including a payroll system and a traffic-analysis program.",
-      "question": "A local company gives you an opportunity to work with real computer systems. Will you take it?",
+      "playerFact": "While still in school, you and your friend find opportunities to work with real computing systems for local organizations. You write actual code that businesses use — an extraordinary experience for someone your age.",
+      "historicalFact": "You and your friend gained early programming experience through real-world projects for local companies.",
+      "question": "A local company gives you an opportunity to work with real systems. Will you take it?",
       "weight": 3,
       "yes": {
-        "consequence": "You gain valuable experience working with real-world computer systems while still a student.",
+        "consequence": "You gain valuable experience working with real-world systems while still a student.",
         "historical": true,
         "risk": 4,
         "independence": 6,
         "nextEvent": 4
       },
       "no": {
-        "consequence": "You decide to focus on school and wait until you are older.",
+        "consequence": "You decide to focus on school and wait until you are older to enter the workforce.",
         "historical": false,
         "risk": 2,
         "independence": 4,
-        "nextEvent": 4
+        "nextEvent": 24
       }
     },
     {
       "id": 4,
       "year": 1973,
       "chapter": "The Decision",
-      "title": "Harvard",
-      "playerFact": "You are accepted into one of the most prestigious universities in the world. Your family expects you to go, and it is a remarkable opportunity — but it means leaving behind the practical computing work you love.",
-      "historicalFact": "You enrolled at Harvard University in 1973, where you studied mathematics and computer science while continuing to think about the future of software.",
-      "question": "You have been accepted into Harvard. Will you leave Seattle and pursue a university education?",
+      "title": "Famous University",
+      "playerFact": "You are accepted into one of the most prestigious universities in the world. Your family expects you to go, and it is a remarkable opportunity — but it means leaving behind the practical work you love.",
+      "historicalFact": "You enrolled at Harvard University in 1973, where you studied mathematics and computer science.",
+      "question": "You have been accepted into a very famous university. Will you leave your city and pursue a university education?",
       "weight": 3,
       "yes": {
-        "consequence": "You move to Cambridge and begin studying at Harvard while continuing to think about computers.",
+        "consequence": "You move to the university town and begin studying while continuing to think about technology.",
         "historical": true,
         "risk": 4,
         "independence": 5,
         "nextEvent": 5
       },
       "no": {
-        "consequence": "You skip Harvard and immediately pursue opportunities in the computer industry.",
+        "consequence": "You skip university and immediately pursue opportunities in the technology industry — a big risk but an adventurous one.",
         "historical": false,
         "risk": 8,
         "independence": 9,
-        "nextEvent": 5
+        "nextEvent": 26
       }
     },
     {
       "id": 5,
       "year": 1975,
       "chapter": "Your Company",
-      "title": "The Altair",
-      "playerFact": "You learn about a new personal computer that has just been announced — a machine for hobbyists. It has no software. You and your friend realize you could write a programming language for it. It is a gamble, but it could be the beginning of something much bigger.",
-      "historicalFact": "You learned about the Altair 8800 — one of the first personal computers — and you and your friend built a version of the BASIC programming language for it, launching your software company.",
-      "question": "A new personal computer has appeared, but it needs software. Will you build it?",
+      "title": "The New Device",
+      "playerFact": "You learn about a new personal computing device that has just been announced — a machine for hobbyists. It has no software. You and your friend realize you could write a programming language for it. It is a gamble, but it could be the beginning of something much bigger.",
+      "historicalFact": "You learned about one of the first personal computers and you and your friend built a version of the BASIC programming language for it, launching your software company.",
+      "question": "A new personal device has appeared, but it needs software. Will you build it?",
       "weight": 5,
       "yes": {
-        "consequence": "You and your partner build a programming language and see an opportunity in the emerging personal-computer market.",
+        "consequence": "You and your partner build a programming language and see an opportunity in the emerging market.",
         "historical": true,
         "risk": 7,
         "independence": 8,
         "nextEvent": 6
       },
       "no": {
-        "consequence": "You decide the machine is too limited and wait for more powerful computers.",
+        "consequence": "You decide the machine is too limited and wait for more powerful devices.",
         "historical": false,
         "risk": 3,
         "independence": 4,
-        "nextEvent": 6
+        "nextEvent": 28
       }
     },
     {
       "id": 6,
       "year": 1975,
       "chapter": "Your Company",
-      "title": "Leaving Harvard",
+      "title": "Leaving University",
       "playerFact": "Your software business is growing. You have real customers and real revenue. But you are still enrolled at the most prestigious university in the country. You cannot do both at full capacity.",
-      "historicalFact": "You left Harvard without completing your degree to focus full-time on the software company you had co-founded — a decision that would prove transformative.",
-      "question": "Your software business is gaining traction, but you are still at Harvard. Will you leave university and pursue the company full-time?",
+      "historicalFact": "You left university without completing your degree to focus full-time on the software company you had co-founded — a decision that would prove transformative.",
+      "question": "Your software business is gaining traction, but you are still at university. Will you leave university and pursue the company full-time?",
       "weight": 5,
       "yes": {
-        "consequence": "You leave Harvard and dedicate yourself completely to building the software company.",
+        "consequence": "You leave university and dedicate yourself completely to building the software company.",
         "historical": true,
         "risk": 9,
         "independence": 10,
         "nextEvent": 7
       },
       "no": {
-        "consequence": "You stay at Harvard and try to build the company while completing your education.",
+        "consequence": "You stay at university and try to build the company while completing your education — but both remain incomplete.",
         "historical": false,
-        "risk": 4,
+        "risk": 5,
         "independence": 5,
-        "nextEvent": 7
+        "nextEvent": 30
       }
     },
     {
       "id": 7,
       "year": 1980,
       "chapter": "The Big Opportunity",
-      "title": "IBM",
-      "playerFact": "The largest computer company in the world is building a personal computer. They need software — specifically, an operating system. They come to your small company. This is the opportunity of a lifetime.",
+      "title": "The Giant Corporation",
+      "playerFact": "The largest technology company in the world is building a new personal device. They need software — specifically, an operating system. They come to your small company. This is the opportunity of a lifetime.",
       "historicalFact": "IBM approached your young company about providing software for its new personal computer. You supplied an operating system that would become the foundation of a computing empire.",
-      "question": "The world's largest computer company wants software for its new personal computer. Will you pursue the deal?",
+      "question": "The world's largest technology company wants software for its new device. Will you pursue the deal?",
       "weight": 5,
       "yes": {
-        "consequence": "You pursue the deal and secure an opportunity to put your software on a major new computer.",
-        "historicalConsequence": "You secured a deal with IBM to provide the operating system for their PC — the deal that would define the personal-computing era.",
+        "consequence": "You pursue the deal and secure an opportunity to put your software on a major new device.",
         "historical": true,
         "risk": 7,
         "independence": 8,
         "nextEvent": 8
       },
       "no": {
-        "consequence": "You decide that working with such a large company is too risky.",
+        "consequence": "You decide that working with such a large company is too risky and turn down the offer.",
         "historical": false,
-        "risk": 3,
+        "risk": 4,
         "independence": 5,
-        "nextEvent": 8
+        "nextEvent": 32
       }
     },
     {
       "id": 8,
       "year": 1981,
       "chapter": "The Big Opportunity",
-      "title": "Keep the Rights",
-      "playerFact": "The deal is on the table. The large computer company wants your operating system, but they want to license it exclusively. Your instinct tells you something different: keep the ability to sell it to everyone else.",
+      "title": "Keeping the Rights",
+      "playerFact": "The deal is on the table. The large company wants your operating system, but they want to license it exclusively. Your instinct tells you something different: keep the ability to sell it to everyone else.",
       "historicalFact": "You licensed the operating system to the computer giant while retaining the right to license it to other manufacturers — a decision that made your software the industry standard.",
-      "question": "A major computer company wants your operating system. Will you retain the right to license it to others?",
+      "question": "A major company wants your operating system. Will you retain the right to license it to others?",
       "weight": 5,
       "yes": {
         "consequence": "You retain the ability to license the operating system to other manufacturers, allowing the software business to expand.",
@@ -203,21 +202,21 @@
         "nextEvent": 9
       },
       "no": {
-        "consequence": "You give the major manufacturer exclusive control and build your business around one hardware partner.",
+        "consequence": "You give the major company exclusive control and build your business around one hardware partner — safer but more limiting.",
         "historical": false,
         "risk": 5,
-        "independence": 2,
-        "nextEvent": 9
+        "independence": 3,
+        "nextEvent": 34
       }
     },
     {
       "id": 9,
       "year": 1985,
       "chapter": "A New Era",
-      "title": "Windows",
-      "playerFact": "Computers are evolving from text-based machines to something visual. You see that the future of personal computing is graphical — windows, icons, menus, and a mouse. You pour resources into building a graphical system.",
+      "title": "Visual Interface",
+      "playerFact": "Computers are evolving from text-based machines to something visual. You see that the future of personal computing is graphical — windows, icons, menus, and a pointing device. You pour resources into building a graphical system.",
       "historicalFact": "You bet the company on a graphical operating system, releasing the first version of Windows and laying the foundation for decades of dominance in personal computing.",
-      "question": "Graphical interfaces are becoming the future of personal computing. Will you invest heavily in building one?",
+      "question": "Graphical interfaces are becoming the future. Will you invest heavily in building one?",
       "weight": 5,
       "yes": {
         "consequence": "You invest heavily in graphical computing and pursue a future of visual operating systems.",
@@ -231,30 +230,462 @@
         "historical": false,
         "risk": 3,
         "independence": 5,
-        "nextEvent": 10
+        "nextEvent": 36
       }
     },
     {
       "id": 10,
       "year": 2000,
       "chapter": "A New Mission",
-      "title": "A Different Mission",
+      "title": "Another Purpose",
       "playerFact": "You have led your company to extraordinary success. You are one of the wealthiest people in the world. But you increasingly feel that your real impact could be somewhere else — saving lives, improving health, solving problems that technology alone cannot fix.",
       "historicalFact": "You stepped down as CEO of your company in 2000 and turned your focus to philanthropy, creating one of the largest charitable foundations in the world.",
       "question": "You have achieved extraordinary financial success. Will you step away from running your company and focus more on philanthropy?",
       "weight": 4,
       "yes": {
-        "consequence": "You step back from day-to-day leadership and dedicate much of your time and resources to philanthropy.",
+        "consequence": "You step back from day-to-day leadership and dedicate much of your time and resources to philanthropy, building a legacy beyond technology.",
         "historical": true,
         "risk": 5,
         "independence": 7,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You remain focused on technology and continue directing the company yourself.",
+        "consequence": "You remain focused on technology and continue directing the company yourself, but the bigger questions about your purpose never leave you.",
         "historical": false,
         "risk": 4,
         "independence": 6,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 20,
+      "year": 1970,
+      "chapter": "The Ordinary Path",
+      "title": "The Model Employee",
+      "playerFact": "You abandon computing machines and turn to ordinary studies and a normal life. You become a diligent clerk in a government office.",
+      "historicalFact": "Many of your talented contemporaries, by not pursuing technology opportunities, remained in ordinary jobs.",
+      "question": "Are you satisfied with this quiet, carefree life?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You spend years in the office, retire, and live an average life. You never impact the world, but your conscience is clear.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 21
+      },
+      "no": {
+        "consequence": "You grow to hate this life and chase your old dreams — but time is lost, and you never reach the top.",
+        "historical": false,
+        "risk": 5,
+        "independence": 4,
+        "nextEvent": 21
+      }
+    },
+    {
+      "id": 21,
+      "year": 1990,
+      "chapter": "The Ordinary Path",
+      "title": "Late Regret",
+      "playerFact": "In middle age, you see the news about the technology revolution. Those who were once your classmates have changed the world, and you are left on the sidelines.",
+      "historicalFact": "Success stories in technology are full of people who took risks at the right time.",
+      "question": "Do you regret abandoning that computing machine?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You die with regret, wishing in your final moments you had chosen courage over security.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die content, believing a quiet life was better than the anxieties of entrepreneurship — unaware that the world will never remember your name.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 22,
+      "year": 1970,
+      "chapter": "The Solitary Path",
+      "title": "The Lone Programmer",
+      "playerFact": "You reject your companion and continue programming alone. You build small projects but never form a powerful partnership.",
+      "historicalFact": "Some talented programmers, due to a lack of collaboration, never turned big ideas into big products.",
+      "question": "Are you satisfied with working alone?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You become an independent developer, writing useful software, but you never build an empire.",
+        "historical": false,
+        "risk": 3,
+        "independence": 8,
+        "nextEvent": 23
+      },
+      "no": {
+        "consequence": "You constantly think about that lost companion, and this regret haunts you for the rest of your life.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 23
+      }
+    },
+    {
+      "id": 23,
+      "year": 1985,
+      "chapter": "The Solitary Path",
+      "title": "Unknown Among Giants",
+      "playerFact": "While others build large technology companies, you still work as an independent developer. You have respect, but fame and fortune never come.",
+      "historicalFact": "The history of technology is filled with hidden talents who never achieved fame.",
+      "question": "Are you satisfied with this anonymity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You die peacefully, knowing you did your work right, even though the world never knew you.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die with regret, wishing you had built a powerful partnership instead of going it alone.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 24,
+      "year": 1972,
+      "chapter": "The Conservative Path",
+      "title": "The Diligent Student",
+      "playerFact": "You abandon practical projects and focus on school and university studies. You get excellent grades and are recognized as a model student.",
+      "historicalFact": "Many talented students, by prioritizing grades over practical experience, never fulfilled their potential.",
+      "question": "Do you continue on this academic path?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You graduate, become a university professor, and have a quiet academic life, but you never bring a product to market.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 25
+      },
+      "no": {
+        "consequence": "You drop out halfway and seek practical work, but time is lost and you've lost your competitive edge.",
+        "historical": false,
+        "risk": 5,
+        "independence": 4,
+        "nextEvent": 25
+      }
+    },
+    {
+      "id": 25,
+      "year": 1990,
+      "chapter": "The Conservative Path",
+      "title": "The Forgotten Professor",
+      "playerFact": "You teach at the university for years and publish mediocre papers. Your students remember you as a precise but uninspiring professor.",
+      "historicalFact": "The history of science and technology forgets the cautious and only remembers the bold.",
+      "question": "Do you regret choosing the academic path?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You die with regret, wishing you had built a great product instead of just teaching.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die peacefully, believing the university was a worthy place for you, though the world never felt your impact.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 26,
+      "year": 1973,
+      "chapter": "The Adventurous Path",
+      "title": "The Young Entrepreneur",
+      "playerFact": "You leave university and jump straight into the world of entrepreneurship. But without enough experience and without the right partner, your company quickly goes bankrupt.",
+      "historicalFact": "Many young entrepreneurs, despite talent, failed at their first attempt due to lack of preparation and lack of the right partnership.",
+      "question": "Do you learn from this failure and try again, or do you give up?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You learn from failure, form a new partnership, and this time succeed — though later than your competitors.",
+        "historical": false,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 27
+      },
+      "no": {
+        "consequence": "You give up on entrepreneurship and take a regular job. Years later, seeing others' success, you regret it.",
+        "historical": false,
+        "risk": 5,
+        "independence": 4,
+        "nextEvent": 27
+      }
+    },
+    {
+      "id": 27,
+      "year": 1985,
+      "chapter": "The Adventurous Path",
+      "title": "The Late Bloomer",
+      "playerFact": "With a new partnership, you start a small business. You have some success, but never reach the scale of your larger competitors. You are always a step behind.",
+      "historicalFact": "Business history shows that timing is as important as the idea.",
+      "question": "Are you satisfied with your moderate success, or do you still regret not reaching the peak?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You die with pride, knowing you built something from your initial failure, even if you never reached the summit.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die with regret, always wondering what would have happened if you hadn't left university at that time.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 28,
+      "year": 1975,
+      "chapter": "The Path of Waiters",
+      "title": "Spectator of the Revolution",
+      "playerFact": "You reject the new personal device and wait for more advanced technology. But the market fills up quickly, and the golden opportunity slips away.",
+      "historicalFact": "Many large companies of that era ignored the personal computer market and missed a historic opportunity.",
+      "question": "Do you regret not entering the market earlier?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Years later, when personal devices become ubiquitous, you enter but have lost your competitive position.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 29
+      },
+      "no": {
+        "consequence": "You never enter this market and continue working in more traditional fields, though you miss out on big opportunities.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 29
+      }
+    },
+    {
+      "id": 29,
+      "year": 1990,
+      "chapter": "The Path of Waiters",
+      "title": "Left Behind by History",
+      "playerFact": "The world is changing rapidly and you are left on the sidelines. The large companies that were once small are now giants, and you are just a spectator.",
+      "historicalFact": "The history of technology is full of those who didn't take risks and lost their opportunities.",
+      "question": "Do you wish you had taken the risk and entered the game?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You die with regret, wishing you had chosen courage over caution.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die content, believing caution saved you from big failures — unaware that you also lost big opportunities.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 30,
+      "year": 1976,
+      "chapter": "The Dual Path",
+      "title": "Stuck in Between",
+      "playerFact": "You decide to both continue university and build the company. But you are not fully committed to either. Both remain incomplete.",
+      "historicalFact": "Some entrepreneurs, due to a lack of focus, failed to pursue either path well and failed.",
+      "question": "Do you continue the dual path or choose one?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You remain in this duality for years, earn your degree but your company stays small, and you never achieve great success.",
+        "historical": false,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 31
+      },
+      "no": {
+        "consequence": "You choose one, but it's too late; you've fallen behind in both, and neither succeeds.",
+        "historical": false,
+        "risk": 6,
+        "independence": 5,
+        "nextEvent": 31
+      }
+    },
+    {
+      "id": 31,
+      "year": 1990,
+      "chapter": "The Dual Path",
+      "title": "Persistent Frustration",
+      "playerFact": "Your peers have either become prominent professors or great entrepreneurs. You have become neither. You are left in a middle ground that is neither this nor that.",
+      "historicalFact": "History forgets the middle-grounders and only rewards the peak-dwellers.",
+      "question": "Do you wish you had chosen one path full-time?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You die with regret, wishing you had focused on one goal instead of being torn between two.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die bitterly, blaming circumstances, but deep down you know it was your own fault.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 32,
+      "year": 1980,
+      "chapter": "The Isolation Path",
+      "title": "The Missed Opportunity",
+      "playerFact": "You turn down the giant corporation's offer. A few years later, that same corporation partners with someone else, and that someone becomes an industry giant. You are left regretting the missed opportunity.",
+      "historicalFact": "In the history of technology, turning down a big offer sometimes means losing an entire industry.",
+      "question": "Do you regret this decision?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You live for years with this regret and never forgive yourself for letting that opportunity slip away.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 33
+      },
+      "no": {
+        "consequence": "You pass by the matter indifferently and continue with smaller projects, but you know you ignored a historic opportunity.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 33
+      }
+    },
+    {
+      "id": 33,
+      "year": 1995,
+      "chapter": "The Isolation Path",
+      "title": "Bitter Memories",
+      "playerFact": "Every time you hear the name of that giant corporation and its new partner, your heart sinks. You know you could have been in their place, but you weren't.",
+      "historicalFact": "History forgets hesitant people and remembers only those who took risks.",
+      "question": "Do you carry this regret with you forever?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You die with an agonizing regret, wishing you had chosen courage over fear.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die bitterly, telling yourself it was fate — but deep down, you know it was your own fault.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 34,
+      "year": 1981,
+      "chapter": "The Dependency Path",
+      "title": "The Exclusive Partner",
+      "playerFact": "You give exclusive rights to the giant company. In the short term, you have good deals, but when that company moves to another manufacturer, your business collapses.",
+      "historicalFact": "Business history is full of companies that became dependent on one large partner and were later destroyed.",
+      "question": "Do you regret this dependency?",
+      "weight": 4,
+      "yes": {
+        "consequence": "With the company's collapse, you lose everything. Years later, you regret not keeping the rights for yourself.",
+        "historical": false,
+        "risk": 6,
+        "independence": 3,
+        "nextEvent": 35
+      },
+      "no": {
+        "consequence": "Despite the failure, you don't blame yourself, believing you made the best decision at the time — even though it led to ruin.",
+        "historical": false,
+        "risk": 4,
+        "independence": 2,
+        "nextEvent": 35
+      }
+    },
+    {
+      "id": 35,
+      "year": 1990,
+      "chapter": "The Dependency Path",
+      "title": "Collapse",
+      "playerFact": "Your company no longer exists. You are a failed entrepreneur who, with one wrong decision, lost all your capital.",
+      "historicalFact": "The history of technology is full of entrepreneurs who, with one wrong decision, fell from the peak to the bottom.",
+      "question": "Do you wish you had signed that contract differently?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You die with regret, wishing in your final moments you had thought about the long-term future instead of short-term security.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die bitterly, telling yourself it was fate — but you know you destroyed your own future.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 36,
+      "year": 1985,
+      "chapter": "The Traditionalist Path",
+      "title": "Loyal to Text",
+      "playerFact": "You reject graphical interfaces and continue with text-based software. Your competitors, with visual systems, capture the market and you fall behind.",
+      "historicalFact": "Some software companies, by failing to accept graphical interfaces, were eliminated from the market.",
+      "question": "Do you regret this loyalty to old methods?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Years later, when everyone has moved to graphics, you enter but it's too late, and you've lost market share.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 37
+      },
+      "no": {
+        "consequence": "You remain loyal to text-based software until the end, keeping a small niche of customers — but you never grow.",
+        "historical": false,
+        "risk": 3,
+        "independence": 6,
+        "nextEvent": 37
+      }
+    },
+    {
+      "id": 37,
+      "year": 2000,
+      "chapter": "The Traditionalist Path",
+      "title": "Survivor of the Text Era",
+      "playerFact": "While the world moves toward images and interaction, you still cling to old methods. Your company is small and getting smaller.",
+      "historicalFact": "The history of technology is a graveyard of companies that couldn't adapt to change.",
+      "question": "Do you wish you had moved toward graphics in time?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You die with regret, wishing you had been more flexible and seen the future sooner instead of being stubborn.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die with pride, believing you preserved the correctness of your methods, even though the world moved on without you.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       }
     }
