@@ -13,13 +13,19 @@ export default function RiveBackground({ src, rotation = 0, cover = false }: Pro
     layout: new Layout({
       fit: cover ? Fit.Cover : Fit.Contain,
       alignment: Alignment.Center,
-      rotation: rotation * (Math.PI / 180),
     }),
   })
 
+  const isRotated = rotation !== 0
+
   return (
     <div className="rive-bg" aria-hidden="true">
-      <RiveComponent />
+      <div
+        className={isRotated ? 'rive-bg-canvas rive-bg-canvas-rotated' : 'rive-bg-canvas'}
+        style={isRotated ? { transform: `translate(-50%, -50%) rotate(${rotation}deg)` } : undefined}
+      >
+        <RiveComponent />
+      </div>
     </div>
   )
 }

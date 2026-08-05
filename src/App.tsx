@@ -1,6 +1,8 @@
 import { useReducer, useCallback, useEffect } from 'react'
 import { getCharacter, getRandomCharacter } from './data/characters'
 import { initialGameState, gameReducer } from './engine/gameState'
+import { LanguageProvider } from './i18n/LanguageContext'
+import { useLanguage } from './i18n/useLanguage'
 import { audio } from './engine/audio'
 import RiveBackground from './components/RiveBackground'
 import SplashScreen from './components/SplashScreen'
@@ -12,6 +14,15 @@ import SettingsMenu from './components/SettingsMenu'
 import './styles/game.css'
 
 export default function App() {
+  return (
+    <LanguageProvider>
+      <Game />
+    </LanguageProvider>
+  )
+}
+
+function Game() {
+  const { lang } = useLanguage()
   const [state, dispatch] = useReducer(gameReducer, initialGameState)
 
   useEffect(() => {
@@ -26,7 +37,19 @@ export default function App() {
     return () => document.removeEventListener('pointerdown', handlePress)
   }, [])
 
-  const character = state.characterId ? getCharacter(state.characterId) ?? null : null
+  useEffect(() => {
+    audio.load('click', '/click.mp3')
+    audio.startBackground()
+    const handlePress = (e: PointerEvent) => {
+      if (e.target instanceof Element && e.target.closest('button')) {
+        audio.play('click')
+      }
+    }
+    document.addEventListener('pointerdown', handlePress)
+    return () => document.removeEventListener('pointerdown', handlePress)
+  }, [])
+
+  const character = state.characterId ? getCharacter(state.characterId, lang) ?? null : null
   const currentEvent =
     character && state.currentEventId
       ? character.events.find(e => e.id === state.currentEventId) ?? null
@@ -44,14 +67,14 @@ export default function App() {
   )
 
   const handleBegin = useCallback(() => {
-    const picked = getRandomCharacter()
+    const picked = getRandomCharacter(undefined, lang)
     dispatch({ type: 'SELECT_CHARACTER', characterId: picked.id })
-  }, [])
+  }, [lang])
 
   const handleAnotherLife = useCallback(() => {
-    const picked = getRandomCharacter(state.characterId ?? undefined)
+    const picked = getRandomCharacter(state.characterId ?? undefined, lang)
     dispatch({ type: 'SELECT_CHARACTER', characterId: picked.id })
-  }, [state.characterId])
+  }, [state.characterId, lang])
 
   const isSplash = state.phase === 'splash'
 
