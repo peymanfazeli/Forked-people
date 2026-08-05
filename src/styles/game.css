@@ -363,6 +363,16 @@ p {
   background: var(--accent);
 }
 
+.progress-dot.definite {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.progress-dot.possible {
+  opacity: 0.35;
+  filter: blur(1px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
 /* Chapter Header */
 
 .chapter-header {
@@ -401,6 +411,39 @@ p {
   color: var(--text-muted);
   font-size: 0.88rem;
   line-height: 1.7;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .event-fact {
+    --shine-from: 100% 0;
+    --shine-to: 0% 0;
+    background-image: linear-gradient(
+      90deg,
+      var(--text-muted) 45%,
+      rgba(255, 255, 255, 0.85) 50%,
+      var(--text-muted) 55%
+    );
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: text-shine 5s ease-in-out infinite;
+  }
+
+  [dir='rtl'] .event-fact {
+    --shine-from: 0% 0;
+    --shine-to: 100% 0;
+  }
+
+  @keyframes text-shine {
+    from {
+      background-position: var(--shine-from);
+    }
+    to {
+      background-position: var(--shine-to);
+    }
+  }
 }
 
 /* Question */

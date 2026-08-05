@@ -1,6 +1,7 @@
-import { useCallback } from 'react'
+import { useCallback, useMemo } from 'react'
 import type { Character, GameEvent } from '../types'
 import { getChoiceData } from '../engine/scoring'
+import { computePathLengths, countGuaranteedRun } from '../engine/progress'
 import { audio } from '../engine/audio'
 import ProgressDots from './ProgressDots'
 import ChapterHeader from './ChapterHeader'
@@ -42,14 +43,32 @@ export default function GameView({
     onContinue(choiceData.nextEvent)
   }, [event, selectedChoice, onContinue])
 
-  const totalEvents = character.events.length
+  const pathLengths = useMemo(() => computePathLengths(character), [character])
+
+  const isAnswered = selectedChoice !== null
+  const nextEventId = isAnswered ? getChoiceData(event, selectedChoice).nextEvent : null
+
+  const total =
+    completedCount +
+    (isAnswered
+      ? nextEventId !== null
+        ? (pathLengths.get(nextEventId) ?? 0)
+        : 0
+      : (pathLengths.get(event.id) ?? 1))
+
+  const definite =
+    completedCount +
+    (isAnswered
+      ? countGuaranteedRun(character, nextEventId)
+      : countGuaranteedRun(character, event.id))
+
   const isConsequence = selectedChoice !== null
 
   return (
     <div className="screen game-screen">
       <div className="game-sections">
         <div className="glass game-section-progress">
-          <ProgressDots total={totalEvents} completed={completedCount} />
+          <ProgressDots total={total} completed={completedCount} definite={definite} />
         </div>
 
         <div className="glass game-section-life">
