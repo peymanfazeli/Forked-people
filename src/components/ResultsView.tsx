@@ -3,6 +3,7 @@ import type { Character, CompletedEvent } from '../types'
 import { calculateResults } from '../engine/scoring'
 import { audio } from '../engine/audio'
 import DivergenceHighlight from './DivergenceHighlight'
+import { useLanguage } from '../i18n/useLanguage'
 
 interface Props {
   character: Character
@@ -32,6 +33,7 @@ export default function ResultsView({
   onReplay,
   onBackToSelect,
 }: Props) {
+  const { t } = useLanguage()
   const results = useMemo(
     () => calculateResults(character, completedEvents),
     [character, completedEvents]
@@ -46,17 +48,17 @@ export default function ResultsView({
       <div className="results-content glass">
         <h2 className="results-heading">{character.ending.title}</h2>
         <p className="results-subtitle">
-          You made {completedEvents.length} decisions.
+          {t('youMadeDecisions', { count: completedEvents.length })}
         </p>
 
         <div className="results-scores">
           <div className="results-main-score glass-card">
             <span className="results-main-value">{results.historicalSimilarity}%</span>
-            <span className="results-main-label">Historical Similarity</span>
+            <span className="results-main-label">{t('historicalSimilarity')}</span>
           </div>
 
-          <ScoreBar label="Risk Taking" value={results.risk} />
-          <ScoreBar label="Independence" value={results.independence} />
+          <ScoreBar label={t('riskTaking')} value={results.risk} />
+          <ScoreBar label={t('independence')} value={results.independence} />
         </div>
 
         {results.biggestDivergence && (
@@ -65,10 +67,10 @@ export default function ResultsView({
 
         <div className="results-actions">
           <button className="btn btn-primary" onClick={onReplay}>
-            Play Again
+            {t('playAgain')}
           </button>
           <button className="btn btn-secondary" onClick={onBackToSelect}>
-            Another Life
+            {t('anotherLife')}
           </button>
         </div>
       </div>

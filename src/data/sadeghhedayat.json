@@ -1,0 +1,213 @@
+{
+    "id": "sadegh-hedayat",
+    "name": "Sadegh Hedayat",
+    "birthYear": 1903,
+    "description": "A journey through the life of a tormented writer who shaped modern Persian literature with his bleak vision, existential despair, and innovative storytelling.",
+    "scoring": {
+      "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
+      "risk": "average risk score of selected choices",
+      "independence": "average independence score of selected choices",
+      "scoreRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    "ending": {
+      "title": "Your Journey as a Writer",
+      "revealName": true
+    },
+    "events": [
+      {
+        "id": 1,
+        "year": 1918,
+        "chapter": "The Awakening",
+        "title": "The Discovery of Literature",
+        "playerFact": "As a teenager in Tehran, you stumble upon a translated collection of European stories—tales of darkness, mystery, and psychology. They stir something deep inside you. You feel that words can express the despair you've always sensed.",
+        "historicalFact": "As a young man, you were deeply influenced by Western literature, particularly the works of Poe, Kafka, and Chekhov, which shaped your literary sensibilities and your view of human existence.",
+        "question": "Do you immerse yourself in these foreign stories and let them shape your own writing?",
+        "weight": 3,
+        "yes": {
+          "consequence": "You devour European literature and begin experimenting with dark, psychological themes in your own sketches.",
+          "historical": true,
+          "risk": 4,
+          "independence": 6,
+          "nextEvent": 2
+        },
+        "no": {
+          "consequence": "You dismiss these translations as foreign nonsense and stick to traditional Persian poetry.",
+          "historical": false,
+          "risk": 2,
+          "independence": 3,
+          "nextEvent": 2
+        }
+      },
+      {
+        "id": 2,
+        "year": 1925,
+        "chapter": "The European Sojourn",
+        "title": "Studies Abroad",
+        "playerFact": "Your family sends you to Europe to study a practical profession—engineering, architecture, or dentistry. But in the lecture halls, your mind drifts to the cafés where writers gather, to the books you'd rather read.",
+        "historicalFact": "You traveled to Europe in 1925 to study engineering and dentistry, but you spent much of your time reading, writing, and immersing yourself in the avant‑garde literary scene.",
+        "question": "Do you force yourself to complete a proper degree, or abandon formal studies to pursue literature?",
+        "weight": 4,
+        "yes": {
+          "consequence": "You earn your degree but feel hollow; your true passion remains unfulfilled.",
+          "historical": false,
+          "risk": 4,
+          "independence": 5,
+          "nextEvent": 3
+        },
+        "no": {
+          "consequence": "You drop out, dedicating yourself entirely to writing and exploring the literary circles of Paris and Brussels.",
+          "historical": true,
+          "risk": 8,
+          "independence": 9,
+          "nextEvent": 3
+        }
+      },
+      {
+        "id": 3,
+        "year": 1927,
+        "chapter": "The European Sojourn",
+        "title": "The Edge of Despair",
+        "playerFact": "Your loneliness and existential anguish grow unbearable. You find yourself standing by the Marne River one bleak afternoon, questioning the point of it all.",
+        "historicalFact": "In 1927, you attempted suicide by throwing yourself into the Marne River in Paris, but were rescued and eventually returned to Iran.",
+        "question": "Do you give in to the urge and try to end your life?",
+        "weight": 4,
+        "yes": {
+          "consequence": "You jump, but are rescued. The attempt leaves you even more haunted, yet you survive to write another day.",
+          "historical": true,
+          "risk": 10,
+          "independence": 8,
+          "nextEvent": 4
+        },
+        "no": {
+          "consequence": "You walk away from the river and decide to fight your inner demons through your writing.",
+          "historical": false,
+          "risk": 6,
+          "independence": 7,
+          "nextEvent": 4
+        }
+      },
+      {
+        "id": 4,
+        "year": 1930,
+        "chapter": "The Return",
+        "title": "First Publications",
+        "playerFact": "Back in Tehran, you have a collection of short stories and sketches. They are unlike anything written in Persian—dark, introspective, and cynical. Publishers are wary, but you believe they must see the light.",
+        "historicalFact": "You published your first book of short stories, *Buried Alive*, in 1930, introducing modernist themes and techniques to Persian literature.",
+        "question": "Do you push to have your stories published despite the conservative literary climate?",
+        "weight": 3,
+        "yes": {
+          "consequence": "You publish *Buried Alive*, causing a stir and gaining a small but devoted readership.",
+          "historical": true,
+          "risk": 6,
+          "independence": 7,
+          "nextEvent": 5
+        },
+        "no": {
+          "consequence": "You keep your writings private, sharing them only with close friends.",
+          "historical": false,
+          "risk": 3,
+          "independence": 4,
+          "nextEvent": 5
+        }
+      },
+      {
+        "id": 5,
+        "year": 1933,
+        "chapter": "The Masterpiece",
+        "title": "The Blind Owl",
+        "playerFact": "You have been working on a strange, obsessive novella—a nightmarish tale of a painter haunted by an ethereal woman, despair, and a sense of unreality. It feels like your truest work, but it is deeply disturbing.",
+        "historicalFact": "You wrote *The Blind Owl* in the early 1930s, a work that would become a landmark of Persian modernist literature, blending Kafkaesque alienation and Persian mysticism.",
+        "question": "Do you complete and attempt to publish this radical novella, even though it may be censored?",
+        "weight": 5,
+        "yes": {
+          "consequence": "You finish *The Blind Owl* and seek a publisher, knowing it might be banned in Iran.",
+          "historical": true,
+          "risk": 8,
+          "independence": 9,
+          "nextEvent": 6
+        },
+        "no": {
+          "consequence": "You set the manuscript aside, fearing that its content is too bleak and controversial.",
+          "historical": false,
+          "risk": 4,
+          "independence": 5,
+          "nextEvent": 6
+        }
+      },
+      {
+        "id": 6,
+        "year": 1936,
+        "chapter": "The Masterpiece",
+        "title": "Publication in India",
+        "playerFact": "Iranian censorship makes it impossible to publish *The Blind Owl* at home. You hear that a small press in Bombay might accept it. You have family connections there, and you could travel to India.",
+        "historicalFact": "You traveled to India in 1936, where you arranged for the first edition of *The Blind Owl* to be published in Bombay, and you also studied Pahlavi and Zoroastrian texts while there.",
+        "question": "Do you go to India to publish your novella and explore ancient Persian culture?",
+        "weight": 4,
+        "yes": {
+          "consequence": "You travel to Bombay, publish *The Blind Owl*, and spend time studying Pahlavi literature—a rich period of intellectual growth.",
+          "historical": true,
+          "risk": 7,
+          "independence": 8,
+          "nextEvent": 7
+        },
+        "no": {
+          "consequence": "You stay in Iran and give up on publishing the book for now.",
+          "historical": false,
+          "risk": 3,
+          "independence": 4,
+          "nextEvent": 7
+        }
+      },
+      {
+        "id": 7,
+        "year": 1940,
+        "chapter": "The Final Years",
+        "title": "Censorship and Isolation",
+        "playerFact": "Back in Iran, your works are increasingly attacked by traditionalists and authorities. You feel misunderstood and isolated. Yet you continue writing biting satires and critical essays.",
+        "historicalFact": "You returned to Iran and faced growing censorship and criticism; you wrote satirical works like *Haji Agha* while feeling alienated from society and politics.",
+        "question": "Do you continue to write controversial works despite the risk of persecution?",
+        "weight": 4,
+        "yes": {
+          "consequence": "You keep writing and publishing, often through underground channels, further alienating yourself from the establishment.",
+          "historical": true,
+          "risk": 7,
+          "independence": 9,
+          "nextEvent": 8
+        },
+        "no": {
+          "consequence": "You retreat into silence, writing only for yourself and avoiding public scrutiny.",
+          "historical": false,
+          "risk": 3,
+          "independence": 5,
+          "nextEvent": 8
+        }
+      },
+      {
+        "id": 8,
+        "year": 1951,
+        "chapter": "The Final Years",
+        "title": "The End",
+        "playerFact": "Your depression has deepened. You see no hope for change in Iran, and your literary work seems futile. You decide to return to Paris, the city of your youthful despair, perhaps for good.",
+        "historicalFact": "In 1951, you returned to Paris and committed suicide by gassing yourself in a small apartment, leaving a note that reflected your lifelong disillusionment.",
+        "question": "Do you take your own life, ending your journey in the same city where you once attempted it?",
+        "weight": 5,
+        "yes": {
+          "consequence": "You end your life in Paris, but your writings live on, influencing generations of Iranian and world literature.",
+          "historical": true,
+          "risk": 10,
+          "independence": 10,
+          "nextEvent": null
+        },
+        "no": {
+          "consequence": "You resist the impulse and return to Iran, living out your life in quiet obscurity, perhaps finding a sliver of peace and no one will ever know about your works any more.",
+          "historical": false,
+          "risk": 5,
+          "independence": 6,
+          "nextEvent": null
+        }
+      }
+    ]
+  }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { Character } from '../types'
 import { audio } from '../engine/audio'
+import { useLanguage } from '../i18n/useLanguage'
 
 interface Props {
   character: Character
@@ -9,6 +10,7 @@ interface Props {
 
 export default function IdentityReveal({ character, onComplete }: Props) {
   const [step, setStep] = useState(0)
+  const { t } = useLanguage()
 
   useEffect(() => {
     audio.play('reveal')
@@ -25,22 +27,22 @@ export default function IdentityReveal({ character, onComplete }: Props) {
       <div className="reveal-content glass">
         {step >= 0 && (
           <p className="reveal-line reveal-line-1">
-            Your journey is complete.
+            {t('journeyComplete')}
           </p>
         )}
         {step >= 1 && (
           <p className="reveal-line reveal-line-2">
-            You were living the life of...
+            {t('youWereLiving')}
           </p>
         )}
         {step >= 2 && (
           <div className="reveal-identity">
             <h1 className="reveal-name">{character.name}</h1>
             <p className="reveal-years">
-              {character.birthYear}&ndash;{character.deathYear ?? 'Present'}
+              {character.birthYear}&ndash;{character.deathYear ?? t('present')}
             </p>
             <button className="btn btn-primary" onClick={onComplete}>
-              See Your Results
+              {t('seeYourResults')}
             </button>
           </div>
         )}

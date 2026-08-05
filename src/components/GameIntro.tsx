@@ -1,4 +1,5 @@
 import type { Character } from '../types'
+import { useLanguage } from '../i18n/useLanguage'
 
 interface Props {
   character: Character
@@ -6,16 +7,17 @@ interface Props {
 }
 
 export default function GameIntro({ character, onStart }: Props) {
+  const { t } = useLanguage()
   return (
     <div className="screen intro-screen">
       <div className="intro-content glass">
-        <p className="intro-label">Your journey begins...</p>
+        <p className="intro-label">{t('yourJourneyBegins')}</p>
         <p className="intro-description">{character.description}</p>
         <p className="intro-hint">
-          At each moment, choose what <em>you</em> would do.
+          {t('hintPrefix')} <em>{t('you')}</em> {t('hintSuffix')}
         </p>
         <button className="btn btn-primary" onClick={onStart}>
-          Begin
+          {t('begin')}
         </button>
       </div>
     </div>
