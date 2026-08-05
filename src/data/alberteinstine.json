@@ -13,7 +13,7 @@
     }
   },
   "ending": {
-    "title": "Your Fate as a Seeker of Truth",
+    "title": "Your Fate: Seeker of Truth",
     "revealName": true
   },
   "events": [
@@ -46,23 +46,23 @@
       "year": 1895,
       "chapter": "Finding a Path",
       "title": "Leaving Home",
-      "playerFact": "In your teens, you find the rigid, inflexible educational environment of your homeland suffocating. You decide to leave and continue your studies in a neighboring country where the approach to learning is much freer.",
-      "historicalFact": "In your teens, you left your homeland and continued your studies in a neighboring country, where the educational environment was more compatible with your independent thinking.",
-      "question": "Are you unhappy with your educational surroundings? Will you leave and seek a more open environment?",
+      "playerFact": "In your teens, you find the rigid, inflexible educational environment of your homeland suffocating. You consider leaving to continue your studies in a neighboring country where the approach to learning is freer.",
+      "historicalFact": "In your teens, you left Germany and continued your studies in Switzerland, where the educational environment was more compatible with your independent thinking.",
+      "question": "Despite your dissatisfaction, do you stay in your country and adapt to the traditional education system?",
       "weight": 4,
       "yes": {
-        "consequence": "You uproot yourself and go to a country where you can think differently.",
-        "historical": true,
-        "risk": 6,
-        "independence": 7,
-        "nextEvent": 3
-      },
-      "no": {
         "consequence": "You stay and adapt yourself to the traditional education system, though your mind yearns for freedom.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": 22
+      },
+      "no": {
+        "consequence": "You uproot yourself and go to a country where you can think differently.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 3
       }
     },
     {
@@ -71,7 +71,7 @@
       "chapter": "Finding a Path",
       "title": "The Polytechnic Institute",
       "playerFact": "You are accepted into a prestigious technical institute and devote yourself to mathematics and physics — the sciences that explain the natural world. You have prominent professors, but you find some of their teaching methods outdated.",
-      "historicalFact": "You entered a federal polytechnic institute and studied mathematics and physics with some of the best minds of that era.",
+      "historicalFact": "You entered the Swiss Federal Polytechnic in Zurich and studied mathematics and physics with some of the best minds of that era.",
       "question": "Despite disagreements with some professors, do you still pursue a deep understanding of nature with all your might?",
       "weight": 4,
       "yes": {
@@ -94,23 +94,23 @@
       "year": 1902,
       "chapter": "The Patent Office",
       "title": "An Ordinary Job",
-      "playerFact": "After graduation, despite your abilities, you cannot find an academic position. You take a job examining patent applications. The quiet atmosphere of the office gives you the opportunity to devote your spare time to deep scientific reflection.",
-      "historicalFact": "After graduation, you struggled to get an academic position and eventually found work in a patent office, where you developed your theories in secret.",
-      "question": "Do you accept this ordinary job so that you can pursue your beloved science on the side?",
+      "playerFact": "After graduation, despite your abilities, you cannot find an academic position. You are offered a job examining patent applications. The quiet atmosphere of the office would give you the opportunity to devote your spare time to deep scientific reflection.",
+      "historicalFact": "After graduation, you struggled to get an academic position and eventually found work at the Swiss Patent Office in Bern, where you developed your theories in secret.",
+      "question": "Do you find this ordinary job demeaning and reject it to continue searching for an academic position?",
       "weight": 4,
       "yes": {
-        "consequence": "You take the job and, in the silence of the office, nurture the most revolutionary scientific ideas.",
-        "historical": true,
-        "risk": 5,
-        "independence": 8,
-        "nextEvent": 5
-      },
-      "no": {
-        "consequence": "You find this job demeaning and continue searching for an academic position, though years pass in unemployment and frustration.",
+        "consequence": "You reject the job and spend years in unemployment and frustration, continuing your search for an academic position.",
         "historical": false,
         "risk": 7,
         "independence": 6,
         "nextEvent": 26
+      },
+      "no": {
+        "consequence": "You accept the job and, in the silence of the office, nurture the most revolutionary scientific ideas.",
+        "historical": true,
+        "risk": 5,
+        "independence": 8,
+        "nextEvent": 5
       }
     },
     {
@@ -119,7 +119,7 @@
       "chapter": "The Miraculous Year",
       "title": "Radical Ideas",
       "playerFact": "In a short period, you publish several papers that challenge the foundations of physics. One redefines how we understand space and time. Another shows how light behaves like particles. These ideas are so radical they could change everything — or be dismissed as nonsense.",
-      "historicalFact": "In 1905 — often called your miraculous year — you published groundbreaking papers on the special theory of relativity, the photoelectric effect, and Brownian motion, each revolutionizing its field.",
+      "historicalFact": "In 1905 — often called your miraculous year — you published groundbreaking papers on special relativity, the photoelectric effect, and Brownian motion, each revolutionizing its field.",
       "question": "Even though you are still unknown in the scientific community, do you publish these revolutionary ideas?",
       "weight": 5,
       "yes": {
@@ -191,11 +191,11 @@
       "chapter": "A New World",
       "title": "Fleeing the Darkness",
       "playerFact": "Your homeland has fallen under the control of a regime you fundamentally oppose. Your work is denounced, your safety is at risk, and staying means accepting a world you cannot live in. You must decide whether to leave everything behind.",
-      "historicalFact": "With the rise of an oppressive regime, you left your homeland forever and eventually settled in a new country, escaping one of history's darkest periods.",
+      "historicalFact": "With the rise of the Nazi regime, you left Germany forever and eventually settled in the United States, escaping one of history's darkest periods.",
       "question": "Given the clear dangers, do you leave your homeland forever?",
       "weight": 5,
       "yes": {
-        "consequence": "You flee your homeland and seek refuge in a free country, continuing your scientific work.",
+        "consequence": "You flee Germany and take refuge in a free country, continuing your scientific work.",
         "historical": true,
         "risk": 9,
         "independence": 10,
@@ -215,22 +215,22 @@
       "chapter": "The Atomic Age",
       "title": "A Warning to the World",
       "playerFact": "You receive word that scientists in your former homeland may be building a weapon of unimaginable power based on recent physics discoveries. The leaders of the world are listening to you. Do you warn them, knowing your warning could lead to the very technology you fear?",
-      "historicalFact": "You signed a letter to a world leader, warning that they might build an atomic weapon and urging that country to start its own research.",
-      "question": "Fearing your former homeland might build a superweapon, do you warn the government of another major power?",
+      "historicalFact": "You signed a letter to President Franklin D. Roosevelt, warning that the Nazis might build an atomic bomb and urging the United States to start its own research.",
+      "question": "Do you prefer to remain silent about the atomic threat and avoid getting involved in politics?",
       "weight": 5,
       "yes": {
-        "consequence": "You send the warning letter, and a massive weapons project begins. Years later, you regret your role in the events.",
-        "historical": true,
-        "risk": 8,
-        "independence": 9,
-        "nextEvent": 10
-      },
-      "no": {
-        "consequence": "You remain silent and refuse to get involved in politics. Years later, when bombs fall on cities, you are haunted by regret and inaction.",
+        "consequence": "You remain silent and refuse to get involved in politics. Years later, when bombs fall on Japanese cities, you are haunted by regret and inaction.",
         "historical": false,
         "risk": 5,
         "independence": 6,
         "nextEvent": 36
+      },
+      "no": {
+        "consequence": "You send the warning letter, and the American atomic bomb project begins. Years later, you express regret for your role in the events.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 10
       }
     },
     {
@@ -504,7 +504,7 @@
       "title": "A Missed Chance",
       "playerFact": "You do not publish the theory of spacetime curvature, and a few years later, a young physicist presents a similar idea, astonishing the world. You are merely a spectator.",
       "historicalFact": "The history of science is full of rivalries where a physicist, due to hesitation, lost their chance to another.",
-      "question": "How do you feel about someone else taking your place?",
+      "question": "Do you feel bitter about someone else taking your place?",
       "weight": 4,
       "yes": {
         "consequence": "You become bitter and live your life in the shadow of that physicist. You never forgive yourself for lacking courage.",
@@ -598,8 +598,8 @@
       "year": 1933,
       "chapter": "The Resistance Path",
       "title": "Standing Against Tyranny",
-      "playerFact": "Despite the dangers, you decide not to leave your homeland. Soon, the regime arrests you, and you spend years in prison or house arrest. But your spirit is not broken, and you are recognized as a symbol of resistance among your compatriots.",
-      "historicalFact": "Some intellectuals, despite the danger, stayed in their country and resisted; some died, and some became legends.",
+      "playerFact": "Despite the dangers, you decide not to leave Germany. Soon, the regime arrests you, and you spend years in prison or house arrest. But your spirit is not broken, and you are recognized as a symbol of resistance among your compatriots.",
+      "historicalFact": "Some German intellectuals, despite the danger, stayed in the country and resisted; some died, and some became legends.",
       "question": "Do you regret your choice to stay and resist?",
       "weight": 5,
       "yes": {

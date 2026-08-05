@@ -48,21 +48,21 @@
       "title": "Studying Abroad",
       "playerFact": "Your wealthy family sends you to Europe to study a practical field—engineering, architecture, or dentistry. But in the lecture halls, your mind wanders elsewhere: to crowded writer's cafés and the books you truly long to read.",
       "historicalFact": "You traveled to Europe for studies, but spent more time writing and exploring modern literary scenes than attending classes.",
-      "question": "Do you abandon formal education to devote yourself fully to literature?",
+      "question": "Do you continue your formal education and earn a university degree?",
       "weight": 4,
       "yes": {
-        "consequence": "You abandon formal studies and spend your nights in the literary circles of Paris and Brussels, feeding your soul with modernism.",
-        "historical": true,
-        "risk": 8,
-        "independence": 9,
-        "nextEvent": 3
-      },
-      "no": {
         "consequence": "You earn your degree but feel hollow inside—returning home with a diploma in hand and a regret in your heart.",
         "historical": false,
         "risk": 4,
         "independence": 5,
         "nextEvent": 4
+      },
+      "no": {
+        "consequence": "You abandon formal studies and spend your nights in the literary circles of Paris and Brussels, feeding your soul with modernism.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 3
       }
     },
     {
@@ -72,20 +72,20 @@
       "title": "On the Edge",
       "playerFact": "Loneliness and existential anguish have become unbearable. One cold afternoon, you find yourself by a dark river in a major European city, contemplating the futility of everything.",
       "historicalFact": "In the late 1920s, you attempted suicide but were rescued, and after some time, you returned home.",
-      "question": "Do you give in to this absolute darkness and throw yourself into the river?",
+      "question": "Do you refrain from attempting suicide and choose to continue living?",
       "weight": 4,
       "yes": {
-        "consequence": "You jump, but a passerby saves you. You survive, but the experience leaves an even deeper scar on your psyche.",
-        "historical": true,
-        "risk": 10,
-        "independence": 8,
-        "nextEvent": 4
-      },
-      "no": {
         "consequence": "You walk away from the river and vow to fight your inner demons only with pen and paper.",
         "historical": false,
         "risk": 6,
         "independence": 7,
+        "nextEvent": 4
+      },
+      "no": {
+        "consequence": "You jump, but a passerby saves you. You survive, but the experience leaves an even deeper scar on your psyche.",
+        "historical": true,
+        "risk": 10,
+        "independence": 8,
         "nextEvent": 4
       }
     },
@@ -168,20 +168,20 @@
       "title": "The Atmosphere of Oppression",
       "playerFact": "You've returned, but things are worse. Traditionalists and government agents attack your writings. You stand isolated, yet you cannot stop writing sharp satires and social critiques.",
       "historicalFact": "Upon returning to Iran, you faced severe censorship and wrote satirical, critical works that further alienated you.",
-      "question": "Despite these clear dangers, do you keep writing provocatively?",
+      "question": "Do you give up writing and withdraw from society?",
       "weight": 4,
       "yes": {
-        "consequence": "You continue writing and distributing your work underground, becoming a banned yet influential author.",
-        "historical": true,
-        "risk": 7,
-        "independence": 9,
-        "nextEvent": 8
-      },
-      "no": {
         "consequence": "You stop writing altogether, only scribbling private notes for yourself, and withdraw from society.",
         "historical": false,
         "risk": 3,
         "independence": 5,
+        "nextEvent": 8
+      },
+      "no": {
+        "consequence": "You continue writing and distributing your work underground, becoming a banned yet influential author.",
+        "historical": true,
+        "risk": 7,
+        "independence": 9,
         "nextEvent": 8
       }
     },
@@ -192,20 +192,20 @@
       "title": "The End of the Journey",
       "playerFact": "Your depression has reached its peak. There is no place left for you in Iran, nor in Europe. You decide to return to that European city of your youth—perhaps for good.",
       "historicalFact": "In 1951, you returned to Paris and ended your life by gas in a small apartment.",
-      "question": "Do you close the curtain on your life in the very city where you once tried to destroy yourself?",
+      "question": "Do you refrain from suicide and return to Iran instead?",
       "weight": 5,
       "yes": {
-        "consequence": "You end your life, but years later, your writings are recognized as a treasure of Persian dark literature, and your name becomes immortal.",
-        "historical": true,
-        "risk": 10,
-        "independence": 10,
-        "nextEvent": null
-      },
-      "no": {
         "consequence": "You resist the temptation of death, return to Iran, and spend the rest of your life in relative peace and obscurity.",
         "historical": false,
         "risk": 5,
         "independence": 6,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You end your life, but years later, your writings are recognized as a treasure of Persian dark literature, and your name becomes immortal.",
+        "historical": true,
+        "risk": 10,
+        "independence": 10,
         "nextEvent": null
       }
     },

@@ -13,7 +13,7 @@
     }
   },
   "ending": {
-    "title": "Your Fate: Ambitious or Cautious",
+    "title": "Your Fate: Ambitious or Conservative",
     "revealName": true
   },
   "events": [
@@ -24,7 +24,7 @@
       "title": "The Computing Machine",
       "playerFact": "Your school gains access to a rare computing machine — an expensive device that almost no one your age has ever touched. You become fascinated by the idea that you can tell this machine what to do through code.",
       "historicalFact": "As a teenager, you gained access to a computer terminal and became deeply interested in programming, spending countless hours learning to write code.",
-      "question": "Your school gives you access to a computing machine. Will you spend your free time learning how to program?",
+      "question": "Do you spend your free time learning programming?",
       "weight": 3,
       "yes": {
         "consequence": "You become fascinated by programming and spend as much time as possible experimenting with the machine.",
@@ -48,7 +48,7 @@
       "title": "The Companion",
       "playerFact": "At school, you meet someone who is just as obsessed with computing machines as you are. The two of you begin spending every possible moment together, writing programs, exploring systems, and dreaming about what these machines could become.",
       "historicalFact": "At school you met a kindred spirit who shared your passion for computers — a friendship that would grow into one of the most important partnerships in technology.",
-      "question": "You meet someone who is just as obsessed with these machines as you are. Will you work together?",
+      "question": "Do you collaborate with this companion on projects?",
       "weight": 4,
       "yes": {
         "consequence": "You and your new friend begin spending countless hours writing programs together.",
@@ -72,7 +72,7 @@
       "title": "Real-World Experience",
       "playerFact": "While still in school, you and your friend find opportunities to work with real computing systems for local organizations. You write actual code that businesses use — an extraordinary experience for someone your age.",
       "historicalFact": "You and your friend gained early programming experience through real-world projects for local companies.",
-      "question": "A local company gives you an opportunity to work with real systems. Will you take it?",
+      "question": "Do you accept this opportunity to work with real systems?",
       "weight": 3,
       "yes": {
         "consequence": "You gain valuable experience working with real-world systems while still a student.",
@@ -96,21 +96,21 @@
       "title": "Famous University",
       "playerFact": "You are accepted into one of the most prestigious universities in the world. Your family expects you to go, and it is a remarkable opportunity — but it means leaving behind the practical work you love.",
       "historicalFact": "You enrolled at Harvard University in 1973, where you studied mathematics and computer science.",
-      "question": "You have been accepted into a very famous university. Will you leave your city and pursue a university education?",
+      "question": "Do you drop out of university and jump straight into entrepreneurship?",
       "weight": 3,
       "yes": {
-        "consequence": "You move to the university town and begin studying while continuing to think about technology.",
-        "historical": true,
-        "risk": 4,
-        "independence": 5,
-        "nextEvent": 5
-      },
-      "no": {
         "consequence": "You skip university and immediately pursue opportunities in the technology industry — a big risk but an adventurous one.",
         "historical": false,
         "risk": 8,
         "independence": 9,
         "nextEvent": 26
+      },
+      "no": {
+        "consequence": "You move to the university town and begin studying while continuing to think about technology.",
+        "historical": true,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 5
       }
     },
     {
@@ -120,7 +120,7 @@
       "title": "The New Device",
       "playerFact": "You learn about a new personal computing device that has just been announced — a machine for hobbyists. It has no software. You and your friend realize you could write a programming language for it. It is a gamble, but it could be the beginning of something much bigger.",
       "historicalFact": "You learned about one of the first personal computers and you and your friend built a version of the BASIC programming language for it, launching your software company.",
-      "question": "A new personal device has appeared, but it needs software. Will you build it?",
+      "question": "Do you build the software for this new device?",
       "weight": 5,
       "yes": {
         "consequence": "You and your partner build a programming language and see an opportunity in the emerging market.",
@@ -144,7 +144,7 @@
       "title": "Leaving University",
       "playerFact": "Your software business is growing. You have real customers and real revenue. But you are still enrolled at the most prestigious university in the country. You cannot do both at full capacity.",
       "historicalFact": "You left university without completing your degree to focus full-time on the software company you had co-founded — a decision that would prove transformative.",
-      "question": "Your software business is gaining traction, but you are still at university. Will you leave university and pursue the company full-time?",
+      "question": "Do you leave university and pursue the company full-time?",
       "weight": 5,
       "yes": {
         "consequence": "You leave university and dedicate yourself completely to building the software company.",
@@ -168,21 +168,21 @@
       "title": "The Giant Corporation",
       "playerFact": "The largest technology company in the world is building a new personal device. They need software — specifically, an operating system. They come to your small company. This is the opportunity of a lifetime.",
       "historicalFact": "IBM approached your young company about providing software for its new personal computer. You supplied an operating system that would become the foundation of a computing empire.",
-      "question": "The world's largest technology company wants software for its new device. Will you pursue the deal?",
+      "question": "Do you refuse to work with this giant company?",
       "weight": 5,
       "yes": {
-        "consequence": "You pursue the deal and secure an opportunity to put your software on a major new device.",
-        "historical": true,
-        "risk": 7,
-        "independence": 8,
-        "nextEvent": 8
-      },
-      "no": {
         "consequence": "You decide that working with such a large company is too risky and turn down the offer.",
         "historical": false,
         "risk": 4,
         "independence": 5,
         "nextEvent": 32
+      },
+      "no": {
+        "consequence": "You pursue the deal and secure an opportunity to put your software on a major new device.",
+        "historical": true,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 8
       }
     },
     {
@@ -192,7 +192,7 @@
       "title": "Keeping the Rights",
       "playerFact": "The deal is on the table. The large company wants your operating system, but they want to license it exclusively. Your instinct tells you something different: keep the ability to sell it to everyone else.",
       "historicalFact": "You licensed the operating system to the computer giant while retaining the right to license it to other manufacturers — a decision that made your software the industry standard.",
-      "question": "A major company wants your operating system. Will you retain the right to license it to others?",
+      "question": "Do you retain the right to license your operating system to others?",
       "weight": 5,
       "yes": {
         "consequence": "You retain the ability to license the operating system to other manufacturers, allowing the software business to expand.",
@@ -216,21 +216,21 @@
       "title": "Visual Interface",
       "playerFact": "Computers are evolving from text-based machines to something visual. You see that the future of personal computing is graphical — windows, icons, menus, and a pointing device. You pour resources into building a graphical system.",
       "historicalFact": "You bet the company on a graphical operating system, releasing the first version of Windows and laying the foundation for decades of dominance in personal computing.",
-      "question": "Graphical interfaces are becoming the future. Will you invest heavily in building one?",
+      "question": "Do you stay loyal to old text-based software and avoid graphics?",
       "weight": 5,
       "yes": {
-        "consequence": "You invest heavily in graphical computing and pursue a future of visual operating systems.",
-        "historical": true,
-        "risk": 7,
-        "independence": 8,
-        "nextEvent": 10
-      },
-      "no": {
         "consequence": "You continue focusing on text-based software and leave graphical computing to competitors.",
         "historical": false,
         "risk": 3,
         "independence": 5,
         "nextEvent": 36
+      },
+      "no": {
+        "consequence": "You invest heavily in graphical computing and pursue a future of visual operating systems.",
+        "historical": true,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 10
       }
     },
     {
@@ -240,7 +240,7 @@
       "title": "Another Purpose",
       "playerFact": "You have led your company to extraordinary success. You are one of the wealthiest people in the world. But you increasingly feel that your real impact could be somewhere else — saving lives, improving health, solving problems that technology alone cannot fix.",
       "historicalFact": "You stepped down as CEO of your company in 2000 and turned your focus to philanthropy, creating one of the largest charitable foundations in the world.",
-      "question": "You have achieved extraordinary financial success. Will you step away from running your company and focus more on philanthropy?",
+      "question": "Do you step away from running your company and focus more on philanthropy?",
       "weight": 4,
       "yes": {
         "consequence": "You step back from day-to-day leadership and dedicate much of your time and resources to philanthropy, building a legacy beyond technology.",
@@ -408,7 +408,7 @@
       "title": "The Young Entrepreneur",
       "playerFact": "You leave university and jump straight into the world of entrepreneurship. But without enough experience and without the right partner, your company quickly goes bankrupt.",
       "historicalFact": "Many young entrepreneurs, despite talent, failed at their first attempt due to lack of preparation and lack of the right partnership.",
-      "question": "Do you learn from this failure and try again, or do you give up?",
+      "question": "Do you learn from this failure and try again, or give up?",
       "weight": 4,
       "yes": {
         "consequence": "You learn from failure, form a new partnership, and this time succeed — though later than your competitors.",

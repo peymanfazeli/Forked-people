@@ -46,23 +46,23 @@
       "year": 1875,
       "chapter": "The Inventor",
       "title": "Technical University",
-      "playerFact": "You enroll in a technical university and devote yourself to understanding electricity — a force that few truly comprehend. You become obsessed with the behavior of electrical machines and begin imagining ways to improve them.",
+      "playerFact": "You have been accepted to study electrical engineering at a prestigious technical university. This field could lead you to a deep understanding of electricity, but some friends say it's a difficult and unrewarding path.",
       "historicalFact": "You studied electrical engineering at the Austrian Polytechnic in Graz and became deeply interested in the problems of electrical machines and their limitations.",
-      "question": "You have the opportunity to study electrical engineering. Will you devote yourself to understanding electricity?",
+      "question": "Do you give up on studying electrical engineering at the university and choose another path?",
       "weight": 4,
       "yes": {
+        "consequence": "You abandon electrical engineering and turn to more traditional fields like civil engineering.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 22
+      },
+      "no": {
         "consequence": "You immerse yourself in electrical engineering and begin thinking about improving electrical machines.",
         "historical": true,
         "risk": 4,
         "independence": 6,
         "nextEvent": 3
-      },
-      "no": {
-        "consequence": "You choose another path and leave electrical engineering behind, moving toward more traditional fields.",
-        "historical": false,
-        "risk": 2,
-        "independence": 3,
-        "nextEvent": 22
       }
     },
     {
@@ -94,23 +94,23 @@
       "year": 1884,
       "chapter": "America",
       "title": "A New Country",
-      "playerFact": "You have an opportunity to move to America and work for a famous inventor who has changed the world with his inventions. It means leaving everything you know, but America is where the future is being built.",
+      "playerFact": "You have an opportunity to move to America and work for the most famous inventor in America. It means leaving everything you know, but America is where the future is being built.",
       "historicalFact": "In 1884, you moved to the United States and began working for Thomas Edison, hoping to collaborate with America's most famous inventor on electrical innovation.",
-      "question": "You are offered the chance to move to America and work for a great inventor. Will you go?",
+      "question": "Do you prefer to stay in Europe and not go to America?",
       "weight": 4,
       "yes": {
-        "consequence": "You leave Europe and travel to America to pursue your future in electrical engineering.",
-        "historical": true,
-        "risk": 6,
-        "independence": 7,
-        "nextEvent": 5
-      },
-      "no": {
         "consequence": "You stay in Europe and continue developing your ideas there, though without sufficient capital and support.",
         "historical": false,
         "risk": 3,
         "independence": 5,
         "nextEvent": 26
+      },
+      "no": {
+        "consequence": "You leave Europe and travel to America to pursue your future in electrical engineering.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 5
       }
     },
     {
@@ -166,23 +166,23 @@
       "year": 1888,
       "chapter": "The War of Currents",
       "title": "The Powerful Industrialist",
-      "playerFact": "A powerful industrialist recognizes the potential of your electrical system. He offers to license your technology and support it with his resources. This means your ideas can reach the world — but you share control.",
+      "playerFact": "A powerful industrialist recognizes the potential of your electrical system and offers to license your technology and support it with his resources. This means your ideas can reach the world — but you share control.",
       "historicalFact": "George Westinghouse acquired the rights to your alternating current patents and provided resources to develop and deploy your technology on a massive scale.",
-      "question": "A powerful industrialist believes in your electrical system. Will you work with him?",
+      "question": "Do you reject this partnership with the powerful industrialist to maintain your independence?",
       "weight": 5,
       "yes": {
-        "consequence": "You allow your technology to become part of a much larger electrical system, trusting the industrialist.",
-        "historical": true,
-        "risk": 6,
-        "independence": 6,
-        "nextEvent": 8
-      },
-      "no": {
         "consequence": "You reject the partnership and try to develop the technology independently — but your funds quickly run out.",
         "historical": false,
         "risk": 8,
         "independence": 9,
         "nextEvent": 32
+      },
+      "no": {
+        "consequence": "You allow your technology to become part of a much larger electrical system, trusting the industrialist.",
+        "historical": true,
+        "risk": 6,
+        "independence": 6,
+        "nextEvent": 8
       }
     },
     {
@@ -216,21 +216,21 @@
       "title": "The Remote Laboratory",
       "playerFact": "You become convinced that electricity can travel through the air itself — without any wires. You build a laboratory in a remote location and conduct experiments with voltages so high that lightning flashes across the plains for miles.",
       "historicalFact": "You conducted high-voltage experiments in Colorado Springs, producing artificial lightning and investigating wireless transmission of electrical power over distances.",
-      "question": "You believe electricity can travel wirelessly. Will you spend your fortune pursuing this idea?",
+      "question": "Do you give up on investing in wireless experiments and turn toward more profitable technologies?",
       "weight": 5,
       "yes": {
-        "consequence": "You dedicate yourself to wireless electricity and high-voltage experiments, spending everything you have.",
-        "historical": true,
-        "risk": 8,
-        "independence": 9,
-        "nextEvent": 10
-      },
-      "no": {
         "consequence": "You abandon the risky experiments and focus on technologies that generate reliable income — but the wireless dream never releases its hold on you.",
         "historical": false,
         "risk": 4,
         "independence": 5,
         "nextEvent": 36
+      },
+      "no": {
+        "consequence": "You dedicate yourself to wireless electricity and high-voltage experiments, spending everything you have.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 10
       }
     },
     {

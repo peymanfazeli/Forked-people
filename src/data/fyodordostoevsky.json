@@ -1,501 +1,501 @@
 {
-    "id": "fyodor-dostoevsky",
-    "name": "Fyodor Dostoevsky",
-    "birthYear": 1821,
-    "description": "A journey through the darkness and light of the human soul — from the brink of execution to the heights of Russian literature. Every choice can lead you to a completely different fate.",
-    "scoring": {
-      "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
-      "risk": "average risk score of selected choices",
-      "independence": "average independence score of selected choices",
-      "scoreRange": {
-        "min": 0,
-        "max": 100
+  "id": "fyodor-dostoevsky",
+  "name": "Fyodor Dostoevsky",
+  "birthYear": 1821,
+  "description": "A journey through the darkness and light of the human soul — from the brink of execution to the heights of Russian literature. Every choice can lead you to a completely different fate.",
+  "scoring": {
+    "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
+    "risk": "average risk score of selected choices",
+    "independence": "average independence score of selected choices",
+    "scoreRange": {
+      "min": 0,
+      "max": 100
+    }
+  },
+  "ending": {
+    "title": "Your Fate: Writer of Depths or History's Forgotten",
+    "revealName": true
+  },
+  "events": [
+    {
+      "id": 1,
+      "year": 1837,
+      "chapter": "The Beginning",
+      "title": "Father's Death",
+      "playerFact": "Your father, a strict doctor, dies suddenly and violently. This blow confronts you in your youth with bitter questions about death, justice, and the meaning of life.",
+      "historicalFact": "Your father, Mikhail Dostoevsky, died in 1839, and you faced this loss at age 18, an event that shaped your dark view of life.",
+      "question": "Does this loss drive you toward deep existential questions?",
+      "weight": 3,
+      "yes": {
+        "consequence": "Grief and unanswered questions draw you toward literature and philosophy.",
+        "historical": true,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 2
+      },
+      "no": {
+        "consequence": "You accept your father's death and continue your ordinary life, never understanding the depth of suffering.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 20
       }
     },
-    "ending": {
-      "title": "Your Fate: Writer of Depths or History's Forgotten",
-      "revealName": true
-    },
-    "events": [
-      {
-        "id": 1,
-        "year": 1837,
-        "chapter": "The Beginning",
-        "title": "Father's Death",
-        "playerFact": "Your father, a strict doctor, dies suddenly and violently. This blow confronts you in your youth with bitter questions about death, justice, and the meaning of life.",
-        "historicalFact": "Your father, Mikhail Dostoevsky, died in 1839, and you faced this loss at age 18, an event that shaped your dark view of life.",
-        "question": "Does this loss drive you toward deep existential questions?",
-        "weight": 3,
-        "yes": {
-          "consequence": "Grief and unanswered questions draw you toward literature and philosophy.",
-          "historical": true,
-          "risk": 4,
-          "independence": 5,
-          "nextEvent": 2
-        },
-        "no": {
-          "consequence": "You accept your father's death and continue your ordinary life, never understanding the depth of suffering.",
-          "historical": false,
-          "risk": 2,
-          "independence": 3,
-          "nextEvent": 20
-        }
+    {
+      "id": 2,
+      "year": 1843,
+      "chapter": "Youth",
+      "title": "Military Academy",
+      "playerFact": "To please your family, you enter a military academy, but soon realize military life is suffocating. Instead, you spend nights studying literature and writing short stories.",
+      "historicalFact": "You studied at the St. Petersburg Academy of Military Engineering, but you were more interested in literature and writing than in your studies.",
+      "question": "Do you prefer military duty over your love of writing?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You give up writing and continue serving as an ordinary officer.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 21
       },
-      {
-        "id": 2,
-        "year": 1843,
-        "chapter": "Youth",
-        "title": "Military Academy",
-        "playerFact": "To please your family, you enter a military academy, but soon realize military life is suffocating. Instead, you spend nights studying literature and writing short stories.",
-        "historicalFact": "You studied at the St. Petersburg Academy of Military Engineering, but you were more interested in literature and writing than in your studies.",
-        "question": "Do you prefer your love of writing over military duty?",
-        "weight": 4,
-        "yes": {
-          "consequence": "You take refuge in writing and decide to become a writer, despite family opposition.",
-          "historical": true,
-          "risk": 5,
-          "independence": 6,
-          "nextEvent": 3
-        },
-        "no": {
-          "consequence": "You give up writing and continue serving as an ordinary officer.",
-          "historical": false,
-          "risk": 2,
-          "independence": 3,
-          "nextEvent": 21
-        }
-      },
-      {
-        "id": 3,
-        "year": 1846,
-        "chapter": "Youth",
-        "title": "First Literary Success",
-        "playerFact": "You publish your first story and suddenly receive praise from critics. Famous writers see you as a new discovery in literature. But this early success creates heavy expectations for your next work.",
-        "historicalFact": "In 1846, you published the epistolary novel \"Poor Folk\" and received acclaim from prominent critics like Belinsky.",
-        "question": "Does this success encourage you to continue your literary path?",
-        "weight": 4,
-        "yes": {
-          "consequence": "You continue writing with greater passion, dedicating yourself to literature.",
-          "historical": true,
-          "risk": 4,
-          "independence": 6,
-          "nextEvent": 4
-        },
-        "no": {
-          "consequence": "You fear the pressure of expectations and abandon writing to live in peace.",
-          "historical": false,
-          "risk": 3,
-          "independence": 4,
-          "nextEvent": 22
-        }
-      },
-      {
-        "id": 4,
-        "year": 1849,
-        "chapter": "The Brink of Death",
-        "title": "The Secret Circle",
-        "playerFact": "You join an intellectual circle discussing radical social ideas. The government sees these meetings as a threat, and all members are arrested. You are among those sentenced to death.",
-        "historicalFact": "You joined the Petrashevsky Circle and were arrested in 1849. After interrogation, you were sentenced to death, but at the last moment, the sentence was commuted to exile in Siberia.",
-        "question": "Does the brush with death lead you to contemplate the deepest questions of existence?",
-        "weight": 5,
-        "yes": {
-          "consequence": "The brush with death transforms you forever, driving you to the deepest questions of existence.",
-          "historical": true,
-          "risk": 10,
-          "independence": 7,
-          "nextEvent": 5
-        },
-        "no": {
-          "consequence": "You react with fear and violence, abandoning your beliefs to save yourself.",
-          "historical": false,
-          "risk": 8,
-          "independence": 3,
-          "nextEvent": 23
-        }
-      },
-      {
-        "id": 5,
-        "year": 1849,
-        "chapter": "The Brink of Death",
-        "title": "The Pardon",
-        "playerFact": "At the last moment, your death sentence is commuted to exile in a remote, frozen region. You spend years in a labor camp and then in a distant military outpost. The suffering you witness takes you to the depths of the human soul.",
-        "historicalFact": "Your death sentence was commuted to four years in Omsk prison, followed by military service in Siberia. These years were a defining experience that shaped your worldview.",
-        "question": "Do you turn this suffering into an opportunity for a deeper understanding of humanity?",
-        "weight": 5,
-        "yes": {
-          "consequence": "You embrace suffering and draw inspiration from it to write stories about the depths of the human soul.",
-          "historical": true,
-          "risk": 7,
-          "independence": 8,
-          "nextEvent": 6
-        },
-        "no": {
-          "consequence": "You flee from suffering and become bitter, never returning to writing.",
-          "historical": false,
-          "risk": 5,
-          "independence": 4,
-          "nextEvent": 24
-        }
-      },
-      {
-        "id": 6,
-        "year": 1859,
-        "chapter": "Return",
-        "title": "Return to Life",
-        "playerFact": "After years of exile, you return to the big city. What you saw in prison and what you experienced in those years has transformed you into a different writer. Now you have something to say that no one else knows.",
-        "historicalFact": "In 1859, you returned to St. Petersburg and began writing again with a fresh perspective. Your prison and exile experiences became the foundation of your later works.",
-        "question": "Do you use your bitter experiences to create great works?",
-        "weight": 4,
-        "yes": {
-          "consequence": "You transform your experiences into stories about redemption, guilt, and freedom.",
-          "historical": true,
-          "risk": 5,
-          "independence": 7,
-          "nextEvent": 7
-        },
-        "no": {
-          "consequence": "You flee from the past and try to live a normal, painless life, but the memories never let you go.",
-          "historical": false,
-          "risk": 3,
-          "independence": 4,
-          "nextEvent": 25
-        }
-      },
-      {
-        "id": 7,
-        "year": 1864,
-        "chapter": "Losses",
-        "title": "Death of Wife and Brother",
-        "playerFact": "Within a short time, you lose your wife and beloved brother. These successive losses plunge you into depression and heavy debt. The only thing left for you is paper and pen.",
-        "historicalFact": "In 1864, you lost your wife Maria Dmitrievna and then your brother Mikhail. These emotional blows were accompanied by financial debt and put immense pressure on you.",
-        "question": "Despite everything, do you continue writing?",
-        "weight": 5,
-        "yes": {
-          "consequence": "Despite everything, you write and transform suffering into art.",
-          "historical": true,
-          "risk": 6,
-          "independence": 7,
-          "nextEvent": 8
-        },
-        "no": {
-          "consequence": "You give up writing, drowning in grief and gambling, losing everything you had.",
-          "historical": false,
-          "risk": 7,
-          "independence": 4,
-          "nextEvent": 26
-        }
-      },
-      {
-        "id": 8,
-        "year": 1866,
-        "chapter": "Masterpieces",
-        "title": "The Great Novel",
-        "playerFact": "Despite all pressures, you begin writing a novel that encompasses all your existential questions: guilt, redemption, justice, and freedom. The story begins with crime and becomes an exploration of human conscience.",
-        "historicalFact": "In 1866, you published \"Crime and Punishment\" — a work that made you one of the greatest writers in history and introduced psychological analysis into literature.",
-        "question": "Do you have the courage to write a novel that challenges traditional concepts and delves into the darkest corners of the human soul?",
-        "weight": 5,
-        "yes": {
-          "consequence": "You write the novel and transform the literary world forever.",
-          "historical": true,
-          "risk": 8,
-          "independence": 9,
-          "nextEvent": 9
-        },
-        "no": {
-          "consequence": "You fear writing a controversial work and turn to milder, less provocative stories.",
-          "historical": false,
-          "risk": 4,
-          "independence": 5,
-          "nextEvent": 27
-        }
-      },
-      {
-        "id": 9,
-        "year": 1867,
-        "chapter": "Salvation",
-        "title": "The Young Secretary",
-        "playerFact": "To complete your next novel, you hire a young secretary to transcribe and organize your notes. But over time, this secretary becomes more than an employee — a loyal partner in life and work.",
-        "historicalFact": "You hired Anna Grigorievna Snitkina as your secretary. She later became your wife and played a crucial role in managing your financial and literary affairs.",
-        "question": "Do you trust this young secretary and let her become part of your life?",
-        "weight": 4,
-        "yes": {
-          "consequence": "A deep relationship forms, and she becomes your support in the hardest days.",
-          "historical": true,
-          "risk": 5,
-          "independence": 6,
-          "nextEvent": 10
-        },
-        "no": {
-          "consequence": "You see her only as an employee and keep your distance. Years later, loneliness and financial chaos destroy your life.",
-          "historical": false,
-          "risk": 4,
-          "independence": 7,
-          "nextEvent": 28
-        }
-      },
-      {
-        "id": 10,
-        "year": 1880,
-        "chapter": "The Peak",
-        "title": "The Final Masterpiece",
-        "playerFact": "Decades of writing, living, suffering, and joy have brought you to a place where you feel you must summarize all your ideas in one great novel. A story about three brothers, each representing an aspect of the human soul: faith, reason, and emotion.",
-        "historicalFact": "In 1880, you published your last and greatest novel, \"The Brothers Karamazov\" — a masterpiece that gathered all your philosophical and spiritual concerns.",
-        "question": "Do you spend your final years writing a work meant to summarize all your thoughts?",
-        "weight": 5,
-        "yes": {
-          "consequence": "You write your final masterpiece and immortalize your name in literary history forever.",
-          "historical": true,
-          "risk": 6,
-          "independence": 8,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You fear the pressure of writing a monumental work and turn to shorter, lighter pieces. You never achieve artistic completeness.",
-          "historical": false,
-          "risk": 3,
-          "independence": 5,
-          "nextEvent": 29
-        }
-      },
-      {
-        "id": 20,
-        "year": 1840,
-        "chapter": "The Path Without Suffering",
-        "title": "A Superficial Life",
-        "playerFact": "You ignore your father's death and continue your ordinary life. You never confront the depths of suffering and existential questions, so you never write anything lasting.",
-        "historicalFact": "Some of your contemporaries, by ignoring suffering, settled for ordinary, insignificant lives.",
-        "question": "Do you regret ignoring suffering and the big questions?",
-        "weight": 3,
-        "yes": {
-          "consequence": "You die with regret, wishing you had looked into the depths of your soul instead of running away.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die peacefully, believing a carefree life is better — unaware that the world lost one of its greatest writers.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
-      },
-      {
-        "id": 21,
-        "year": 1845,
-        "chapter": "The Military Path",
-        "title": "The Unknown Officer",
-        "playerFact": "You continue as an officer, living an orderly, uneventful life. You never take up the pen, and your stories are never written.",
-        "historicalFact": "Some graduates of the military academy became unknown officers, and history passed them by.",
-        "question": "Do you wish you had chosen writing instead of military service?",
-        "weight": 3,
-        "yes": {
-          "consequence": "You die with regret, wishing you had had the courage to follow your true love.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die with pride, proud of your military service, though you know your name is not in history.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
-      },
-      {
-        "id": 22,
-        "year": 1846,
-        "chapter": "The Conservative Path",
-        "title": "The Forgotten Writer",
-        "playerFact": "Despite the acclaim for your first work, you abandon writing out of fear of criticism. Years later, you are remembered only as a one-work writer on the margins of literary history.",
-        "historicalFact": "Literary history is full of one-work writers who never dared to continue.",
-        "question": "Do you regret abandoning writing?",
-        "weight": 3,
-        "yes": {
-          "consequence": "You die with regret, wishing you had had the courage to continue instead of giving in to fear.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die peacefully, believing you chose silence over criticism — but your books were never read.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
-      },
-      {
-        "id": 23,
-        "year": 1849,
-        "chapter": "The Surrender Path",
-        "title": "The Broken Prisoner",
-        "playerFact": "Before the firing squad, you renounce your beliefs and beg for mercy. You survive but lose your self-respect and convictions. You spend years in shame and humiliation.",
-        "historicalFact": "Some political exiles of that era, by breaking their spirit, never returned to normal life.",
-        "question": "Do you regret surrendering in the face of death?",
-        "weight": 4,
-        "yes": {
-          "consequence": "You die with regret, wishing you had chosen honor over humiliation.",
-          "historical": false,
-          "risk": 2,
-          "independence": 3,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die bitterly, believing survival matters more than any belief — but you lost your soul.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
-      },
-      {
-        "id": 24,
-        "year": 1850,
-        "chapter": "The Bitter Path",
-        "title": "The Unnamed Transformed One",
-        "playerFact": "In prison, you flee from suffering and take refuge in hatred and bitterness instead of writing. After release, you never take up the pen again and spend the rest of your life in anger and loneliness.",
-        "historicalFact": "Some political prisoners, by breaking their spirit, never returned to creativity.",
-        "question": "Do you regret not turning suffering into art?",
-        "weight": 4,
-        "yes": {
-          "consequence": "You die with regret, wishing you had drawn inspiration from your suffering instead of anger.",
-          "historical": false,
-          "risk": 2,
-          "independence": 3,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die bitterly, believing nothing is worth writing — but you know the world lost a masterpiece.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
-      },
-      {
-        "id": 25,
-        "year": 1860,
-        "chapter": "The Escape Path",
-        "title": "An Ordinary, Empty Life",
-        "playerFact": "After returning from exile, you flee from the past and take a clerical job. You spend years in monotony, never saying the words you should have said.",
-        "historicalFact": "Some writers, after experiencing failure, retreated into ordinary lives and vanished from the literary scene.",
-        "question": "Do you regret escaping from the past?",
-        "weight": 3,
-        "yes": {
-          "consequence": "You die with regret, wishing you had used your experiences to create art instead of fleeing.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die peacefully, believing a quiet life is better than the troubles of writing — but you know you silenced a voice.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
-      },
-      {
-        "id": 26,
-        "year": 1865,
-        "chapter": "The Self-Destructive Path",
-        "title": "The Bankrupt Gambler",
-        "playerFact": "After the death of your wife and brother, you turn to gambling. You lose everything you have, debts pile up, and you never return to writing. Your final days are spent in poverty and loneliness.",
-        "historicalFact": "Some intellectuals of that era destroyed their lives through gambling and extravagance.",
-        "question": "Do you regret choosing gambling over writing?",
-        "weight": 4,
-        "yes": {
-          "consequence": "You die with regret, wishing you had entrusted your suffering to paper instead of the gambling table.",
-          "historical": false,
-          "risk": 2,
-          "independence": 3,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die bitterly, believing it was your fate — but you know you destroyed your own future.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
-      },
-      {
-        "id": 27,
-        "year": 1867,
-        "chapter": "The Popular Path",
-        "title": "The Superficial Writer",
-        "playerFact": "Instead of a controversial and deep novel, you write light, entertaining stories that please the general audience. You achieve financial success but never reach the depths of truth.",
-        "historicalFact": "Literary history is full of writers who chose entertainment over depth and were forgotten.",
-        "question": "Do you regret choosing superficiality over depth?",
-        "weight": 4,
-        "yes": {
-          "consequence": "You die with regret, wishing you had valued artistic honesty over popularity.",
-          "historical": false,
-          "risk": 2,
-          "independence": 3,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die content, believing making people happy is valuable — but your name is not recorded in literary history.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
-      },
-      {
-        "id": 28,
-        "year": 1868,
-        "chapter": "The Loneliness Path",
-        "title": "Alone Among the Crowd",
-        "playerFact": "You see the young secretary only as an employee and keep your distance. You spend years in loneliness, debts pile up, and your life descends into chaos.",
-        "historicalFact": "Some writers, by not accepting help from others, destroyed their own lives.",
-        "question": "Do you regret not trusting your secretary?",
-        "weight": 4,
-        "yes": {
-          "consequence": "You die with regret, wishing you had let someone into your life instead of going it alone.",
-          "historical": false,
-          "risk": 2,
-          "independence": 3,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die bitterly, believing independence is valuable — but loneliness destroyed you.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
-      },
-      {
-        "id": 29,
-        "year": 1881,
-        "chapter": "The Unfinished Path",
-        "title": "The Masterpiece Never Written",
-        "playerFact": "You abandon the novel about three brothers. You write shorter stories and never achieve artistic completeness. When you die, your readers await a work that was never published.",
-        "historicalFact": "Dostoevsky never wrote the second part of \"The Brothers Karamazov\" and died in 1881, but that single volume was enough to make him immortal.",
-        "question": "Do you regret not writing the final masterpiece?",
-        "weight": 4,
-        "yes": {
-          "consequence": "You die with regret, wishing you had had the courage to write that great work.",
-          "historical": false,
-          "risk": 2,
-          "independence": 3,
-          "nextEvent": null
-        },
-        "no": {
-          "consequence": "You die peacefully, believing what you wrote was enough — but you know the world lost something great.",
-          "historical": false,
-          "risk": 1,
-          "independence": 2,
-          "nextEvent": null
-        }
+      "no": {
+        "consequence": "You take refuge in writing and decide to become a writer, despite family opposition.",
+        "historical": true,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 3
       }
-    ]
-  }
+    },
+    {
+      "id": 3,
+      "year": 1846,
+      "chapter": "Youth",
+      "title": "First Literary Success",
+      "playerFact": "You publish your first story and suddenly receive praise from critics. Famous writers see you as a new discovery in literature. But this early success creates heavy expectations for your next work.",
+      "historicalFact": "In 1846, you published the epistolary novel \"Poor Folk\" and received acclaim from prominent critics like Belinsky.",
+      "question": "Does this success encourage you to continue your literary path?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You continue writing with greater passion, dedicating yourself to literature.",
+        "historical": true,
+        "risk": 4,
+        "independence": 6,
+        "nextEvent": 4
+      },
+      "no": {
+        "consequence": "You fear the pressure of expectations and abandon writing to live in peace.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 22
+      }
+    },
+    {
+      "id": 4,
+      "year": 1849,
+      "chapter": "The Brink of Death",
+      "title": "The Secret Circle",
+      "playerFact": "You join an intellectual circle discussing radical social ideas. The government sees these meetings as a threat, and all members are arrested. You are among those sentenced to death.",
+      "historicalFact": "You joined the Petrashevsky Circle and were arrested in 1849. After interrogation, you were sentenced to death, but at the last moment, the sentence was commuted to exile in Siberia.",
+      "question": "Facing the firing squad, do you surrender to fear and abandon your beliefs?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You react with fear and violence, abandoning your beliefs to save yourself, but you lose your self-respect and convictions.",
+        "historical": false,
+        "risk": 8,
+        "independence": 3,
+        "nextEvent": 23
+      },
+      "no": {
+        "consequence": "The brush with death transforms you forever, driving you to the deepest questions of existence.",
+        "historical": true,
+        "risk": 10,
+        "independence": 7,
+        "nextEvent": 5
+      }
+    },
+    {
+      "id": 5,
+      "year": 1849,
+      "chapter": "The Brink of Death",
+      "title": "The Pardon",
+      "playerFact": "At the last moment, your death sentence is commuted to exile in a remote, frozen region. You spend years in a labor camp and then in a distant military outpost. The suffering you witness takes you to the depths of the human soul.",
+      "historicalFact": "Your death sentence was commuted to four years in Omsk prison, followed by military service in Siberia. These years were a defining experience that shaped your worldview.",
+      "question": "Do you turn this suffering into an opportunity for a deeper understanding of humanity?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You embrace suffering and draw inspiration from it to write stories about the depths of the human soul.",
+        "historical": true,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 6
+      },
+      "no": {
+        "consequence": "You flee from suffering and become bitter, never returning to writing.",
+        "historical": false,
+        "risk": 5,
+        "independence": 4,
+        "nextEvent": 24
+      }
+    },
+    {
+      "id": 6,
+      "year": 1859,
+      "chapter": "Return",
+      "title": "Return to Life",
+      "playerFact": "After years of exile, you return to the big city. What you saw in prison and what you experienced in those years has transformed you into a different writer. Now you have something to say that no one else knows.",
+      "historicalFact": "In 1859, you returned to St. Petersburg and began writing again with a fresh perspective. Your prison and exile experiences became the foundation of your later works.",
+      "question": "Do you flee from the past and try to live a normal, painless life?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You flee from the past and try to live a normal, painless life, but the memories never let you go.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 25
+      },
+      "no": {
+        "consequence": "You transform your experiences into stories about redemption, guilt, and freedom.",
+        "historical": true,
+        "risk": 5,
+        "independence": 7,
+        "nextEvent": 7
+      }
+    },
+    {
+      "id": 7,
+      "year": 1864,
+      "chapter": "Losses",
+      "title": "Death of Wife and Brother",
+      "playerFact": "Within a short time, you lose your wife and beloved brother. These successive losses plunge you into depression and heavy debt. The only thing left for you is paper and pen.",
+      "historicalFact": "In 1864, you lost your wife Maria Dmitrievna and then your brother Mikhail. These emotional blows were accompanied by financial debt and put immense pressure on you.",
+      "question": "Despite everything, do you continue writing?",
+      "weight": 5,
+      "yes": {
+        "consequence": "Despite everything, you write and transform suffering into art.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 8
+      },
+      "no": {
+        "consequence": "You give up writing, drowning in grief and gambling, losing everything you had.",
+        "historical": false,
+        "risk": 7,
+        "independence": 4,
+        "nextEvent": 26
+      }
+    },
+    {
+      "id": 8,
+      "year": 1866,
+      "chapter": "Masterpieces",
+      "title": "The Great Novel",
+      "playerFact": "Despite all pressures, you begin writing a novel that encompasses all your existential questions: guilt, redemption, justice, and freedom. The story begins with crime and becomes an exploration of human conscience.",
+      "historicalFact": "In 1866, you published \"Crime and Punishment\" — a work that made you one of the greatest writers in history and introduced psychological analysis into literature.",
+      "question": "Do you have the courage to write a novel that challenges traditional concepts and delves into the darkest corners of the human soul?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You write the novel and transform the literary world forever.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 9
+      },
+      "no": {
+        "consequence": "You fear writing a controversial work and turn to milder, less provocative stories.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 27
+      }
+    },
+    {
+      "id": 9,
+      "year": 1867,
+      "chapter": "Salvation",
+      "title": "The Young Secretary",
+      "playerFact": "To complete your next novel, you hire a young secretary to transcribe and organize your notes. But over time, this secretary becomes more than an employee — a loyal partner in life and work.",
+      "historicalFact": "You hired Anna Grigorievna Snitkina as your secretary. She later became your wife and played a crucial role in managing your financial and literary affairs.",
+      "question": "Do you see the young secretary only as an employee and keep your distance?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You see her only as an employee and keep your distance. Years later, loneliness and financial chaos destroy your life.",
+        "historical": false,
+        "risk": 4,
+        "independence": 7,
+        "nextEvent": 28
+      },
+      "no": {
+        "consequence": "A deep relationship forms, and she becomes your support in the hardest days.",
+        "historical": true,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 10
+      }
+    },
+    {
+      "id": 10,
+      "year": 1880,
+      "chapter": "The Peak",
+      "title": "The Final Masterpiece",
+      "playerFact": "Decades of writing, living, suffering, and joy have brought you to a place where you feel you must summarize all your ideas in one great novel. A story about three brothers, each representing an aspect of the human soul: faith, reason, and emotion.",
+      "historicalFact": "In 1880, you published your last and greatest novel, \"The Brothers Karamazov\" — a masterpiece that gathered all your philosophical and spiritual concerns.",
+      "question": "Do you spend your final years writing a work meant to summarize all your thoughts?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You write your final masterpiece and immortalize your name in literary history forever.",
+        "historical": true,
+        "risk": 6,
+        "independence": 8,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You fear the pressure of writing a monumental work and turn to shorter, lighter pieces. You never achieve artistic completeness.",
+        "historical": false,
+        "risk": 3,
+        "independence": 5,
+        "nextEvent": 29
+      }
+    },
+    {
+      "id": 20,
+      "year": 1840,
+      "chapter": "The Path Without Suffering",
+      "title": "A Superficial Life",
+      "playerFact": "You ignore your father's death and continue your ordinary life. You never confront the depths of suffering and existential questions, so you never write anything lasting.",
+      "historicalFact": "Some of your contemporaries, by ignoring suffering, settled for ordinary, insignificant lives.",
+      "question": "Do you regret ignoring suffering and the big questions?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You die with regret, wishing you had looked into the depths of your soul instead of running away.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die peacefully, believing a carefree life is better — unaware that the world lost one of its greatest writers.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 21,
+      "year": 1845,
+      "chapter": "The Military Path",
+      "title": "The Unknown Officer",
+      "playerFact": "You continue as an officer, living an orderly, uneventful life. You never take up the pen, and your stories are never written.",
+      "historicalFact": "Some graduates of the military academy became unknown officers, and history passed them by.",
+      "question": "Do you wish you had chosen writing instead of military service?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You die with regret, wishing you had had the courage to follow your true love.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die with pride, proud of your military service, though you know your name is not in history.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 22,
+      "year": 1846,
+      "chapter": "The Conservative Path",
+      "title": "The Forgotten Writer",
+      "playerFact": "Despite the acclaim for your first work, you abandon writing out of fear of criticism. Years later, you are remembered only as a one-work writer on the margins of literary history.",
+      "historicalFact": "Literary history is full of one-work writers who never dared to continue.",
+      "question": "Do you regret abandoning writing?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You die with regret, wishing you had had the courage to continue instead of giving in to fear.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die peacefully, believing you chose silence over criticism — but your books were never read.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 23,
+      "year": 1849,
+      "chapter": "The Surrender Path",
+      "title": "The Broken Prisoner",
+      "playerFact": "Before the firing squad, you renounce your beliefs and beg for mercy. You survive but lose your self-respect and convictions. You spend years in shame and humiliation.",
+      "historicalFact": "Some political exiles of that era, by breaking their spirit, never returned to normal life.",
+      "question": "Do you regret surrendering in the face of death?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You die with regret, wishing you had chosen honor over humiliation.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die bitterly, believing survival matters more than any belief — but you lost your soul.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 24,
+      "year": 1850,
+      "chapter": "The Bitter Path",
+      "title": "The Unnamed Transformed One",
+      "playerFact": "In prison, you flee from suffering and take refuge in hatred and bitterness instead of writing. After release, you never take up the pen again and spend the rest of your life in anger and loneliness.",
+      "historicalFact": "Some political prisoners, by breaking their spirit, never returned to creativity.",
+      "question": "Do you regret not turning suffering into art?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You die with regret, wishing you had drawn inspiration from your suffering instead of anger.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die bitterly, believing nothing is worth writing — but you know the world lost a masterpiece.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 25,
+      "year": 1860,
+      "chapter": "The Escape Path",
+      "title": "An Ordinary, Empty Life",
+      "playerFact": "After returning from exile, you flee from the past and take a clerical job. You spend years in monotony, never saying the words you should have said.",
+      "historicalFact": "Some writers, after experiencing failure, retreated into ordinary lives and vanished from the literary scene.",
+      "question": "Do you regret escaping from the past?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You die with regret, wishing you had used your experiences to create art instead of fleeing.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die peacefully, believing a quiet life is better than the troubles of writing — but you know you silenced a voice.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 26,
+      "year": 1865,
+      "chapter": "The Self-Destructive Path",
+      "title": "The Bankrupt Gambler",
+      "playerFact": "After the death of your wife and brother, you turn to gambling. You lose everything you have, debts pile up, and you never return to writing. Your final days are spent in poverty and loneliness.",
+      "historicalFact": "Some intellectuals of that era destroyed their lives through gambling and extravagance.",
+      "question": "Do you regret choosing gambling over writing?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You die with regret, wishing you had entrusted your suffering to paper instead of the gambling table.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die bitterly, believing it was your fate — but you know you destroyed your own future.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 27,
+      "year": 1867,
+      "chapter": "The Popular Path",
+      "title": "The Superficial Writer",
+      "playerFact": "Instead of a controversial and deep novel, you write light, entertaining stories that please the general audience. You achieve financial success but never reach the depths of truth.",
+      "historicalFact": "Literary history is full of writers who chose entertainment over depth and were forgotten.",
+      "question": "Do you regret choosing superficiality over depth?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You die with regret, wishing you had valued artistic honesty over popularity.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die content, believing making people happy is valuable — but your name is not recorded in literary history.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 28,
+      "year": 1868,
+      "chapter": "The Loneliness Path",
+      "title": "Alone Among the Crowd",
+      "playerFact": "You see the young secretary only as an employee and keep your distance. You spend years in loneliness, debts pile up, and your life descends into chaos.",
+      "historicalFact": "Some writers, by not accepting help from others, destroyed their own lives.",
+      "question": "Do you regret not trusting your secretary?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You die with regret, wishing you had let someone into your life instead of going it alone.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die bitterly, believing independence is valuable — but loneliness destroyed you.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 29,
+      "year": 1881,
+      "chapter": "The Unfinished Path",
+      "title": "The Masterpiece Never Written",
+      "playerFact": "You abandon the novel about three brothers. You write shorter stories and never achieve artistic completeness. When you die, your readers await a work that was never published.",
+      "historicalFact": "Dostoevsky never wrote the second part of \"The Brothers Karamazov\" and died in 1881, but that single volume was enough to make him immortal.",
+      "question": "Do you regret not writing the final masterpiece?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You die with regret, wishing you had had the courage to write that great work.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die peacefully, believing what you wrote was enough — but you know the world lost something great.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    }
+  ]
+}

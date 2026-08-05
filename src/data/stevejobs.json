@@ -48,21 +48,21 @@
       "title": "A Curious Young Mind",
       "playerFact": "In your teens, you become fascinated with electronics and computing machines — devices that seem to have endless possibilities. You meet someone who shares this obsession completely.",
       "historicalFact": "In your teens, you developed a deep interest in electronics and computers, and you found a kindred spirit who became your lifelong collaborator.",
-      "question": "You meet someone who is just as obsessed with electronics as you are. Will you work together?",
+      "question": "Do you avoid working with this companion and continue on your own path alone?",
       "weight": 4,
       "yes": {
-        "consequence": "You become close friends and start building things together.",
-        "historical": true,
-        "risk": 4,
-        "independence": 5,
-        "nextEvent": 3
-      },
-      "no": {
         "consequence": "You continue exploring electronics on your own, most of the time pursuing your interests alone.",
         "historical": false,
         "risk": 3,
         "independence": 8,
         "nextEvent": 21
+      },
+      "no": {
+        "consequence": "You become close friends and start building things together.",
+        "historical": true,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 3
       }
     },
     {
@@ -72,21 +72,21 @@
       "title": "Dropping Out of College",
       "playerFact": "You enroll in a liberal arts college but soon feel that formal education is not for you. It's expensive, and your family's finances are strained.",
       "historicalFact": "You enrolled in Reed College but dropped out after about six months, partly due to financial pressure on your adoptive parents.",
-      "question": "College doesn't feel right for you. Will you drop out and find your own path?",
+      "question": "Do you stay in college and continue your studies until you earn a degree?",
       "weight": 4,
       "yes": {
-        "consequence": "You leave college and begin exploring life outside the traditional education system.",
-        "historical": true,
-        "risk": 5,
-        "independence": 7,
-        "nextEvent": 4
-      },
-      "no": {
         "consequence": "You stay in college and continue toward a conventional degree.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": 22
+      },
+      "no": {
+        "consequence": "You leave college and begin exploring life outside the traditional education system.",
+        "historical": true,
+        "risk": 5,
+        "independence": 7,
+        "nextEvent": 4
       }
     },
     {
@@ -120,21 +120,21 @@
       "title": "Journey to the East",
       "playerFact": "In your early twenties, you feel drawn to Eastern philosophy. An opportunity arises to travel to a distant land in search of spiritual enlightenment.",
       "historicalFact": "In your early twenties, you traveled to India in search of spiritual enlightenment — a journey that deeply shaped your worldview and aesthetic sensibility.",
-      "question": "You have the chance to travel to the East in search of spiritual answers. Will you go?",
+      "question": "Do you decide not to go on the spiritual journey and instead focus on technology and work?",
       "weight": 4,
       "yes": {
-        "consequence": "You travel and explore spirituality and different ways of thinking.",
-        "historical": true,
-        "risk": 6,
-        "independence": 7,
-        "nextEvent": 6
-      },
-      "no": {
         "consequence": "You stay home and focus on technology and work.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": 24
+      },
+      "no": {
+        "consequence": "You travel and explore spirituality and different ways of thinking.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 6
       }
     },
     {
@@ -168,21 +168,21 @@
       "title": "The Computing Machine",
       "playerFact": "Your friend has built a working computing machine in his spare time. It's a simple device, but you immediately see that it could be more than a hobby. You see an opportunity to build something ordinary people can use.",
       "historicalFact": "Your collaborator designed a personal computer, and you saw the potential to turn it into a commercial product — a machine anyone could use, not just hobbyists.",
-      "question": "Your friend has built a working computing machine. Will you turn his invention into a joint business?",
+      "question": "Do you refuse to turn your friend's invention into a joint business and see it only as a hobby?",
       "weight": 5,
       "yes": {
-        "consequence": "You decide the machine can become a real product, and you start a company with your friend.",
-        "historical": true,
-        "risk": 6,
-        "independence": 7,
-        "nextEvent": 8
-      },
-      "no": {
         "consequence": "You decide the machine is more of an interesting hobby than a business opportunity.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": 26
+      },
+      "no": {
+        "consequence": "You decide the machine can become a real product, and you start a company with your friend.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 8
       }
     },
     {
@@ -216,21 +216,21 @@
       "title": "The Ouster",
       "playerFact": "Tensions rise within the company you helped build. The leadership you brought in sees things differently. Eventually, you are pushed out of the very organization you founded.",
       "historicalFact": "After a power struggle with the company's leadership, you were ousted from the business you had founded — a painful but ultimately liberating moment.",
-      "question": "You have lost control of the company you helped build. Will you leave and start something new?",
+      "question": "Do you fight to regain control of the company and refuse to leave it?",
       "weight": 5,
       "yes": {
-        "consequence": "You leave the company and decide to build the next chapter of your life elsewhere.",
-        "historical": true,
-        "risk": 8,
-        "independence": 9,
-        "nextEvent": 10
-      },
-      "no": {
         "consequence": "You remain determined to regain your influence within the company.",
         "historical": false,
         "risk": 6,
         "independence": 6,
         "nextEvent": 28
+      },
+      "no": {
+        "consequence": "You leave the company and decide to build the next chapter of your life elsewhere.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 10
       }
     },
     {
