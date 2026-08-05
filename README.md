@@ -318,3 +318,61 @@ npm run preview
 3. Give both YES and NO plausible consequences and set `historical` on the factually correct choice.
 4. Register the file in `src/data/characters.ts` (roster + optional `fa` overlay).
 5. Run `npm run lint && npm run build` to verify.
+
+---
+
+## Try It
+
+### Live someone else's life. Without knowing whose.
+
+Imagine closing your eyes, opening them, and being **someone else**. Someone real. Someone whose name is never spoken to you.
+
+You're not playing a history quiz. You're **living a biography** — one decision at a time.
+
+A year appears. A chapter of someone's life. A moment where everything could go one way or another. Then the question, asked only to you:
+
+> *What would you do?*
+
+Two buttons. **YES** and **NO.** That's the whole game.
+
+And here's the thing — you won't know which one is "right." Neither will anyone else. Because both are human, both are possible, and the game will never tell you. Not once, not until the very end.
+
+### What you'll feel
+
+**The first moments.** You'll be curious. A stranger's life is in your hands, and a small voice asks: *Whose life am I about to live?*
+
+**Somewhere in the middle.** You'll start to feel the weight of it. Every choice carries a quiet consequence, and you'll catch yourself wondering — *was that actually what this person did?*
+
+**After a big decision.** You'll want to know what happens next. You'll *need* to know. One tap, and the story keeps moving.
+
+**Near the end.** Suspicion creeps in. Clues you barely noticed start to line up. You'll lean closer and think: *I think I know who this is…*
+
+**The reveal.** Then it hits you.
+
+> *Oh. It was Einstein.*
+
+**Your results.** Now it's personal. The game hands you a profile of the person you turned out to be — how closely you walked the real historical path, how much risk you took, how independently you decided.
+
+> *I was only 62% Einstein.*
+
+**The divergence.** One moment will stand out — the choice that set your life apart from the real one. The game shows you both roads: the one you walked, and the one they walked. And you'll find yourself asking the most dangerous question a game can leave you with:
+
+> *What if I'd chosen differently?*
+
+**The moment it ends.** You'll already be tempted to start again.
+
+### Why it's different
+
+- **It's not a test.** No red "✗", no "WRONG!" — just your story, told your way.
+- **Both choices feel real.** You'll never face an obviously stupid option. Just human ones.
+- **Every playthrough is yours.** Your score, your profile, your divergence. No two players end up the same.
+
+### Six lives await
+
+A dreamer who changed the way the world computes. A genius of electricity who saw the future and was forgotten for it. A young man who dropped out of college and never stopped. A refugee who reimagined the universe. A lonely writer who turned darkness into literature. A gambler who lost everything — and wrote *Crime and Punishment*.
+
+Choose one. Or don't choose — let the game decide. Either way, you'll live a life that isn't yours, for a few unforgettable minutes.
+
+> **Live another life. Make the choices that shape history.**
+
+Your first decision is waiting.
