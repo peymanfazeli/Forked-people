@@ -47,7 +47,7 @@
       "chapter": "The European Sojourn",
       "title": "Studying Abroad",
       "playerFact": "Your wealthy family sends you to Europe to study a practical field—engineering, architecture, or dentistry. But in the lecture halls, your mind wanders elsewhere: to crowded writer's cafés and the books you truly long to read.",
-      "historicalFact": "You traveled to Europe for stulives, but spent more time writing and exploring modern literary scenes than attending classes.",
+      "historicalFact": "You traveled to Europe for studies, but spent more time writing and exploring modern literary scenes than attending classes.",
       "question": "Do you continue your formal education and earn a university degree?",
       "weight": 4,
       "yes": {
@@ -58,7 +58,7 @@
         "nextEvent": 4
       },
       "no": {
-        "consequence": "You abandon formal stulives and spend your nights in the literary circles of Paris and Brussels, feeding your soul with modernism.",
+        "consequence": "You abandon formal studies and spend your nights in the literary circles of Paris and Brussels, feeding your soul with modernism.",
         "historical": true,
         "risk": 8,
         "independence": 9,
@@ -134,7 +134,7 @@
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": 22
+        "nextEvent": 23
       }
     },
     {
@@ -147,7 +147,7 @@
       "question": "Do you endure the hardships of traveling to that distant country to get your book printed?",
       "weight": 4,
       "yes": {
-        "consequence": "You go to India, publish the book, and stay there for months, becoming fascinated with ancient Persian heritage (Pahlavi and Zoroastrian stulives).",
+        "consequence": "You go to India, publish the book, and stay there for months, becoming fascinated with ancient Persian heritage (Pahlavi and Zoroastrian studies).",
         "historical": true,
         "risk": 7,
         "independence": 8,
@@ -175,7 +175,7 @@
         "historical": false,
         "risk": 3,
         "independence": 5,
-        "nextEvent": 8
+        "nextEvent": 24
       },
       "no": {
         "consequence": "You continue writing and distributing your work underground, becoming a banned yet influential author.",
@@ -199,14 +199,14 @@
         "historical": false,
         "risk": 5,
         "independence": 6,
-        "nextEvent": null
+        "nextEvent": 30
       },
       "no": {
         "consequence": "You end your life, but years later, your writings are recognized as a treasure of Persian dark literature, and your name becomes immortal.",
         "historical": true,
         "risk": 10,
         "independence": 10,
-        "nextEvent": null
+        "nextEvent": 40
       }
     },
     {
@@ -247,35 +247,227 @@
         "historical": false,
         "risk": 6,
         "independence": 7,
-        "nextEvent": 22
+        "nextEvent": 25
       },
       "no": {
         "consequence": "You stay on the safe path, collecting awards and titles one after another, but deep down, you feel like nothing but a hypocrite.",
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": 22
+        "nextEvent": 26
       }
     },
     {
-      "id": 22,
-      "year": 1950,
-      "chapter": "The Traditional Path",
-      "title": "Eternal Obscurity",
-      "playerFact": "Old age arrives. You live in relative comfort, but when you look back, you realize you never added a single lasting sentence to the literature of your land. Your name barely appears in the margins of literary history.",
-      "historicalFact": "Many imitative and traditional poets of that era were quickly forgotten in the currents of history.",
-      "question": "Do you regret never taking a risk and never putting your inner darkness into words?",
+      "id": 23,
+      "year": 1934,
+      "chapter": "The Burning Path",
+      "title": "Fire and Ashes",
+      "playerFact": "You burned your manuscript. But the obsessive story comes back to life in your nightmares. A year later, you rewrite it from memory, but this time from a fresh perspective.",
+      "historicalFact": "Some writers, after burning their work, later returned to it with regret and rewrote it.",
+      "question": "Do you send the rewritten version to a publisher?",
+      "weight": 3,
+      "yes": {
+        "consequence": "Under a pseudonym, you send the story to a publisher and this time it receives acclaim. But your identity remains hidden.",
+        "historical": false,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 24
+      },
+      "no": {
+        "consequence": "You burn the manuscript again, and this time, you give up writing forever.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 25
+      }
+    },
+    {
+      "id": 24,
+      "year": 1942,
+      "chapter": "The Hidden Path",
+      "title": "The Anonymous Translator",
+      "playerFact": "Under a pseudonym, you begin translating Western literary works—Kafka, Sartre, Camus—into Persian. Your translations are published without your name, but in intellectual circles, everyone knows that the anonymous translator is the one who once wrote that obsessive story.",
+      "historicalFact": "Some intellectuals of that era used pseudonyms to translate and publish modern works.",
+      "question": "Do you reveal your true identity and achieve literary fame?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You reveal your identity and become known as a pioneering translator, but you never write a new story again. Your name lives on in the history of translation.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 27
+      },
+      "no": {
+        "consequence": "You remain anonymous for life, known only to a small circle of friends. When you die, no one knows what a treasure of Western literature you brought into Persian.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 27
+      }
+    },
+    {
+      "id": 25,
+      "year": 1936,
+      "chapter": "The Rejection Path",
+      "title": "An Outcast of Two Worlds",
+      "playerFact": "Rejected by both traditionalists and modernists, you belong to neither world. You wander aimlessly, a stranger to everyone.",
+      "historicalFact": "Literary history is full of wandering figures who lost their place in the transition from tradition to modernity.",
+      "question": "Do you turn to music and singing to escape this restlessness?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You meet a Romani musician in Tehran and turn to music. Your soulful voice makes you a beloved singer in night cafés.",
+        "historical": false,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 28
+      },
+      "no": {
+        "consequence": "You take refuge in Sufism and mysticism. You spend years in khanaqahs (Sufi lodges) in spiritual retreat, eventually becoming known as an intellectual cleric who reached faith through literature.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 29
+      }
+    },
+    {
+      "id": 26,
+      "year": 1940,
+      "chapter": "The Hypocrisy Path",
+      "title": "The Soulless Court Poet",
+      "playerFact": "You continue on the safe path, becoming a court poet who composes panegyrics for kings and ministers. You are wealthy and respected, but every night you tell yourself that you are nothing but a hypocrite.",
+      "historicalFact": "Some poets of that era gained wealth by flattering the court, but lost their artistic integrity.",
+      "question": "In middle age, do you grow tired of this inauthentic life and search for another truth?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You abandon everything overnight and travel. You spend years in India and Pakistan, eventually returning to Iran as a scholar of Eastern religions.",
+        "historical": false,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 27
+      },
+      "no": {
+        "consequence": "You remain the soulless court poet until the end. You die wealthy, but your name appears only in the margins of literary history among the imitators.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 27
+      }
+    },
+    {
+      "id": 27,
+      "year": 1960,
+      "chapter": "Diverse Endings",
+      "title": "Reflection of a Lifetime",
+      "playerFact": "In old age, you look back at all the paths you've taken. Each road you chose left a mark of you on it. Now it is time to reflect.",
+      "historicalFact": "Every human being, at the end of life, faces the question: 'Was what I did worth it?'",
+      "question": "Are you satisfied with the entire journey of your life?",
       "weight": 2,
       "yes": {
-        "consequence": "You live with deep regret, thinking in your final moments that you should have had the courage to write your true heart.",
+        "consequence": "You die with peace of mind, knowing that even if you never achieved global fame, you lived honestly and never betrayed yourself.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live peacefully, telling yourself you escaped infamy and obscurity—unaware that no one even remembers you ever held a pen.",
+        "consequence": "You die regretting all the paths you never took, wishing you had walked one of them with more courage.",
         "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 28,
+      "year": 1945,
+      "chapter": "The Music Path",
+      "title": "The Night Café Singer",
+      "playerFact": "With your soulful voice, you become a beloved singer in the cafés of Tehran and Paris. Your songs tell stories of loneliness and the beauty of life. Your stage name is on everyone's lips.",
+      "historicalFact": "Some intellectuals of that era turned to music as a new way to express their feelings.",
+      "question": "Do you go to Paris to continue singing in its famous cafés?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You go to Paris and become an international singer. You live in Europe for years, and your name shines alongside the greats of café music.",
+        "historical": false,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 27
+      },
+      "no": {
+        "consequence": "You stay in Tehran and turn to traditional Persian music. You become known as a singer of classical radif, performing in private aristocratic gatherings.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 27
+      }
+    },
+    {
+      "id": 29,
+      "year": 1942,
+      "chapter": "The Mysticism Path",
+      "title": "The Intellectual Cleric",
+      "playerFact": "After years of retreat in Sufi lodges, studying mystical texts, you have arrived at a new understanding of faith. You are now known as an intellectual cleric who bridges tradition and modernity.",
+      "historicalFact": "Some intellectuals of that era, by turning to mysticism, reached a new interpretation of religion.",
+      "question": "Do you return to Tehran to teach comparative mysticism?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You return to Tehran and become a university professor. Your courses on comparative mysticism attract many students, and your name is recorded as an influential figure in the philosophy of religion.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 27
+      },
+      "no": {
+        "consequence": "You stay in the lodge and spend the rest of your life in meditation and writing mystical treatises. Your works gain attention in mystical circles after your death.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 27
+      }
+    },
+    {
+      "id": 30,
+      "year": 1952,
+      "chapter": "Return to Iran",
+      "title": "Life on the Margins",
+      "playerFact": "You return to Iran and start a simple life in a quiet corner of Tehran. You have stopped writing and spend most of your time reading and walking. Few people know that you are the author who once caused such controversy.",
+      "historicalFact": "Some disillusioned writers, after years, turned to simple, anonymous lives.",
+      "question": "In this simple life, do you find peace?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with deep peace and, in the end, become known among small circles of friends as a wise elder who withdrew from the world.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "The regret of your vibrant past stays with you until the end. Every night, memories of Paris and unfinished writings pass through your mind.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 40,
+      "year": 1951,
+      "chapter": "The Tragic End",
+      "title": "Immortality Through Death",
+      "playerFact": "You end your life. But in the years that follow, your writings are recognized as a treasure of Persian dark literature. Your name becomes immortal in the history of Persian literature, and future generations know you as a pioneer of modernism.",
+      "historicalFact": "Sadegh Hedayat committed suicide in Paris in 1951, and after his death, he became one of Iran's most influential writers.",
+      "question": "In your final moments, were you aware of this posthumous immortality?",
+      "weight": 5,
+      "yes": {
+        "consequence": "In your last moments, with the awareness that your works will live on after you, you find peace. Your death becomes a rebirth for Persian literature.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You die believing that everything ends with you. But the world you leave behind is far greater than what you imagined in those final moments.",
+        "historical": true,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
