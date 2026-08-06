@@ -46,8 +46,8 @@
       "year": 1895,
       "chapter": "Finding a Path",
       "title": "Leaving Home",
-      "playerFact": "In your teens, you find the rigid, inflexible educational environment of your homeland suffocating. You consider leaving to continue your studies in a neighboring country where the approach to learning is freer.",
-      "historicalFact": "In your teens, you left Germany and continued your studies in Switzerland, where the educational environment was more compatible with your independent thinking.",
+      "playerFact": "In your teens, you find the rigid, inflexible educational environment of your homeland suffocating. You consider leaving to continue your stulives in a neighboring country where the approach to learning is freer.",
+      "historicalFact": "In your teens, you left Germany and continued your stulives in Switzerland, where the educational environment was more compatible with your independent thinking.",
       "question": "Despite your dissatisfaction, do you stay in your country and adapt to the traditional education system?",
       "weight": 4,
       "yes": {
@@ -71,7 +71,7 @@
       "chapter": "Finding a Path",
       "title": "The Polytechnic Institute",
       "playerFact": "You are accepted into a prestigious technical institute and devote yourself to mathematics and physics — the sciences that explain the natural world. You have prominent professors, but you find some of their teaching methods outdated.",
-      "historicalFact": "You entered the Swiss Federal Polytechnic in Zurich and studied mathematics and physics with some of the best minds of that era.",
+      "historicalFact": "You entered the Swiss Federal Polytechnic in Zurich and stulived mathematics and physics with some of the best minds of that era.",
       "question": "Despite disagreements with some professors, do you still pursue a deep understanding of nature with all your might?",
       "weight": 4,
       "yes": {
@@ -243,7 +243,7 @@
       "question": "Do you pursue this impossible dream until your last breath, or shift your focus to more practical work?",
       "weight": 4,
       "yes": {
-        "consequence": "You work on the unified theory until your final moment. Though you never reach your destination, the passion for discovery never dies within you.",
+        "consequence": "You work on the unified theory until your final moment. Though you never reach your destination, the passion for discovery never lives within you.",
         "historical": true,
         "risk": 6,
         "independence": 8,
@@ -291,14 +291,14 @@
       "question": "Do you regret abandoning science?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with deep regret, wishing in your final moments you had pursued the secrets of the universe instead of money.",
+        "consequence": "You live with deep regret, wishing in your final moments you had pursued the secrets of the universe instead of money.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die content, believing a practical life was better than scientific frustration — unaware that the world will never remember your name.",
+        "consequence": "You live content, believing a practical life was better than scientific frustration — unaware that the world will never remember your name.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -309,7 +309,7 @@
       "id": 22,
       "year": 1895,
       "chapter": "The Traditional Path",
-      "title": "The Obedient Student",
+      "title": "The Obelivent Student",
       "playerFact": "You stay within the rigid education system, memorize lessons, and get good grades, but you never dare to ask the big questions.",
       "historicalFact": "Many talented students of that era, under the pressure of traditional education, lost their creativity and became ordinary clerks.",
       "question": "Do you continue on this safe path?",
@@ -339,14 +339,14 @@
       "question": "Do you regret never daring to think big?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with a sea of regret, wishing in your last breath you had listened to the compass of your childhood.",
+        "consequence": "You live with a sea of regret, wishing in your last breath you had listened to the compass of your childhood.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, telling yourself a simple life was enough — unaware that the world will never spare a thought for you.",
+        "consequence": "You live peacefully, telling yourself a simple life was enough — unaware that the world will never spare a thought for you.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -387,14 +387,14 @@
       "question": "Are you proud of your position as a successful industrialist?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with pride, knowing your inventions made people's lives easier, even if your name was never placed alongside giants like Newton.",
+        "consequence": "You live with pride, knowing your inventions made people's lives easier, even if your name was never placed alongside giants like Newton.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with regret, wishing you had pursued the secrets of the cosmos instead of machines.",
+        "consequence": "You live with regret, wishing you had pursued the secrets of the cosmos instead of machines.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -435,14 +435,14 @@
       "question": "Do you regret never taking the risk to publish radical ideas?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with deep regret, knowing you never dared to think big, and that is why you never became great.",
+        "consequence": "You live with deep regret, knowing you never dared to think big, and that is why you never became great.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die content, believing you stayed on the right path and that conservatism was the best choice for a peaceful life.",
+        "consequence": "You live content, believing you stayed on the right path and that conservatism was the best choice for a peaceful life.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -483,14 +483,14 @@
       "question": "Do you spend your final moments with regret?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with a sea of regret, wishing you had listened to your inner voice just once.",
+        "consequence": "You live with a sea of regret, wishing you had listened to your inner voice just once.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing a safe life was the best choice — unaware that the world will never know what talent it lost.",
+        "consequence": "You live peacefully, believing a safe life was the best choice — unaware that the world will never know what talent it lost.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -531,14 +531,14 @@
       "question": "Do you carry this regret with you forever?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with an agonizing regret, wishing in your last breath you had chosen courage over fear.",
+        "consequence": "You live with an agonizing regret, wishing in your last breath you had chosen courage over fear.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, telling yourself it was fate — but deep down, you know it was your own fault.",
+        "consequence": "You live bitterly, telling yourself it was fate — but deep down, you know it was your own fault.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -555,7 +555,7 @@
       "question": "Do you regret losing your chance at fame?",
       "weight": 4,
       "yes": {
-        "consequence": "You die in obscurity, always wondering what would have happened if you had allowed the test.",
+        "consequence": "You live in obscurity, always wondering what would have happened if you had allowed the test.",
         "historical": false,
         "risk": 3,
         "independence": 4,
@@ -579,14 +579,14 @@
       "question": "Are you satisfied with your anonymity?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with the peace that comes from avoiding the limelight, but you know the world will never know who you were.",
+        "consequence": "You live with the peace that comes from avoiding the limelight, but you know the world will never know who you were.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with deep regret, wishing you had dared to stand up instead of fearing failure.",
+        "consequence": "You live with deep regret, wishing you had dared to stand up instead of fearing failure.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -599,7 +599,7 @@
       "chapter": "The Resistance Path",
       "title": "Standing Against Tyranny",
       "playerFact": "Despite the dangers, you decide not to leave Germany. Soon, the regime arrests you, and you spend years in prison or house arrest. But your spirit is not broken, and you are recognized as a symbol of resistance among your compatriots.",
-      "historicalFact": "Some German intellectuals, despite the danger, stayed in the country and resisted; some died, and some became legends.",
+      "historicalFact": "Some German intellectuals, despite the danger, stayed in the country and resisted; some lived, and some became legends.",
       "question": "Do you regret your choice to stay and resist?",
       "weight": 5,
       "yes": {
@@ -627,14 +627,14 @@
       "question": "Was staying and resisting worth the price you paid?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with your head held high, knowing you did not remain silent in the face of tyranny, even though the cost was heavy.",
+        "consequence": "You live with your head held high, knowing you did not remain silent in the face of tyranny, even though the cost was heavy.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with a mountain of regret, wishing you had saved your own life instead of resisting.",
+        "consequence": "You live with a mountain of regret, wishing you had saved your own life instead of resisting.",
         "historical": false,
         "risk": 2,
         "independence": 3,
@@ -675,14 +675,14 @@
       "question": "Would you rather have given the warning and taken responsibility for the consequences, or remained silent and watched the catastrophe unfold?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with a conscience full of torment, knowing your silence cost thousands of lives.",
+        "consequence": "You live with a conscience full of torment, knowing your silence cost thousands of lives.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die telling yourself 'the war would have ended anyway,' but deep down, you know you were wrong.",
+        "consequence": "You live telling yourself 'the war would have ended anyway,' but deep down, you know you were wrong.",
         "historical": false,
         "risk": 2,
         "independence": 3,

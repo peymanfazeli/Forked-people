@@ -72,7 +72,7 @@
       "title": "Dropping Out of College",
       "playerFact": "You enroll in a liberal arts college but soon feel that formal education is not for you. It's expensive, and your family's finances are strained.",
       "historicalFact": "You enrolled in Reed College but dropped out after about six months, partly due to financial pressure on your adoptive parents.",
-      "question": "Do you stay in college and continue your studies until you earn a degree?",
+      "question": "Do you stay in college and continue your stulives until you earn a degree?",
       "weight": 4,
       "yes": {
         "consequence": "You stay in college and continue toward a conventional degree.",
@@ -190,7 +190,7 @@
       "year": 1977,
       "chapter": "Building a Company",
       "title": "The Polished Version",
-      "playerFact": "Your machine is gaining attention. It's still mostly a device for hobbyists, but you believe it can reach a much broader audience. You want to make it polished, accessible, and beautiful — something people would want in their homes.",
+      "playerFact": "Your machine is gaining attention. It's still mostly a device for hobbyists, but you believe it can reach a much broader aulivence. You want to make it polished, accessible, and beautiful — something people would want in their homes.",
       "historicalFact": "The second version of your product became a huge success, helping establish your company as a major force in personal computing. It set a new standard for what a personal computer could be.",
       "question": "Your machine is gaining traction. Will you invest heavily to turn it into a polished consumer product?",
       "weight": 5,
@@ -267,14 +267,14 @@
       "question": "Do you regret not accepting the adoption?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had given the child a better chance at life.",
+        "consequence": "You live with regret, wishing you had given the child a better chance at life.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing you made the right decision — unaware that the world lost a genius.",
+        "consequence": "You live peacefully, believing you made the right decision — unaware that the world lost a genius.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -315,14 +315,14 @@
       "question": "Do you regret staying in college?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to drop out.",
+        "consequence": "You live with regret, wishing you had had the courage to drop out.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing education was the best choice — unaware that the world will never know your name.",
+        "consequence": "You live peacefully, believing education was the best choice — unaware that the world will never know your name.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -339,14 +339,14 @@
       "question": "Do you regret not studying calligraphy?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had valued aesthetics as well.",
+        "consequence": "You live with regret, wishing you had valued aesthetics as well.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with pride, believing function is more important than beauty — unaware that design was the key to your competitors' success.",
+        "consequence": "You live with pride, believing function is more important than beauty — unaware that design was the key to your competitors' success.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -363,14 +363,14 @@
       "question": "Do you regret not going on the spiritual journey?",
       "weight": 3,
       "yes": {
-        "consequence": "You die wealthy but with an empty heart, wishing you had cared for your soul as well.",
+        "consequence": "You live wealthy but with an empty heart, wishing you had cared for your soul as well.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with pride, believing pragmatism is better than dreaming — though your products never have soul or unique appeal.",
+        "consequence": "You live with pride, believing pragmatism is better than dreaming — though your products never have soul or unique appeal.",
         "historical": false,
         "risk": 2,
         "independence": 3,
@@ -387,14 +387,14 @@
       "question": "Do you regret turning down that job?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had paid attention to that early opportunity.",
+        "consequence": "You live with regret, wishing you had paid attention to that early opportunity.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing fate had other plans — but you know you missed a big chance.",
+        "consequence": "You live peacefully, believing fate had other plans — but you know you missed a big chance.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -411,14 +411,14 @@
       "question": "Do you regret not turning it into a business?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to invest in it.",
+        "consequence": "You live with regret, wishing you had had the courage to invest in it.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing these machines were just hobbies — unaware they would change the world.",
+        "consequence": "You live peacefully, believing these machines were just hobbies — unaware they would change the world.",
         "historical": false,
         "risk": 2,
         "independence": 3,
@@ -435,14 +435,14 @@
       "question": "Do you regret focusing only on hobbyists?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had thought about ordinary people too.",
+        "consequence": "You live with regret, wishing you had thought about ordinary people too.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with pride, believing your products were for the best — though your company stayed small and the world passed you by.",
+        "consequence": "You live with pride, believing your products were for the best — though your company stayed small and the world passed you by.",
         "historical": false,
         "risk": 2,
         "independence": 3,
@@ -459,14 +459,14 @@
       "question": "Do you regret fighting for power?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had gone your own way and started over instead of fighting.",
+        "consequence": "You live with regret, wishing you had gone your own way and started over instead of fighting.",
         "historical": false,
         "risk": 5,
         "independence": 4,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, believing you were right — but the company died, and you with it.",
+        "consequence": "You live bitterly, believing you were right — but the company lived, and you with it.",
         "historical": false,
         "risk": 4,
         "independence": 3,
@@ -483,14 +483,14 @@
       "question": "Do you regret retiring early?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to start over instead of withdrawing.",
+        "consequence": "You live with regret, wishing you had had the courage to start over instead of withdrawing.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing a quiet life is better than the stress of entrepreneurship — unaware that the world will never remember your name.",
+        "consequence": "You live peacefully, believing a quiet life is better than the stress of entrepreneurship — unaware that the world will never remember your name.",
         "historical": false,
         "risk": 2,
         "independence": 3,

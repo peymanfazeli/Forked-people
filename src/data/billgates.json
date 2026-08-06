@@ -34,7 +34,7 @@
         "nextEvent": 2
       },
       "no": {
-        "consequence": "You decide these machines are just a hobby and focus your attention on regular studies.",
+        "consequence": "You decide these machines are just a hobby and focus your attention on regular stulives.",
         "historical": false,
         "risk": 1,
         "independence": 3,
@@ -95,7 +95,7 @@
       "chapter": "The Decision",
       "title": "Famous University",
       "playerFact": "You are accepted into one of the most prestigious universities in the world. Your family expects you to go, and it is a remarkable opportunity — but it means leaving behind the practical work you love.",
-      "historicalFact": "You enrolled at Harvard University in 1973, where you studied mathematics and computer science.",
+      "historicalFact": "You enrolled at Harvard University in 1973, where you stulived mathematics and computer science.",
       "question": "Do you drop out of university and jump straight into entrepreneurship?",
       "weight": 3,
       "yes": {
@@ -262,7 +262,7 @@
       "year": 1970,
       "chapter": "The Ordinary Path",
       "title": "The Model Employee",
-      "playerFact": "You abandon computing machines and turn to ordinary studies and a normal life. You become a diligent clerk in a government office.",
+      "playerFact": "You abandon computing machines and turn to ordinary stulives and a normal life. You become a diligent clerk in a government office.",
       "historicalFact": "Many of your talented contemporaries, by not pursuing technology opportunities, remained in ordinary jobs.",
       "question": "Are you satisfied with this quiet, carefree life?",
       "weight": 3,
@@ -291,14 +291,14 @@
       "question": "Do you regret abandoning that computing machine?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing in your final moments you had chosen courage over security.",
+        "consequence": "You live with regret, wishing in your final moments of your life you had chosen courage over security.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die content, believing a quiet life was better than the anxieties of entrepreneurship — unaware that the world will never remember your name.",
+        "consequence": "You live content, believing a quiet life was better than the anxieties of entrepreneurship — unaware that the world will never remember your name.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -339,18 +339,18 @@
       "question": "Are you satisfied with this anonymity?",
       "weight": 2,
       "yes": {
-        "consequence": "You die peacefully, knowing you did your work right, even though the world never knew you.",
+        "consequence": "You live peacefully, knowing you did your work right, even though the world never knew you.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with regret, wishing you had built a powerful partnership instead of going it alone.",
+        "consequence": "You look at the other's progress with regret, wishing you had built a powerful partnership instead of going it alone.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 50
       }
     },
     {
@@ -358,7 +358,7 @@
       "year": 1972,
       "chapter": "The Conservative Path",
       "title": "The Diligent Student",
-      "playerFact": "You abandon practical projects and focus on school and university studies. You get excellent grades and are recognized as a model student.",
+      "playerFact": "You abandon practical projects and focus on school and university stulives. You get excellent grades and are recognized as a model student.",
       "historicalFact": "Many talented students, by prioritizing grades over practical experience, never fulfilled their potential.",
       "question": "Do you continue on this academic path?",
       "weight": 3,
@@ -387,14 +387,14 @@
       "question": "Do you regret choosing the academic path?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had built a great product instead of just teaching.",
+        "consequence": "You live with regret, wishing you had built a great product instead of just teaching.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing the university was a worthy place for you, though the world never felt your impact.",
+        "consequence": "You live peacefully, believing the university was a worthy place for you, though the world never felt your impact.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -435,14 +435,14 @@
       "question": "Are you satisfied with your moderate success, or do you still regret not reaching the peak?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with pride, knowing you built something from your initial failure, even if you never reached the summit.",
+        "consequence": "You live with pride, knowing you built something from your initial failure, even if you never reached the summit.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with regret, always wondering what would have happened if you hadn't left university at that time.",
+        "consequence": "You live with regret, always wondering what would have happened if you hadn't left university at that time.",
         "historical": false,
         "risk": 2,
         "independence": 3,
@@ -483,14 +483,14 @@
       "question": "Do you wish you had taken the risk and entered the game?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had chosen courage over caution.",
+        "consequence": "You live with regret, wishing you had chosen courage over caution.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die content, believing caution saved you from big failures — unaware that you also lost big opportunities.",
+        "consequence": "You live content, believing caution saved you from big failures — unaware that you also lost big opportunities.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -531,14 +531,14 @@
       "question": "Do you wish you had chosen one path full-time?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had focused on one goal instead of being torn between two.",
+        "consequence": "You live with regret, wishing you had focused on one goal instead of being torn between two.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, blaming circumstances, but deep down you know it was your own fault.",
+        "consequence": "You live bitterly, blaming circumstances, but deep down you know it was your own fault.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -579,14 +579,14 @@
       "question": "Do you carry this regret with you forever?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with an agonizing regret, wishing you had chosen courage over fear.",
+        "consequence": "You live with an agonizing regret, wishing you had chosen courage over fear.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, telling yourself it was fate — but deep down, you know it was your own fault.",
+        "consequence": "You live bitterly, telling yourself it was fate — but deep down, you know it was your own fault.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -627,14 +627,14 @@
       "question": "Do you wish you had signed that contract differently?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing in your final moments you had thought about the long-term future instead of short-term security.",
+        "consequence": "You live with regret, wishing in your final moments you had thought about the long-term future instead of short-term security.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, telling yourself it was fate — but you know you destroyed your own future.",
+        "consequence": "You live bitterly, telling yourself it was fate — but you know you destroyed your own future.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -675,14 +675,38 @@
       "question": "Do you wish you had moved toward graphics in time?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had been more flexible and seen the future sooner instead of being stubborn.",
+        "consequence": "You live with regret, wishing you had been more flexible and seen the future sooner instead of being stubborn.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with pride, believing you preserved the correctness of your methods, even though the world moved on without you.",
+        "consequence": "You live with pride, believing you preserved the correctness of your methods, even though the world moved on without you.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 50,
+      "year": 2000,
+      "chapter": "The Traditionalist Path",
+      "title": "Survivor of the Text Era",
+      "playerFact": "While the world moves toward images and interaction, you still cling to old methods. Your company is small and getting smaller.",
+      "historicalFact": "The history of technology is a graveyard of companies that couldn't adapt to change.",
+      "question": "You wish you had made a partnership",
+      "weight": 2,
+      "yes": {
+        "consequence": "Rivals have started to distribute interactive operation systems and make a bundle",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with honor and believe your point of view was utmost priotiry, although no-one knows about you",
         "historical": false,
         "risk": 1,
         "independence": 2,

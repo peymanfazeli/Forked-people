@@ -47,7 +47,7 @@
       "chapter": "The Inventor",
       "title": "Technical University",
       "playerFact": "You have been accepted to study electrical engineering at a prestigious technical university. This field could lead you to a deep understanding of electricity, but some friends say it's a difficult and unrewarding path.",
-      "historicalFact": "You studied electrical engineering at the Austrian Polytechnic in Graz and became deeply interested in the problems of electrical machines and their limitations.",
+      "historicalFact": "You stulived electrical engineering at the Austrian Polytechnic in Graz and became deeply interested in the problems of electrical machines and their limitations.",
       "question": "Do you give up on studying electrical engineering at the university and choose another path?",
       "weight": 4,
       "yes": {
@@ -267,14 +267,14 @@
       "question": "Do you regret stifling the child's curiosity?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had let them pursue their dreams instead of normalizing them.",
+        "consequence": "As the child grows up you understand his dejection, and take it as lame excuses.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": 21
       },
       "no": {
-        "consequence": "You die peacefully, believing you did the best for your child — unaware that the world lost a genius.",
+        "consequence": "You live peacefully, believing you did the best for your child and if he wanted to do something extraordinary he could — unaware that the world lost a genius.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -291,14 +291,14 @@
       "question": "Do you wish you had encouraged them instead of suppressing them?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with deep regret, wishing in your final moments you had allowed them to be different instead of fearing abnormality.",
+        "consequence": "You are on your last leg and wish your child could find his Path",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 50
       },
       "no": {
-        "consequence": "You die content, thinking your child had a good life — but your name is recorded in no history book.",
+        "consequence": "You live content, thinking your child had a good life — but your name is recorded in no history book.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -339,14 +339,14 @@
       "question": "Do you wish you had pursued electricity instead of bridges?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to choose the unknown path instead of security.",
+        "consequence": "You live with regret, wishing you had had the courage to choose the unknown path instead of security.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with pride, proud of your structures, though you know you have no place in the history of science.",
+        "consequence": "You live with pride, proud of your structures, though you know you have no place in the history of science.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -387,14 +387,14 @@
       "question": "Do you carry this regret with you forever?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with an agonizing regret, wishing in your last breath you had chosen courage over fear.",
+        "consequence": "You live with an agonizing regret, wishing in your last breath you had chosen courage over fear.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, telling yourself it was fate — but deep down, you know it was your own fault.",
+        "consequence": "You live bitterly, telling yourself it was fate — but deep down, you know it was your own fault.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -435,14 +435,14 @@
       "question": "Do you wish you had gone to America?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to travel and take risks.",
+        "consequence": "You live with regret, wishing you had had the courage to travel and take risks.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, telling yourself you preferred your homeland over fame — though you know your impact on history is small.",
+        "consequence": "You live peacefully, telling yourself you preferred your homeland over fame — though you know your impact on history is small.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -459,14 +459,14 @@
       "question": "Do you regret this forced alignment?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to stand up instead of obeying.",
+        "consequence": "You live with regret, wishing you had had the courage to stand up instead of obeying.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": 29
       },
       "no": {
-        "consequence": "You die peacefully, believing that collaborating with your employer was the wise choice, though you never reached the peak.",
+        "consequence": "You live peacefully, believing that collaborating with your employer was the wise choice, though you never reached the peak.",
         "historical": false,
         "risk": 2,
         "independence": 3,
@@ -483,14 +483,14 @@
       "question": "Do you wish you had gone your own way?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had pursued your own vision instead of aligning with your boss.",
+        "consequence": "You live with regret, wishing you had pursued your own vision instead of aligning with your boss.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with pride, proud to have worked alongside a genius, even though you never became one yourself.",
+        "consequence": "You live with pride, proud to have worked alongside a genius, even though you never became one yourself.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -507,14 +507,14 @@
       "question": "Do you regret this scattering?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had focused on one big idea instead of many incomplete ones.",
+        "consequence": "You live with regret, wishing you had focused on one big idea instead of many incomplete ones.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": 31
       },
       "no": {
-        "consequence": "You die peacefully, believing variety made your life interesting, though you added nothing important to the world.",
+        "consequence": "You live peacefully, believing variety made your life interesting, though you added nothing important to the world.",
         "historical": false,
         "risk": 2,
         "independence": 5,
@@ -531,14 +531,14 @@
       "question": "Do you wish you had focused on one idea?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to focus instead of scattering your efforts.",
+        "consequence": "You live with regret, wishing you had had the courage to focus instead of scattering your efforts.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die content, believing your varied life was valuable — unaware that the world never felt your impact.",
+        "consequence": "You live content, believing your varied life was valuable — unaware that the world never felt your impact.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -579,14 +579,14 @@
       "question": "Do you wish you had chosen partnership over independence?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had thought about sustainability instead of pride.",
+        "consequence": "You live with regret, wishing you had thought about sustainability instead of pride.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with pride, believing you maintained your independence even in failure — though the world does not remember you.",
+        "consequence": "You live with pride, believing you maintained your independence even in failure — though the world does not remember you.",
         "historical": false,
         "risk": 2,
         "independence": 3,
@@ -610,7 +610,7 @@
         "nextEvent": 35
       },
       "no": {
-        "consequence": "You never make your technology public and die in isolation, while the world never knows who you were.",
+        "consequence": "You never make your technology public and live in isolation, while the world never knows who you were.",
         "historical": false,
         "risk": 2,
         "independence": 5,
@@ -622,19 +622,19 @@
       "year": 1910,
       "chapter": "The Conservative Path",
       "title": "The Hidden Treasure",
-      "playerFact": "You have hidden your inventions in drawers and never shown them to anyone. When you die, you take them to the grave, and the world never learns of their existence.",
+      "playerFact": "You have hidden your inventions in drawers and never shown them to anyone. When you live, you take them to the grave, and the world never learns of their existence.",
       "historicalFact": "The history of science is full of unknown ideas that were never seen.",
       "question": "Do you wish you had shown them to the world?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to share instead of hiding.",
+        "consequence": "You live with regret, wishing you had had the courage to share instead of hiding.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing your ideas die with you — but you know the world lost something it will never find.",
+        "consequence": "You live peacefully, believing your ideas live with you — but you know the world lost something it will never find.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -651,14 +651,14 @@
       "question": "Do you regret this practical choice?",
       "weight": 4,
       "yes": {
-        "consequence": "You die wealthy but with an empty heart, always wishing you had continued those experiments.",
+        "consequence": "You live wealthy but with an empty heart, always wishing you had continued those experiments.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": 37
       },
       "no": {
-        "consequence": "You die satisfied with your wealth, believing rationality is better than dreaming — but you know you never came close to the frontiers of knowledge.",
+        "consequence": "You live satisfied with your wealth, believing rationality is better than dreaming — but you know you never came close to the frontiers of knowledge.",
         "historical": false,
         "risk": 2,
         "independence": 3,
@@ -675,19 +675,43 @@
       "question": "Was wealth worth the loss of the dream?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with regret, wishing you had pursued your dreams instead of money.",
+        "consequence": "You live with regret, wishing you had pursued your dreams instead of money.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with pride, proud of your wealth, but deep down you know the world will never remember you.",
+        "consequence": "You live with pride, proud of your wealth, but deep down you know the world will never remember you.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       }
-    }
+    },
+    {
+      "id": 50,
+      "year": 1910,
+      "chapter": "مسیر عادی",
+      "title": "زندگی بی‌اثر",
+      "playerFact": "After talking to your dad, You make effort work round the clock to get to success but It is a farfetched goal",
+      "historicalFact": "بسیاری از خانواده‌ها با سرکوب خلاقیت کودکان، استعدادهای بزرگ را از دست دادند.",
+      "question": "Would you give up by facing the other's success while for you every thing was steady?",
+      "weight": 2,
+      "yes": {
+        "consequence": " Give up and make your Earning to live like before.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "Although you are aged, but the Progress is too slow.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 34
+      }
+    }    
   ]
 }

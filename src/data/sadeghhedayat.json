@@ -47,7 +47,7 @@
       "chapter": "The European Sojourn",
       "title": "Studying Abroad",
       "playerFact": "Your wealthy family sends you to Europe to study a practical field—engineering, architecture, or dentistry. But in the lecture halls, your mind wanders elsewhere: to crowded writer's cafés and the books you truly long to read.",
-      "historicalFact": "You traveled to Europe for studies, but spent more time writing and exploring modern literary scenes than attending classes.",
+      "historicalFact": "You traveled to Europe for stulives, but spent more time writing and exploring modern literary scenes than attending classes.",
       "question": "Do you continue your formal education and earn a university degree?",
       "weight": 4,
       "yes": {
@@ -58,7 +58,7 @@
         "nextEvent": 4
       },
       "no": {
-        "consequence": "You abandon formal studies and spend your nights in the literary circles of Paris and Brussels, feeding your soul with modernism.",
+        "consequence": "You abandon formal stulives and spend your nights in the literary circles of Paris and Brussels, feeding your soul with modernism.",
         "historical": true,
         "risk": 8,
         "independence": 9,
@@ -147,7 +147,7 @@
       "question": "Do you endure the hardships of traveling to that distant country to get your book printed?",
       "weight": 4,
       "yes": {
-        "consequence": "You go to India, publish the book, and stay there for months, becoming fascinated with ancient Persian heritage (Pahlavi and Zoroastrian studies).",
+        "consequence": "You go to India, publish the book, and stay there for months, becoming fascinated with ancient Persian heritage (Pahlavi and Zoroastrian stulives).",
         "historical": true,
         "risk": 7,
         "independence": 8,
@@ -267,14 +267,14 @@
       "question": "Do you regret never taking a risk and never putting your inner darkness into words?",
       "weight": 2,
       "yes": {
-        "consequence": "You die with deep regret, thinking in your final moments that you should have had the courage to write your true heart.",
+        "consequence": "You live with deep regret, thinking in your final moments that you should have had the courage to write your true heart.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, telling yourself you escaped infamy and obscurity—unaware that no one even remembers you ever held a pen.",
+        "consequence": "You live peacefully, telling yourself you escaped infamy and obscurity—unaware that no one even remembers you ever held a pen.",
         "historical": false,
         "risk": 1,
         "independence": 2,

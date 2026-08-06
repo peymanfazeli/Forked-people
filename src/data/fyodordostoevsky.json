@@ -22,8 +22,8 @@
       "year": 1837,
       "chapter": "The Beginning",
       "title": "Father's Death",
-      "playerFact": "Your father, a strict doctor, dies suddenly and violently. This blow confronts you in your youth with bitter questions about death, justice, and the meaning of life.",
-      "historicalFact": "Your father, Mikhail Dostoevsky, died in 1839, and you faced this loss at age 18, an event that shaped your dark view of life.",
+      "playerFact": "Your father, a strict doctor, lives suddenly and violently. This blow confronts you in your youth with bitter questions about death, justice, and the meaning of life.",
+      "historicalFact": "Your father, Mikhail Dostoevsky, lived in 1839, and you faced this loss at age 18, an event that shaped your dark view of life.",
       "question": "Does this loss drive you toward deep existential questions?",
       "weight": 3,
       "yes": {
@@ -47,7 +47,7 @@
       "chapter": "Youth",
       "title": "Military Academy",
       "playerFact": "To please your family, you enter a military academy, but soon realize military life is suffocating. Instead, you spend nights studying literature and writing short stories.",
-      "historicalFact": "You studied at the St. Petersburg Academy of Military Engineering, but you were more interested in literature and writing than in your studies.",
+      "historicalFact": "You stulived at the St. Petersburg Academy of Military Engineering, but you were more interested in literature and writing than in your stulives.",
       "question": "Do you prefer military duty over your love of writing?",
       "weight": 4,
       "yes": {
@@ -267,14 +267,14 @@
       "question": "Do you regret ignoring suffering and the big questions?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had looked into the depths of your soul instead of running away.",
+        "consequence": "You live with regret, wishing you had looked into the depths of your soul instead of running away.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing a carefree life is better — unaware that the world lost one of its greatest writers.",
+        "consequence": "You live peacefully, believing a carefree life is better — unaware that the world lost one of its greatest writers.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -291,14 +291,14 @@
       "question": "Do you wish you had chosen writing instead of military service?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to follow your true love.",
+        "consequence": "You live with regret, wishing you had had the courage to follow your true love.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die with pride, proud of your military service, though you know your name is not in history.",
+        "consequence": "You live with pride, proud of your military service, though you know your name is not in history.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -315,14 +315,14 @@
       "question": "Do you regret abandoning writing?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to continue instead of giving in to fear.",
+        "consequence": "You live with regret, wishing you had had the courage to continue instead of giving in to fear.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing you chose silence over criticism — but your books were never read.",
+        "consequence": "You live peacefully, believing you chose silence over criticism — but your books were never read.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -339,14 +339,14 @@
       "question": "Do you regret surrendering in the face of death?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had chosen honor over humiliation.",
+        "consequence": "You live with regret, wishing you had chosen honor over humiliation.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, believing survival matters more than any belief — but you lost your soul.",
+        "consequence": "You live bitterly, believing survival matters more than any belief — but you lost your soul.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -363,14 +363,14 @@
       "question": "Do you regret not turning suffering into art?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had drawn inspiration from your suffering instead of anger.",
+        "consequence": "You live with regret, wishing you had drawn inspiration from your suffering instead of anger.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, believing nothing is worth writing — but you know the world lost a masterpiece.",
+        "consequence": "You live bitterly, believing nothing is worth writing — but you know the world lost a masterpiece.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -387,14 +387,14 @@
       "question": "Do you regret escaping from the past?",
       "weight": 3,
       "yes": {
-        "consequence": "You die with regret, wishing you had used your experiences to create art instead of fleeing.",
+        "consequence": "You live with regret, wishing you had used your experiences to create art instead of fleeing.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing a quiet life is better than the troubles of writing — but you know you silenced a voice.",
+        "consequence": "You live peacefully, believing a quiet life is better than the troubles of writing — but you know you silenced a voice.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -411,14 +411,14 @@
       "question": "Do you regret choosing gambling over writing?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had entrusted your suffering to paper instead of the gambling table.",
+        "consequence": "You live with regret, wishing you had entrusted your suffering to paper instead of the gambling table.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, believing it was your fate — but you know you destroyed your own future.",
+        "consequence": "You live bitterly, believing it was your fate — but you know you destroyed your own future.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -430,19 +430,19 @@
       "year": 1867,
       "chapter": "The Popular Path",
       "title": "The Superficial Writer",
-      "playerFact": "Instead of a controversial and deep novel, you write light, entertaining stories that please the general audience. You achieve financial success but never reach the depths of truth.",
+      "playerFact": "Instead of a controversial and deep novel, you write light, entertaining stories that please the general aulivence. You achieve financial success but never reach the depths of truth.",
       "historicalFact": "Literary history is full of writers who chose entertainment over depth and were forgotten.",
       "question": "Do you regret choosing superficiality over depth?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had valued artistic honesty over popularity.",
+        "consequence": "You live with regret, wishing you had valued artistic honesty over popularity.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die content, believing making people happy is valuable — but your name is not recorded in literary history.",
+        "consequence": "You live content, believing making people happy is valuable — but your name is not recorded in literary history.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -459,14 +459,14 @@
       "question": "Do you regret not trusting your secretary?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had let someone into your life instead of going it alone.",
+        "consequence": "You live with regret, wishing you had let someone into your life instead of going it alone.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die bitterly, believing independence is valuable — but loneliness destroyed you.",
+        "consequence": "You live bitterly, believing independence is valuable — but loneliness destroyed you.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -478,19 +478,19 @@
       "year": 1881,
       "chapter": "The Unfinished Path",
       "title": "The Masterpiece Never Written",
-      "playerFact": "You abandon the novel about three brothers. You write shorter stories and never achieve artistic completeness. When you die, your readers await a work that was never published.",
-      "historicalFact": "Dostoevsky never wrote the second part of \"The Brothers Karamazov\" and died in 1881, but that single volume was enough to make him immortal.",
+      "playerFact": "You abandon the novel about three brothers. You write shorter stories and never achieve artistic completeness. When you live, your readers await a work that was never published.",
+      "historicalFact": "Dostoevsky never wrote the second part of \"The Brothers Karamazov\" and lived in 1881, but that single volume was enough to make him immortal.",
       "question": "Do you regret not writing the final masterpiece?",
       "weight": 4,
       "yes": {
-        "consequence": "You die with regret, wishing you had had the courage to write that great work.",
+        "consequence": "You live with regret, wishing you had had the courage to write that great work.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You die peacefully, believing what you wrote was enough — but you know the world lost something great.",
+        "consequence": "You live peacefully, believing what you wrote was enough — but you know the world lost something great.",
         "historical": false,
         "risk": 1,
         "independence": 2,

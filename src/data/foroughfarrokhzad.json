@@ -1,0 +1,285 @@
+{
+  "id": "forough-farrokhzad",
+  "name": "Forough Farrokhzad",
+  "birthYear": 1934,
+  "description": "A journey through courage, rebellion, and art — from a tradition-bound girl to a poet who shook the century with her feminine voice.",
+  "scoring": {
+    "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
+    "risk": "average risk score of selected choices",
+    "independence": "average independence score of selected choices",
+    "scoreRange": {
+      "min": 0,
+      "max": 100
+    }
+  },
+  "ending": {
+    "title": "Your Fate: Restless Poet or Woman on the Margins",
+    "revealName": true
+  },
+  "events": [
+    {
+      "id": 1,
+      "year": 1951,
+      "chapter": "The Beginning",
+      "title": "Early Marriage",
+      "playerFact": "At 16, you meet a man 15 years older than you. He is interested in poetry and art, and he introduces you to a new world. Your family opposes the marriage, but you feel it's a way to escape the cage.",
+      "historicalFact": "Forough married Parviz Shapour, her classmate's uncle, at 16 and moved to Ahvaz.",
+      "question": "Despite your family's opposition, do you agree to this marriage?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You leave home and step into a new world, though this marriage soon becomes another cage.",
+        "historical": true,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 2
+      },
+      "no": {
+        "consequence": "You back out of the marriage and stay in your family home. A quiet life, but one lacking the passion that burns inside you.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 20
+      }
+    },
+    {
+      "id": 2,
+      "year": 1954,
+      "chapter": "Rebellion",
+      "title": "Leaving the Husband",
+      "playerFact": "Years of marriage pass. You have a son. But life with him has become routine, and what once felt like poetry now feels stifling. You decide to leave everything behind, even your child.",
+      "historicalFact": "Forough divorced her husband in 1954 and gave up custody of her son. This divorce was a turning point in her life.",
+      "question": "Despite having a child, do you leave your husband and leave everything behind?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You get divorced and step into the unknown without support. Freedom comes at a price, and you know it.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 3
+      },
+      "no": {
+        "consequence": "You stay in the marriage, trapped in the cage. Your poetry never reaches its full rebellion, and your name fades into obscurity.",
+        "historical": false,
+        "risk": 4,
+        "independence": 3,
+        "nextEvent": 22
+      }
+    },
+    {
+      "id": 3,
+      "year": 1956,
+      "chapter": "Poetry and Boldness",
+      "title": "Publishing Controversial Poems",
+      "playerFact": "You are alone, vulnerable yet free. You have notebooks of new poems — 'The Wall' and 'Rebellion' — poems about loneliness, about being a woman, about desire. You know publishing them will cause a storm.",
+      "historicalFact": "'The Wall' and 'Rebellion' were published between 1956 and 1957, making Forough a controversial poet.",
+      "question": "Do you publish these bold poems, even though you know they break traditions?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Your poems are published, and your name becomes famous. Some praise you, others condemn you. But there's no turning back.",
+        "historical": true,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 4
+      },
+      "no": {
+        "consequence": "You hide the poems in a drawer, afraid of judgment. You never become what you could have been.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 24
+      }
+    },
+    {
+      "id": 4,
+      "year": 1958,
+      "chapter": "World and Loneliness",
+      "title": "Journey to Europe",
+      "playerFact": "After publishing your poems, you receive an invitation to travel to Europe. An opportunity to see a new world, meet artists, and breathe freer air.",
+      "historicalFact": "Forough traveled to Italy, Germany, and England in 1958, meeting European artists and intellectuals.",
+      "question": "Do you travel to Europe to open new horizons?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Traveling to Europe broadens your worldview and gives your poetry new colors, though loneliness accompanies you.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 5
+      },
+      "no": {
+        "consequence": "You stay in Iran, never seeing those new horizons. Your poetry remains within the same repetitive space.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 26
+      }
+    },
+    {
+      "id": 5,
+      "year": 1962,
+      "chapter": "Filmmaking",
+      "title": "Film and Lepers",
+      "playerFact": "During your travels in Europe, you discovered cinema and filmmaking. Now you have a chance to go to a place in Iran where no one dares to go: a leper colony. You want to make a film about them, about their lives and suffering.",
+      "historicalFact": "In 1962, Forough made the documentary 'The House Is Black' about the lepers of Baba Baghi, which received international acclaim.",
+      "question": "Do you go to the leper colony and make a film about them, even though it's dangerous?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You make 'The House Is Black' — a film that pushes the boundaries of documentary art and makes your name immortal in cinema too.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 6
+      },
+      "no": {
+        "consequence": "You give up on this dangerous project and continue with poetry and simpler work. You never make that lasting film.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 28
+      }
+    },
+    {
+      "id": 6,
+      "year": 1963,
+      "chapter": "Love and Death",
+      "title": "The Final Chapter",
+      "playerFact": "Your final years are filled with unmatched passion. You write 'Another Birth' and 'Let Us Believe in the Beginning of the Cold Season'. A new love enters your life — a man as stormy as you. But life always has a bitter end for poets.",
+      "historicalFact": "Forough published 'Another Birth' in 1963 and had a romantic and artistic relationship with Ebrahim Golestan in later years. She lived in a car accident on February 13, 1967.",
+      "question": "Do you embrace love and continue writing until the bitter end, even knowing a harsh ending awaits you?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You live fully, write, and love. Your early death immortalizes your name, and your poems shine forever in the history of Persian literature.",
+        "historical": true,
+        "risk": 10,
+        "independence": 10,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You withdraw from danger. You live a quiet, long life, but 'Another Birth' is never written, and your name remains as a mediocre poet in history.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 20,
+      "year": 1961,
+      "chapter": "The Traditional Path",
+      "title": "A Faithful Wife",
+      "playerFact": "You back out of the early marriage and stay in your family home. Years later, you marry a respectable man who knows nothing about poetry. Your life is calm, but empty of the passion that burns inside you.",
+      "historicalFact": "Some women of Forough's era, by staying within tradition, led ordinary and uneventful lives.",
+      "question": "Do you regret your safe choice and long for a different life?",
+      "weight": 3,
+      "yes": {
+        "consequence": "With regret for the lost poetry, you remain suffocated until the end and never become what you could have been.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live peacefully, content with your life, but your name is never recorded in literary history, and no one ever hears your voice.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 22,
+      "year": 1966,
+      "chapter": "The Compromise Path",
+      "title": "A Woman in a Cage",
+      "playerFact": "You stay with your husband, even though the love of the early days is gone. Your poetry never reaches true rebellion and always remains on the margins of official literature.",
+      "historicalFact": "Literary history is full of women who, by remaining in the cage, never reached their potential.",
+      "question": "Do you regret not writing those daring poems?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with deep regret, wishing you had had the courage to let go of everything.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with apparent peace, telling yourself a quiet life was better than poetic controversy — but you know you silenced a scream.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 24,
+      "year": 1957,
+      "chapter": "The Silence Path",
+      "title": "The Unknown Poet",
+      "playerFact": "You don't publish your controversial poems and spend years in silence. Sometimes you write for yourself, but you never dare to share. When you live, no one knows what treasure you carried in your chest.",
+      "historicalFact": "Literary history is full of poets who buried their talent in silence.",
+      "question": "Do you regret your silence and muteness?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with an agonizing regret, wishing you had had the courage to publish instead of fearing.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live in peace of mind, but the world never learns of your existence, and your name fades into the darkness of history.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 26,
+      "year": 1959,
+      "chapter": "The Homeland Path",
+      "title": "The Homebound Poet",
+      "playerFact": "You don't go to Europe and stay in Iran. Although your poems are read inside the country, you never achieve the global depth you could have reached.",
+      "historicalFact": "Some poets of Forough's era, by not going to Europe, never achieved global fame.",
+      "question": "Do you regret not going to Europe?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with regret for the unseen horizons, wishing you had had the courage to travel.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with pride, saying you remained loyal to your homeland — but you know the world never heard your voice.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 28,
+      "year": 1963,
+      "chapter": "The Withdrawal Path",
+      "title": "The Artist Who Didn't Go",
+      "playerFact": "You give up on making the film about lepers and turn to simpler, less risky work. You never make that lasting film, and your name is never recorded in cinema history.",
+      "historicalFact": "Some filmmakers of that era, due to fear of controversy, never completed their grand projects.",
+      "question": "Do you regret the unmade film?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You spend your days regretting the lost work, wishing you had had the courage to make it.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live peacefully, saying you avoided danger — but you know the world lost a great film.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "charlie-chaplin",
+  "name": "Charlie Chaplin",
+  "birthYear": 1889,
+  "description": "A journey through the life of cinema's comedian — from the poor streets to the heights of Hollywood and exile.",
+  "scoring": {
+    "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
+    "risk": "average risk score of selected choices",
+    "independence": "average independence score of selected choices",
+    "scoreRange": {
+      "min": 0,
+      "max": 100
+    }
+  },
+  "ending": {
+    "title": "Your Fate: Immortal Comedian or Forgotten Artist",
+    "revealName": true
+  },
+  "events": [
+    {
+      "id": 1,
+      "year": 1895,
+      "chapter": "The Beginning",
+      "title": "Childhood in Poverty",
+      "playerFact": "You are born into a poor, artistic family. Your father is an alcoholic, your mother a struggling singer. Your childhood passes in absolute poverty, and sometimes you must dance on London's streets just to survive.",
+      "historicalFact": "Charlie Chaplin was born on April 16, 1889, in London. His childhood was spent in poverty with artist parents, and he was sent to a workhouse several times.",
+      "question": "Despite all the poverty and hardship, do you keep your love for art and pursue it?",
+      "weight": 3,
+      "yes": {
+        "consequence": "Despite the poverty, you never abandon your love for theatre and performance, and you step onto the stage.",
+        "historical": true,
+        "risk": 4,
+        "independence": 6,
+        "nextEvent": 2
+      },
+      "no": {
+        "consequence": "You give up on art and pursue simple, everyday work. Your life continues in obscurity and poverty.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 20
+      }
+    },
+    {
+      "id": 2,
+      "year": 1910,
+      "chapter": "Migration",
+      "title": "Journey to America",
+      "playerFact": "You travel to America with a theatre group. This new land is full of opportunities you've never seen in London. Hollywood is just beginning to take shape, and you feel this is where you belong.",
+      "historicalFact": "Chaplin traveled to America with the Fred Karno troupe in 1910 and made his first film in 1914.",
+      "question": "Do you decide to stay in America and enter the emerging film industry?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You stay in America and enter Hollywood. Your first steps in cinema begin a path that will make you a legend.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 3
+      },
+      "no": {
+        "consequence": "You return to England and continue working in London's theatres. You never reach the heights you could have achieved in Hollywood.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 22
+      }
+    },
+    {
+      "id": 3,
+      "year": 1915,
+      "chapter": "Fame",
+      "title": "Creating the Tramp",
+      "playerFact": "You create a character that conquers the world: a little man with a moustache, bowler hat, cane, and oversized shoes. He is poor yet noble, funny yet endearing. This character makes you the greatest comedian in history.",
+      "historicalFact": "Charlie Chaplin achieved global fame with his character 'The Tramp' in his films, becoming a symbol of silent cinema.",
+      "question": "Do you keep this character as your symbol forever and reach the peak with it?",
+      "weight": 5,
+      "yes": {
+        "consequence": "The Little Tramp takes you to the height of fame. Millions around the world know you, and your name is on everyone's lips.",
+        "historical": true,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 4
+      },
+      "no": {
+        "consequence": "You abandon the Tramp and move toward more serious roles. You never achieve that legendary popularity, and history remembers you as a mediocre comedian.",
+        "historical": false,
+        "risk": 4,
+        "independence": 7,
+        "nextEvent": 24
+      }
+    },
+    {
+      "id": 4,
+      "year": 1940,
+      "chapter": "Politics and Cinema",
+      "title": "Political Films",
+      "playerFact": "World War II is raging. You are no longer just a comedian — you raise your voice. You make 'The Great Dictator', delivering the boldest critique of fascism and Hitler. You know this film could get you in trouble, but silence is impossible.",
+      "historicalFact": "Chaplin made 'The Great Dictator' in 1940, a direct critique of Adolf Hitler and Nazism. It was also his last silent film.",
+      "question": "Despite the political risks, do you make and release this controversial film?",
+      "weight": 5,
+      "yes": {
+        "consequence": "'The Great Dictator' is released, establishing you not only as a comedian but as an intellectual and political activist. But it also creates enemies for you.",
+        "historical": true,
+        "risk": 8,
+        "independence": 9,
+        "nextEvent": 5
+      },
+      "no": {
+        "consequence": "You refrain from making a political film and continue with harmless comelives. You never achieve that high artistic and human stature, and history remembers you only as an entertaining comedian.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 26
+      }
+    },
+    {
+      "id": 5,
+      "year": 1950,
+      "chapter": "Exile",
+      "title": "Accusations and Escape",
+      "playerFact": "Political and moral accusations pile up against you. McCarthyism is at its peak in America, and you are accused of espionage and communism. You can stay and fight, or leave everything behind and flee to Europe.",
+      "historicalFact": "During the McCarthy era, Chaplin was accused of communist activities. He left America in 1952 and moved to Switzerland.",
+      "question": "Do you stay in America and fight the accusations, or do you leave everything behind and go to Europe?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You stay in America and spend years in court battles. Though eventually acquitted, you lose your peak creative years.",
+        "historical": false,
+        "risk": 9,
+        "independence": 6,
+        "nextEvent": 28
+      },
+      "no": {
+        "consequence": "You leave America and go to Switzerland. This exile is bitter, but it gives you a new freedom to live in peace and continue your work.",
+        "historical": true,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 6
+      }
+    },
+    {
+      "id": 6,
+      "year": 1972,
+      "chapter": "Return",
+      "title": "Triumphant Return",
+      "playerFact": "Decades have passed since your exile. Now old and weary, you are invited to return to America to receive an honorary Oscar. This return could be the brilliant ending to a lifetime of art.",
+      "historicalFact": "Chaplin returned to America in 1972 to receive an honorary Academy Award, receiving an unprecedented welcome from the public and artists.",
+      "question": "Do you return to America to accept the Oscar and be welcomed with open arms, or do you stay in Europe and decline the return?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You return to America and receive the longest standing ovation in Oscar history. This return is the crown of victory over your turbulent life.",
+        "historical": true,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You stay in Switzerland and never experience that glorious applause. You live with an incomplete ending, and the world never shares that historic moment with you.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 20,
+      "year": 1905,
+      "chapter": "The Obscurity Path",
+      "title": "A Simple Worker",
+      "playerFact": "You give up on art and take a simple job. You spend years in factories and shops, never becoming what you could have been.",
+      "historicalFact": "Many poor children of Chaplin's era never escaped the cycle of poverty and remained in obscurity.",
+      "question": "Do you regret abandoning art?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with regret for the lost life, wishing you had pursued your dreams instead of giving up.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live peacefully, telling yourself a simple life is better — but the world never remembers your name.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 22,
+      "year": 1915,
+      "chapter": "The Theatre Path",
+      "title": "A London Theatre Actor",
+      "playerFact": "You don't go to America and stay in London's theatres. You become a good actor, but you never become a global star.",
+      "historicalFact": "Some of Chaplin's contemporaries stayed in London theatre and never achieved Hollywood fame.",
+      "question": "Do you regret not going to America?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with regret for the unseen horizons, wishing you had had the courage to travel.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with pride, saying you remained loyal to your homeland — but the world never heard your voice.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 24,
+      "year": 1920,
+      "chapter": "The Serious Path",
+      "title": "The Comedian Who Turned Serious",
+      "playerFact": "You abandon the Tramp and move toward serious roles. Though you are a good actor, you never achieve the popularity of that unforgettable character.",
+      "historicalFact": "Some comedians who changed their style lost their aulivences and never returned to their former status.",
+      "question": "Do you regret abandoning the Tramp character?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with regret for the lost popularity, wishing you had stayed loyal to that unique character.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with pride, saying you were recognized as a serious actor — but people never remember you as a legendary comedian.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 26,
+      "year": 1941,
+      "chapter": "The Safe Path",
+      "title": "A Risk-Free Comedian",
+      "playerFact": "You give up on making a political film and continue with harmless comelives. Your films are entertaining but none leave a lasting mark on history.",
+      "historicalFact": "Some artists, by censoring themselves, never expressed their true opinions and never reached the depth of art.",
+      "question": "Do you regret not making a political film?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You live with regret for the lost work, wishing you had had the courage to speak the truth.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live peacefully, saying you avoided trouble — but you know history will remember you as a timid artist.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 28,
+      "year": 1952,
+      "chapter": "The Struggle Path",
+      "title": "A Fruitless Fight",
+      "playerFact": "You stay in America and spend years in lengthy court battles. Though eventually acquitted, you lose your peak creative years in these struggles.",
+      "historicalFact": "Some intellectuals of Chaplin's era who stayed in America and fought spent years in courtrooms.",
+      "question": "Do you regret staying in America and fighting?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You live regretting the lost years, wishing you had focused on peace and continuing your work instead of fighting.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with pride, saying you stood against injustice — but the cost was your golden years of art.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": null
+      }
+    }
+  ]
+}
