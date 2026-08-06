@@ -15,19 +15,29 @@ export default function DivergenceHighlight({ divergence }: Props) {
 
   return (
     <div className="divergence">
-      <h3 className="divergence-title">{t('biggestDivergence')}</h3>
-      <p className="divergence-year">{event.year}</p>
+      <div className="divergence-head">
+        <span className="divergence-year">{event.year}</span>
+        <h3 className="divergence-title">{t('biggestDivergence')}</h3>
+      </div>
       <p className="divergence-event">{event.title}</p>
       <p className="divergence-historical">{event.historicalFact}</p>
       <div className="divergence-paths">
         <div className="divergence-path">
-          <span className="divergence-path-label">{t('yourPath')}</span>
-          <span className="divergence-path-value">{playerChoice === 'yes' ? t('yes') : t('no')}</span>
+          <div className="divergence-path-head">
+            <span className="divergence-path-label">{t('yourPath')}</span>
+            <span className="divergence-chip divergence-chip-player">
+              {playerChoice === 'yes' ? t('yes') : t('no')}
+            </span>
+          </div>
           <span className="divergence-path-detail">{playerConsequence}</span>
         </div>
         <div className="divergence-path">
-          <span className="divergence-path-label">{t('realHistory')}</span>
-          <span className="divergence-path-value">{historicalChoice === 'yes' ? t('yes') : t('no')}</span>
+          <div className="divergence-path-head">
+            <span className="divergence-path-label">{t('realHistory')}</span>
+            <span className="divergence-chip divergence-chip-history">
+              {historicalChoice === 'yes' ? t('yes') : t('no')}
+            </span>
+          </div>
           <span className="divergence-path-detail">{historicalConsequence}</span>
         </div>
       </div>
