@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useRive, Layout, Fit, Alignment } from '@rive-app/react-canvas-lite'
 
 interface Props {
@@ -6,10 +7,16 @@ interface Props {
   cover?: boolean
 }
 
+function prefersReducedMotion(): boolean {
+  return typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+}
+
 export default function RiveBackground({ src, rotation = 0, cover = false }: Props) {
+  const [autoplay] = useState(() => !prefersReducedMotion())
+
   const { RiveComponent } = useRive({
     src,
-    autoplay: true,
+    autoplay,
     layout: new Layout({
       fit: cover ? Fit.Cover : Fit.Contain,
       alignment: Alignment.Center,

@@ -80,9 +80,7 @@ function Game() {
 
   return (
     <>
-      {isSplash ? (
-        <RiveBackground key="earth" src="/earth.riv" />
-      ) : (
+      {!isSplash && (
         <>
           <RiveBackground key="rotate" src="/rotate.riv" rotation={90} cover />
           <div className="bg-overlay" />

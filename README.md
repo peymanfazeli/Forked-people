@@ -1,4 +1,4 @@
-# Life Decisions
+# Fork
 
 A narrative decision game where you live through the lives of real historical figures — without knowing who you are until the final reveal.
 
@@ -21,7 +21,7 @@ A narrative decision game where you live through the lives of real historical fi
 
 ## What Is This Game?
 
-**Life Decisions** is a mobile-first, narrative decision game based on the lives of historical people.
+**Fork** is a mobile-first, narrative decision game based on the lives of historical people.
 
 You enter the life of a famous person — **without being told who that person is**. The game presents important moments from that person's life. At each moment you make a simple decision: **YES** or **NO**. The story continues based on your choice.
 

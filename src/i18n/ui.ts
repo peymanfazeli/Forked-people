@@ -3,6 +3,7 @@ export type Language = 'en' | 'fa'
 export interface UiDictionary {
   splashTitle: string
   splashSubtitle: string
+  splashTagline: string
   beginYourJourney: string
   yourJourneyBegins: string
   hintPrefix: string
@@ -33,8 +34,9 @@ export interface UiDictionary {
 
 export const ui: Record<Language, UiDictionary> = {
   en: {
-    splashTitle: 'Life Decisions',
+    splashTitle: 'Fork',
     splashSubtitle: 'Live another life. Make the choices that shape history.',
+    splashTagline: 'The past. The present. Your life to live.',
     beginYourJourney: 'Begin Your Journey',
     yourJourneyBegins: 'Your journey begins...',
     hintPrefix: 'At each moment, choose what',
@@ -63,8 +65,9 @@ export const ui: Record<Language, UiDictionary> = {
     persian: 'فارسی',
   },
   fa: {
-    splashTitle: 'تصمیم‌های زندگی',
+    splashTitle: 'شاخه‌ها',
     splashSubtitle: 'یک زندگی دیگر را تجربه کن. انتخاب‌هایی که تاریخ را می‌سازند.',
+    splashTagline: 'گذشته. امروز. زندگی‌ای که باید زندگی کنی.',
     beginYourJourney: 'آغاز سفر',
     yourJourneyBegins: 'سفر تو آغاز می‌شود...',
     hintPrefix: 'در هر لحظه، انتخاب کن که',
