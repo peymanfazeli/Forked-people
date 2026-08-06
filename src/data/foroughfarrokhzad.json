@@ -13,7 +13,7 @@
     }
   },
   "ending": {
-    "title": "Your Fate: Restless Poet or Woman on the Margins",
+    "title": "Your Fate: Restless Poet or Traveler of Other Lands",
     "revealName": true
   },
   "events": [
@@ -443,6 +443,54 @@
       },
       "no": {
         "consequence": "You regret the lost life, wishing you had lived longer to create more masterpieces instead of dying young.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 60,
+      "year": 1991,
+      "chapter": "The Retreat Path",
+      "title": "Pioneer of Women's Education",
+      "playerFact": "By founding a school for poor girls, you became one of the pioneers of women's education in Iran. Your name is immortalized in Iran's educational history, and thousands of underprivileged girls learned the path of knowledge from you.",
+      "historicalFact": "Some pioneering women, by founding schools, left a lasting impact on women's education.",
+      "question": "Are you satisfied with this educational life, despite leaving art behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you left art, you educated generations with knowledge and awareness.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost art, wishing you had pursued creation instead of education.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 61,
+      "year": 1991,
+      "chapter": "The Retreat Path",
+      "title": "A Woman on the Margins",
+      "playerFact": "You stay on the margins and never leave a lasting mark. You spend your days in memories of the past and your nights regretting what you could have been.",
+      "historicalFact": "History is full of women who stayed on the margins and never reached their potential.",
+      "question": "Do you regret this marginalization?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the lost days, wishing you had pursued greater goals instead of retreating.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with apparent peace, but you know the world will never remember your name.",
         "historical": false,
         "risk": 1,
         "independence": 2,
