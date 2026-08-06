@@ -13,7 +13,7 @@
     }
   },
   "ending": {
-    "title": "Your Fate: Restless Poet or Woman on the Margins",
+    "title": "Your Fate: Restless Poet or Traveler of Other Lands",
     "revealName": true
   },
   "events": [
@@ -96,21 +96,21 @@
       "title": "Journey to Europe",
       "playerFact": "After publishing your poems, you receive an invitation to travel to Europe. An opportunity to see a new world, meet artists, and breathe freer air.",
       "historicalFact": "Forough traveled to Italy, Germany, and England in 1958, meeting European artists and intellectuals.",
-      "question": "Do you travel to Europe to open new horizons?",
+      "question": "Do you decide not to travel to Europe and stay in Iran?",
       "weight": 4,
       "yes": {
-        "consequence": "Traveling to Europe broadens your worldview and gives your poetry new colors, though loneliness accompanies you.",
-        "historical": true,
-        "risk": 6,
-        "independence": 7,
-        "nextEvent": 5
-      },
-      "no": {
         "consequence": "You stay in Iran, never seeing those new horizons. Your poetry remains within the same repetitive space.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": 26
+      },
+      "no": {
+        "consequence": "Traveling to Europe broadens your worldview and gives your poetry new colors, though loneliness accompanies you.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 5
       }
     },
     {
@@ -143,22 +143,22 @@
       "chapter": "Love and Death",
       "title": "The Final Chapter",
       "playerFact": "Your final years are filled with unmatched passion. You write 'Another Birth' and 'Let Us Believe in the Beginning of the Cold Season'. A new love enters your life — a man as stormy as you. But life always has a bitter end for poets.",
-      "historicalFact": "Forough published 'Another Birth' in 1963 and had a romantic and artistic relationship with Ebrahim Golestan in later years. She lived in a car accident on February 13, 1967.",
-      "question": "Do you embrace love and continue writing until the bitter end, even knowing a harsh ending awaits you?",
+      "historicalFact": "Forough published 'Another Birth' in 1963 and had a romantic and artistic relationship with Ebrahim Golestan in later years. She died in a car accident on February 13, 1967.",
+      "question": "Do you choose to retreat from danger and live a quieter, longer life?",
       "weight": 5,
       "yes": {
+        "consequence": "You retreat from danger. You live a quiet, long life, but 'Another Birth' is never written, and your name remains as a mediocre poet in history.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 35
+      },
+      "no": {
         "consequence": "You live fully, write, and love. Your early death immortalizes your name, and your poems shine forever in the history of Persian literature.",
         "historical": true,
         "risk": 10,
         "independence": 10,
-        "nextEvent": null
-      },
-      "no": {
-        "consequence": "You withdraw from danger. You live a quiet, long life, but 'Another Birth' is never written, and your name remains as a mediocre poet in history.",
-        "historical": false,
-        "risk": 4,
-        "independence": 5,
-        "nextEvent": null
+        "nextEvent": 40
       }
     },
     {
@@ -168,21 +168,21 @@
       "title": "A Faithful Wife",
       "playerFact": "You back out of the early marriage and stay in your family home. Years later, you marry a respectable man who knows nothing about poetry. Your life is calm, but empty of the passion that burns inside you.",
       "historicalFact": "Some women of Forough's era, by staying within tradition, led ordinary and uneventful lives.",
-      "question": "Do you regret your safe choice and long for a different life?",
+      "question": "In middle age, do you turn to **painting** instead of poetry and discover your hidden talent?",
       "weight": 3,
       "yes": {
-        "consequence": "With regret for the lost poetry, you remain suffocated until the end and never become what you could have been.",
+        "consequence": "Turning to painting, you become one of **Iran's prominent painters**, and your works are exhibited in famous galleries.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 50
       },
       "no": {
-        "consequence": "You live peacefully, content with your life, but your name is never recorded in literary history, and no one ever hears your voice.",
+        "consequence": "You continue your quiet, uneventful life and never become what you could have been.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 51
       }
     },
     {
@@ -192,21 +192,21 @@
       "title": "A Woman in a Cage",
       "playerFact": "You stay with your husband, even though the love of the early days is gone. Your poetry never reaches true rebellion and always remains on the margins of official literature.",
       "historicalFact": "Literary history is full of women who, by remaining in the cage, never reached their potential.",
-      "question": "Do you regret not writing those daring poems?",
+      "question": "Do you decide to turn to **acting** instead of poetry and unleash your dramatic talent?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with deep regret, wishing you had had the courage to let go of everything.",
+        "consequence": "Entering the acting world, you become one of **Iran's prominent cinema and theatre actresses**, creating memorable roles.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 52
       },
       "no": {
-        "consequence": "You live with apparent peace, telling yourself a quiet life was better than poetic controversy — but you know you silenced a scream.",
+        "consequence": "You stay in the cage and never write. You live with apparent peace, but you know you silenced a scream.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 53
       }
     },
     {
@@ -214,12 +214,252 @@
       "year": 1957,
       "chapter": "The Silence Path",
       "title": "The Unknown Poet",
-      "playerFact": "You don't publish your controversial poems and spend years in silence. Sometimes you write for yourself, but you never dare to share. When you live, no one knows what treasure you carried in your chest.",
+      "playerFact": "You don't publish your controversial poems and spend years in silence. Sometimes you write for yourself, but you never dare to share. No one knows what treasure you carried in your chest.",
       "historicalFact": "Literary history is full of poets who buried their talent in silence.",
-      "question": "Do you regret your silence and muteness?",
+      "question": "Do you decide to study **medicine abroad** instead of poetry and become a **doctor abroad**?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with an agonizing regret, wishing you had had the courage to publish instead of fearing.",
+        "consequence": "Studying medicine, you become a **successful doctor in Europe** and spend years healing patients. Though you left poetry behind, you dedicated your life to saving others.",
+        "historical": false,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 54
+      },
+      "no": {
+        "consequence": "You remain silent until the end and never let your voice be heard.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 55
+      }
+    },
+    {
+      "id": 26,
+      "year": 1959,
+      "chapter": "The Homeland Path",
+      "title": "The Homebound Poet",
+      "playerFact": "You don't go to Europe and stay in Iran. Although your poems are read inside the country, you never achieve the global depth you could have reached.",
+      "historicalFact": "Some poets of Forough's era, by not going to Europe, never achieved global fame.",
+      "question": "Do you decide to become a **translator of great literary works** instead of a poet, building a bridge between Persian and world literature?",
+      "weight": 3,
+      "yes": {
+        "consequence": "Translating great works of world literature into Persian, you become one of **Iran's most distinguished translators**, and your name is immortalized in translation history.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 56
+      },
+      "no": {
+        "consequence": "You continue your limited poetry and never achieve global fame. You live regretting the unseen horizons.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 57
+      }
+    },
+    {
+      "id": 28,
+      "year": 1963,
+      "chapter": "The Withdrawal Path",
+      "title": "The Artist Who Didn't Go",
+      "playerFact": "You give up on making the film about lepers and turn to simpler, less risky work. You never make that lasting film, and your name is never recorded in cinema history.",
+      "historicalFact": "Some filmmakers of that era, due to fear of controversy, never completed their grand projects.",
+      "question": "Do you decide to turn to **traditional singing** instead of filmmaking and become a **renowned singer**?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Turning to traditional music, you become one of the **leading singers of Persian classical music**, and your voice is remembered for years.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 58
+      },
+      "no": {
+        "consequence": "You never return to filmmaking, living with the thought that you 'avoided danger' — but you know the world lost a great film.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 59
+      }
+    },
+    {
+      "id": 35,
+      "year": 1971,
+      "chapter": "The Retreat Path",
+      "title": "A Long Life on the Margins",
+      "playerFact": "By retreating from danger, you live a long and peaceful life. Though 'Another Birth' was never written, you become one of the influential figures in Iran's literary society — not as a poet, but as a critic and intellectual.",
+      "historicalFact": "Some poets of that era, by choosing a safe life, became influential cultural figures.",
+      "question": "In the second half of your life, do you dedicate yourself to **educating women** and found a school for poor girls?",
+      "weight": 3,
+      "yes": {
+        "consequence": "By founding a school for poor girls, you become one of the **pioneers of women's education in Iran**, and your name is immortalized in Iran's educational history.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 60
+      },
+      "no": {
+        "consequence": "You stay on the margins and never leave a lasting mark.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 61
+      }
+    },
+    {
+      "id": 40,
+      "year": 1967,
+      "chapter": "The Immortal Ending",
+      "title": "The Poet Who Became Immortal",
+      "playerFact": "With your early death, your name becomes immortal in Persian literary history. 'Another Birth' and 'Let Us Believe' are recognized as masterpieces of modern Persian poetry, and future generations know you as the feminine voice that never fell silent.",
+      "historicalFact": "Forough Farrokhzad died in a car accident on February 13, 1967, and after her death, she became one of Iran's most influential poets.",
+      "question": "Are you satisfied with this posthumous immortality, achieved at the cost of a short life?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with deep peace, knowing your name will shine forever in literary history and your poems will guide generations toward freedom and truth.",
+        "historical": true,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost life, wishing you had lived longer to create more masterpieces instead of dying young.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 50,
+      "year": 1971,
+      "chapter": "The Traditional Path",
+      "title": "Prominent Painter",
+      "playerFact": "Turning to painting, you became one of Iran's prominent painters. Your works are exhibited in famous galleries, and your name is immortalized in Iranian art history.",
+      "historicalFact": "Some women artists, by turning to painting, achieved significant success.",
+      "question": "Are you satisfied with this artistic life, despite leaving poetry behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you left poetry, your colors captured the emotions of the women of your era.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost poetry, wishing you had pursued poetry instead of painting.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 51,
+      "year": 1971,
+      "chapter": "The Traditional Path",
+      "title": "A Woman on the Margins",
+      "playerFact": "You continue your quiet life and never become what you could have been. Your name is never recorded in history, and no one ever hears your voice.",
+      "historicalFact": "History is full of women who never reached their potential.",
+      "question": "Are you satisfied with this anonymous life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live peacefully, but you know the world will never remember your name.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost art, wishing you had pursued your dreams instead of staying silent.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 52,
+      "year": 1971,
+      "chapter": "The Compromise Path",
+      "title": "Prominent Actress",
+      "playerFact": "Entering the acting world, you became one of Iran's prominent cinema and theatre actresses. You created memorable roles, and your name is immortalized in Iranian cinema history.",
+      "historicalFact": "Some women artists, by turning to acting, achieved significant success.",
+      "question": "Are you satisfied with this artistic life, despite leaving poetry behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you left poetry, your acting captured the soul of Iranian women.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost poetry, wishing you had pursued poetry instead of acting.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 53,
+      "year": 1971,
+      "chapter": "The Compromise Path",
+      "title": "A Woman in a Cage",
+      "playerFact": "You stay in the cage and never write. You live with apparent peace, but you know you silenced a scream.",
+      "historicalFact": "History is full of women who stayed in the cage and never reached their potential.",
+      "question": "Do you regret this silent life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the lost days, wishing you had pursued art instead of silence.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with apparent peace, but you know the world will never remember your name.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 54,
+      "year": 1981,
+      "chapter": "The Silence Path",
+      "title": "Doctor Abroad",
+      "playerFact": "Studying medicine, you became a successful doctor in Europe. You spent years healing patients, and your name is known in European medical circles. Though you left poetry behind, you dedicated your life to saving others.",
+      "historicalFact": "Some Iranian women, by emigrating and studying medicine, achieved significant success.",
+      "question": "Are you satisfied with this medical life, despite leaving poetry behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you left poetry, you saved many lives.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost poetry, wishing you had pursued literature instead of medicine.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 55,
+      "year": 1981,
+      "chapter": "The Silence Path",
+      "title": "The Unknown Poet",
+      "playerFact": "You remain silent until the end and never let your voice be heard. You tell yourself peace is better than controversy — but the world never learns of your existence.",
+      "historicalFact": "Literary history is full of poets who were never seen.",
+      "question": "Do you regret this eternal silence?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the unwritten poems, wishing you had raised your voice instead of staying silent.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -234,23 +474,23 @@
       }
     },
     {
-      "id": 26,
-      "year": 1959,
+      "id": 56,
+      "year": 1971,
       "chapter": "The Homeland Path",
-      "title": "The Homebound Poet",
-      "playerFact": "You don't go to Europe and stay in Iran. Although your poems are read inside the country, you never achieve the global depth you could have reached.",
-      "historicalFact": "Some poets of Forough's era, by not going to Europe, never achieved global fame.",
-      "question": "Do you regret not going to Europe?",
-      "weight": 3,
+      "title": "Distinguished Translator",
+      "playerFact": "Translating great works of world literature into Persian, you became one of Iran's most distinguished translators. Your name is immortalized in translation history, and you built a bridge between Persian and world literature.",
+      "historicalFact": "Some poets, by turning to translation, left a lasting impact on Persian literature.",
+      "question": "Are you satisfied with this new literary life, despite leaving poetry behind?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live with regret for the unseen horizons, wishing you had had the courage to travel.",
+        "consequence": "You live with pride, knowing that even if you left poetry, you brought world literature to Iran.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live with pride, saying you remained loyal to your homeland — but you know the world never heard your voice.",
+        "consequence": "You regret the lost poetry, wishing you had pursued writing instead of translation.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -258,16 +498,64 @@
       }
     },
     {
-      "id": 28,
-      "year": 1963,
-      "chapter": "The Withdrawal Path",
-      "title": "The Artist Who Didn't Go",
-      "playerFact": "You give up on making the film about lepers and turn to simpler, less risky work. You never make that lasting film, and your name is never recorded in cinema history.",
-      "historicalFact": "Some filmmakers of that era, due to fear of controversy, never completed their grand projects.",
-      "question": "Do you regret the unmade film?",
-      "weight": 4,
+      "id": 57,
+      "year": 1971,
+      "chapter": "The Homeland Path",
+      "title": "The Homebound Poet",
+      "playerFact": "You continue your limited poetry and never achieve global fame. You live regretting the unseen horizons.",
+      "historicalFact": "Some poets, by staying in Iran, never achieved global fame.",
+      "question": "Do you regret this limited life?",
+      "weight": 2,
       "yes": {
-        "consequence": "You spend your days regretting the lost work, wishing you had had the courage to make it.",
+        "consequence": "You regret the lost days, wishing you had sought a new worldview instead of limitations.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live peacefully, believing you preferred your homeland over fame — but you know the world never heard your voice.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 58,
+      "year": 1971,
+      "chapter": "The Withdrawal Path",
+      "title": "Renowned Traditional Singer",
+      "playerFact": "Turning to traditional music, you became one of the leading singers of Persian classical music. Your voice is remembered for years, and your name is immortalized in Iranian music history.",
+      "historicalFact": "Some artists, by turning to music, achieved significant success.",
+      "question": "Are you satisfied with this artistic life, despite leaving filmmaking behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you didn't make a film, your voice captured people's souls.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost film, wishing you had pursued cinema instead of music.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 59,
+      "year": 1971,
+      "chapter": "The Withdrawal Path",
+      "title": "An Artist on the Margins",
+      "playerFact": "You never return to filmmaking, living with the thought that you 'avoided danger' — but you know the world lost a great film.",
+      "historicalFact": "Cinema history is full of unfinished projects that were never made.",
+      "question": "Do you regret this withdrawal?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the lost film, wishing you had had the courage to make it instead of withdrawing.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -275,6 +563,54 @@
       },
       "no": {
         "consequence": "You live peacefully, saying you avoided danger — but you know the world lost a great film.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 60,
+      "year": 1991,
+      "chapter": "The Retreat Path",
+      "title": "Pioneer of Women's Education",
+      "playerFact": "By founding a school for poor girls, you became one of the pioneers of women's education in Iran. Your name is immortalized in Iran's educational history, and thousands of underprivileged girls learned the path of knowledge from you.",
+      "historicalFact": "Some pioneering women, by founding schools, left a lasting impact on women's education.",
+      "question": "Are you satisfied with this educational life, despite leaving art behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you left art, you educated generations with knowledge and awareness.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost art, wishing you had pursued creation instead of education.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 61,
+      "year": 1991,
+      "chapter": "The Retreat Path",
+      "title": "A Woman on the Margins",
+      "playerFact": "You stay on the margins and never leave a lasting mark. You spend your days in memories of the past and your nights regretting what you could have been.",
+      "historicalFact": "History is full of women who stayed on the margins and never reached their potential.",
+      "question": "Do you regret this marginalization?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the lost days, wishing you had pursued greater goals instead of retreating.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with apparent peace, but you know the world will never remember your name.",
         "historical": false,
         "risk": 1,
         "independence": 2,
