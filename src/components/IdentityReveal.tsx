@@ -9,7 +9,7 @@ interface Props {
 }
 
 const FINAL_STEP = 4
-const STEP_DELAYS = [0, 700, 1400, 2100, 2400]
+const STEP_DELAYS = [0, 700, 1400, 3500, 4200]
 
 function prefersReducedMotion(): boolean {
   return (

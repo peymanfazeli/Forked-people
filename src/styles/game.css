@@ -17,8 +17,8 @@
 :root {
   --bg: #0f0f12;
   --text: #e4e4e7;
-  --text-muted: #7f7f85;
-  --text-dim: #52525b;
+  --text-muted: #aaaaaa;
+  --text-dim: #96969c;
   --accent: #f59e0b;
   --accent-hover: #d97706;
   --yes-color: #4ade80;
@@ -934,8 +934,8 @@ p {
 }
 
 .reveal-rule.is-active {
-  animation: reveal-grow 800ms ease both;
-  animation-delay: 300ms;
+  animation: reveal-grow 1000ms ease both;
+  animation-delay: 1100ms;
 }
 
 [dir='rtl'] .reveal-rule {
@@ -951,7 +951,7 @@ p {
 
 .reveal-year.is-active {
   animation: reveal-fade 600ms ease both;
-  animation-delay: 400ms;
+  animation-delay: 1150ms;
 }
 
 .reveal-description {
