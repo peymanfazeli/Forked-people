@@ -13,7 +13,7 @@
     }
   },
   "ending": {
-    "title": "Your Fate: Innovator or Conservative",
+    "title": "Your Fate: Innovator or Traveler of Other Lands",
     "revealName": true
   },
   "events": [
@@ -24,7 +24,7 @@
       "title": "An Adopted Child",
       "playerFact": "Shortly after birth, a family adopts you and raises you in a modest home. From childhood, you have a curious and determined nature.",
       "historicalFact": "You were born in 1955 and soon after, a family in the San Francisco Bay Area adopted and raised you.",
-      "question": "You have the opportunity to raise an adopted child. Do you accept the responsibility?",
+      "question": "Do you accept the responsibility of raising this adopted child?",
       "weight": 3,
       "yes": {
         "consequence": "You decide to raise the child and give them a loving home.",
@@ -48,21 +48,21 @@
       "title": "A Curious Young Mind",
       "playerFact": "In your teens, you become fascinated with electronics and computing machines — devices that seem to have endless possibilities. You meet someone who shares this obsession completely.",
       "historicalFact": "In your teens, you developed a deep interest in electronics and computers, and you found a kindred spirit who became your lifelong collaborator.",
-      "question": "Do you avoid working with this companion and continue on your own path alone?",
+      "question": "Do you collaborate with this companion?",
       "weight": 4,
       "yes": {
-        "consequence": "You continue exploring electronics on your own, most of the time pursuing your interests alone.",
-        "historical": false,
-        "risk": 3,
-        "independence": 8,
-        "nextEvent": 21
-      },
-      "no": {
         "consequence": "You become close friends and start building things together.",
         "historical": true,
         "risk": 4,
         "independence": 5,
         "nextEvent": 3
+      },
+      "no": {
+        "consequence": "You continue exploring electronics on your own, most of the time pursuing your interests alone.",
+        "historical": false,
+        "risk": 3,
+        "independence": 8,
+        "nextEvent": 21
       }
     },
     {
@@ -72,7 +72,7 @@
       "title": "Dropping Out of College",
       "playerFact": "You enroll in a liberal arts college but soon feel that formal education is not for you. It's expensive, and your family's finances are strained.",
       "historicalFact": "You enrolled in Reed College but dropped out after about six months, partly due to financial pressure on your adoptive parents.",
-      "question": "Do you stay in college and continue your stulives until you earn a degree?",
+      "question": "Do you stay in college and continue your studies?",
       "weight": 4,
       "yes": {
         "consequence": "You stay in college and continue toward a conventional degree.",
@@ -96,7 +96,7 @@
       "title": "The Calligraphy Class",
       "playerFact": "Even after dropping out of formal education, you continue attending classes that genuinely interest you. One of them is a calligraphy course — the art of beautiful writing. It has no obvious practical application, but it fascinates you.",
       "historicalFact": "After dropping out of college, you continued taking classes. The calligraphy course you took later influenced your company's revolutionary approach to typography and design.",
-      "question": "A calligraphy class captivates you, even though it has no clear practical value. Will you take it?",
+      "question": "Do you take this calligraphy class?",
       "weight": 3,
       "yes": {
         "consequence": "You study calligraphy simply because you are fascinated by it.",
@@ -120,21 +120,21 @@
       "title": "Journey to the East",
       "playerFact": "In your early twenties, you feel drawn to Eastern philosophy. An opportunity arises to travel to a distant land in search of spiritual enlightenment.",
       "historicalFact": "In your early twenties, you traveled to India in search of spiritual enlightenment — a journey that deeply shaped your worldview and aesthetic sensibility.",
-      "question": "Do you decide not to go on the spiritual journey and instead focus on technology and work?",
+      "question": "Do you go on this spiritual journey?",
       "weight": 4,
       "yes": {
-        "consequence": "You stay home and focus on technology and work.",
-        "historical": false,
-        "risk": 3,
-        "independence": 4,
-        "nextEvent": 24
-      },
-      "no": {
         "consequence": "You travel and explore spirituality and different ways of thinking.",
         "historical": true,
         "risk": 6,
         "independence": 7,
         "nextEvent": 6
+      },
+      "no": {
+        "consequence": "You stay home and focus on technology and work.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 24
       }
     },
     {
@@ -144,7 +144,7 @@
       "title": "The Game Company",
       "playerFact": "After returning from your journey, a young video game company offers you a job. The company is small but growing, in an industry that barely exists yet.",
       "historicalFact": "After returning from India, you worked at Atari and became more deeply involved in the emerging personal computer scene.",
-      "question": "A young game company offers you a job. Will you take this opportunity?",
+      "question": "Do you accept this job offer?",
       "weight": 3,
       "yes": {
         "consequence": "You join the company and gain experience in the nascent gaming industry.",
@@ -168,21 +168,21 @@
       "title": "The Computing Machine",
       "playerFact": "Your friend has built a working computing machine in his spare time. It's a simple device, but you immediately see that it could be more than a hobby. You see an opportunity to build something ordinary people can use.",
       "historicalFact": "Your collaborator designed a personal computer, and you saw the potential to turn it into a commercial product — a machine anyone could use, not just hobbyists.",
-      "question": "Do you refuse to turn your friend's invention into a joint business and see it only as a hobby?",
+      "question": "Do you turn your friend's invention into a business?",
       "weight": 5,
       "yes": {
-        "consequence": "You decide the machine is more of an interesting hobby than a business opportunity.",
-        "historical": false,
-        "risk": 3,
-        "independence": 4,
-        "nextEvent": 26
-      },
-      "no": {
         "consequence": "You decide the machine can become a real product, and you start a company with your friend.",
         "historical": true,
         "risk": 6,
         "independence": 7,
         "nextEvent": 8
+      },
+      "no": {
+        "consequence": "You decide the machine is more of an interesting hobby than a business opportunity.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 26
       }
     },
     {
@@ -190,9 +190,9 @@
       "year": 1977,
       "chapter": "Building a Company",
       "title": "The Polished Version",
-      "playerFact": "Your machine is gaining attention. It's still mostly a device for hobbyists, but you believe it can reach a much broader aulivence. You want to make it polished, accessible, and beautiful — something people would want in their homes.",
+      "playerFact": "Your machine is gaining attention. It's still mostly a device for hobbyists, but you believe it can reach a much broader audience. You want to make it polished, accessible, and beautiful — something people would want in their homes.",
       "historicalFact": "The second version of your product became a huge success, helping establish your company as a major force in personal computing. It set a new standard for what a personal computer could be.",
-      "question": "Your machine is gaining traction. Will you invest heavily to turn it into a polished consumer product?",
+      "question": "Do you invest heavily to turn your product into a polished consumer product?",
       "weight": 5,
       "yes": {
         "consequence": "You focus on making the machine accessible, attractive, and successful.",
@@ -216,7 +216,7 @@
       "title": "The Ouster",
       "playerFact": "Tensions rise within the company you helped build. The leadership you brought in sees things differently. Eventually, you are pushed out of the very organization you founded.",
       "historicalFact": "After a power struggle with the company's leadership, you were ousted from the business you had founded — a painful but ultimately liberating moment.",
-      "question": "Do you fight to regain control of the company and refuse to leave it?",
+      "question": "Do you stay in the company and fight to regain control?",
       "weight": 5,
       "yes": {
         "consequence": "You remain determined to regain your influence within the company.",
@@ -240,14 +240,14 @@
       "title": "A Fresh Start",
       "playerFact": "You have the freedom to build from scratch. You start a new company focused on powerful machines for professionals. Separately, you invest in a small computer graphics team working on something entirely new — storytelling with machines.",
       "historicalFact": "After leaving the company you founded, you built a new company to create advanced workstations, and you acquired what would become a pioneering animation studio.",
-      "question": "You have the freedom to begin again. Will you start a new computing company and invest in computer animation?",
+      "question": "Do you start a new company and invest in computer animation?",
       "weight": 5,
       "yes": {
         "consequence": "You start a new company and back a graphics project that will transform both industries.",
         "historical": true,
         "risk": 9,
         "independence": 10,
-        "nextEvent": null
+        "nextEvent": 40
       },
       "no": {
         "consequence": "You choose a quieter path and avoid building another large technology company.",
@@ -262,23 +262,23 @@
       "year": 1955,
       "chapter": "The Adoption Path",
       "title": "Life in an Orphanage",
-      "playerFact": "You are not adopted and grow up in an orphanage. Your fate is completely different — you never gain access to technology or electronics, and you live an ordinary life.",
+      "playerFact": "You are not adopted and grow up in an orphanage. Your fate is completely different — you never gain access to technology or electronics.",
       "historicalFact": "History is full of stories where one decision changes a life path forever.",
-      "question": "Do you regret not accepting the adoption?",
+      "question": "As a teenager, do you search for your biological family?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret, wishing you had given the child a better chance at life.",
+        "consequence": "By finding your biological family, you discover your origin story. This journey of self-discovery turns you into a **bestselling memoir writer**.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 60
       },
       "no": {
-        "consequence": "You live peacefully, believing you made the right decision — unaware that the world lost a genius.",
+        "consequence": "You run from the past and take on ordinary work, but a sense of loss stays with you forever.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 61
       }
     },
     {
@@ -288,21 +288,21 @@
       "title": "Alone Among Machines",
       "playerFact": "You reject your companion and continue your electronics work alone. You build small projects but never form a powerful partnership.",
       "historicalFact": "Some talented engineers, due to a lack of collaboration, never turned big ideas into big products.",
-      "question": "Are you satisfied with working alone?",
+      "question": "Do you decide to leave electronics behind and turn to music and art instead?",
       "weight": 3,
       "yes": {
-        "consequence": "You become an independent developer, making useful tools, but you never build an empire.",
+        "consequence": "Leaving electronics behind, you become a **street musician** in San Francisco and later a **well-known folk singer**.",
         "historical": false,
-        "risk": 3,
-        "independence": 8,
-        "nextEvent": null
+        "risk": 5,
+        "independence": 7,
+        "nextEvent": 62
       },
       "no": {
-        "consequence": "You constantly think about that lost partner, and this regret haunts you for life.",
+        "consequence": "You continue with electronics but never achieve success, remaining in obscurity.",
         "historical": false,
-        "risk": 4,
-        "independence": 5,
-        "nextEvent": null
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 63
       }
     },
     {
@@ -312,21 +312,21 @@
       "title": "An Ordinary Graduate",
       "playerFact": "You stay in college, study, and earn a degree. You become a professor or a clerk, living a quiet life, but you never enter the technology world.",
       "historicalFact": "Many talented students who stayed on traditional paths never reached their potential.",
-      "question": "Do you regret staying in college?",
+      "question": "Do you decide to enter politics and become a **social activist** instead of teaching?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret, wishing you had had the courage to drop out.",
+        "consequence": "Entering politics, you become an **influential human rights and environmental activist** and found a major non-profit organization.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
-        "nextEvent": null
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 64
       },
       "no": {
-        "consequence": "You live peacefully, believing education was the best choice — unaware that the world will never know your name.",
+        "consequence": "You continue teaching, living a quiet life but never leaving a lasting impact.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 65
       }
     },
     {
@@ -334,15 +334,375 @@
       "year": 1974,
       "chapter": "The Aesthetics-Free Path",
       "title": "Rough Design",
-      "playerFact": "You don't take the calligraphy class and never learn about visual subtlety and typography. Your products always remain rough and unappealing, never excelling in design.",
+      "playerFact": "You don't take the calligraphy class and never learn about visual subtlety and typography. Your products always remain rough and unappealing.",
       "historicalFact": "Some technology companies, by ignoring design, never achieved market dominance.",
-      "question": "Do you regret not studying calligraphy?",
+      "question": "Do you decide to switch from technology to **fashion design** and start your own clothing brand?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret, wishing you had valued aesthetics as well.",
+        "consequence": "Entering the fashion world, you create a minimalist, high-quality clothing brand that becomes recognized worldwide.",
+        "historical": false,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 66
+      },
+      "no": {
+        "consequence": "You continue in technology, but your products never achieve good design and your company remains small.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 67
+      }
+    },
+    {
+      "id": 24,
+      "year": 1975,
+      "chapter": "The Materialistic Path",
+      "title": "The Soulless Entrepreneur",
+      "playerFact": "You reject the spiritual journey and focus entirely on business. You become wealthy, but your deep aesthetic and human sensibility never develops.",
+      "historicalFact": "Some successful entrepreneurs, by neglecting spirituality and art, never achieved true genius.",
+      "question": "Do you use your wealth to pursue **political power** and enter international arms dealing?",
+      "weight": 3,
+      "yes": {
+        "consequence": "With wealth and influence, you become an **arms dealer in Africa**, involved in billion-dollar contracts with African governments.",
+        "historical": false,
+        "risk": 10,
+        "independence": 8,
+        "nextEvent": 68
+      },
+      "no": {
+        "consequence": "You stay in business and die wealthy, but there was never any soul in your work.",
         "historical": false,
         "risk": 2,
         "independence": 3,
+        "nextEvent": 69
+      }
+    },
+    {
+      "id": 25,
+      "year": 1975,
+      "chapter": "The Lost Opportunity Path",
+      "title": "Lost in the Industry",
+      "playerFact": "You turn down the game company job and drift into scattered work. You never enter the personal computing industry and miss the golden opportunity.",
+      "historicalFact": "The history of industry is full of those who ignored early opportunities and later regretted it.",
+      "question": "Do you decide to leave technology behind and become a **chef**, opening a famous restaurant?",
+      "weight": 3,
+      "yes": {
+        "consequence": "With creative cooking, you become a **renowned chef** and your restaurant becomes a destination for tourists.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 70
+      },
+      "no": {
+        "consequence": "You stay in scattered work and never achieve success.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 71
+      }
+    },
+    {
+      "id": 26,
+      "year": 1976,
+      "chapter": "The Hobbyist Path",
+      "title": "The Unknown Inventor",
+      "playerFact": "You don't turn your friend's computing machine into a business. He develops it alone, but without your marketing and vision, it never achieves commercial success.",
+      "historicalFact": "Some great inventions never reached the market due to the lack of a proper entrepreneur.",
+      "question": "Do you decide to become a **screenwriter** and enter Hollywood?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Writing science fiction screenplays, you become a **famous Hollywood screenwriter**, writing several blockbuster films.",
+        "historical": false,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 72
+      },
+      "no": {
+        "consequence": "You remain in obscurity and never achieve success.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 73
+      }
+    },
+    {
+      "id": 27,
+      "year": 1978,
+      "chapter": "The Enthusiast Path",
+      "title": "A Product for Elites",
+      "playerFact": "You keep your machine only for hobbyists and specialists. You never think about simplicity and beauty, and your competitors take the consumer market.",
+      "historicalFact": "Some technology companies, by focusing on specialists, lost the massive consumer market.",
+      "question": "Do you decide to switch to **visual arts** and open an art gallery?",
+      "weight": 4,
+      "yes": {
+        "consequence": "By opening a gallery, you become one of the **largest contemporary art collectors** and your name becomes immortal in the art world.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 74
+      },
+      "no": {
+        "consequence": "You stay in technology but never grow, and your company remains small.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 75
+      }
+    },
+    {
+      "id": 28,
+      "year": 1985,
+      "chapter": "The Power Struggle Path",
+      "title": "The Power Fight",
+      "playerFact": "You don't leave the company and fight to regain control. You spend years in political battles, draining your energy. Eventually, the company collapses, and you go down with it.",
+      "historicalFact": "Some founders, unable to let go, drove their companies to ruin.",
+      "question": "After the company's collapse, do you become an **organic farmer** and start a simple life?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Leaving the technology world, you become an **organic farmer** in California and begin a simple, peaceful life.",
+        "historical": false,
+        "risk": 3,
+        "independence": 5,
+        "nextEvent": 76
+      },
+      "no": {
+        "consequence": "You remain in frustration and bitterness, never finding peace.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 77
+      }
+    },
+    {
+      "id": 29,
+      "year": 1986,
+      "chapter": "The Retirement Path",
+      "title": "A Quiet Life",
+      "playerFact": "After the ouster, you decide to retire from technology. You engage in quieter pursuits and never return to the industry.",
+      "historicalFact": "Some great entrepreneurs, after a failure, never returned, and history passed them by.",
+      "question": "In retirement, do you travel the world and explore different cultures?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Traveling to different countries, you become a **travel writer** and write bestselling books.",
+        "historical": false,
+        "risk": 3,
+        "independence": 5,
+        "nextEvent": 78
+      },
+      "no": {
+        "consequence": "You stay at home and live a quiet life, but never make an impact on the world.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 79
+      }
+    },
+    {
+      "id": 40,
+      "year": 1990,
+      "chapter": "A Fresh Start",
+      "title": "Triumphant Return",
+      "playerFact": "After years, you return to your original company and save it from bankruptcy. With the iPhone, iPod, and iMac, you transform the world again. Your name is recorded as the greatest innovator of the century.",
+      "historicalFact": "Steve Jobs returned to Apple in 1997 and introduced revolutionary products like the iMac, iPod, and iPhone.",
+      "question": "Are you satisfied with this triumphant return, despite the cancer?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with pride, knowing your name will remain forever in the history of technology.",
+        "historical": true,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the shortness of life, wishing you had more time to innovate.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 60,
+      "year": 1975,
+      "chapter": "The Self-Discovery Path",
+      "title": "Bestselling Memoirist",
+      "playerFact": "By searching for your biological family, you discover your origin story. This journey of self-discovery inspires you to write a bestselling memoir. Your book is read worldwide and makes you a **famous author**.",
+      "historicalFact": "Some adopted individuals, by writing self-discovery memoirs, achieved fame.",
+      "question": "Are you satisfied with this new life as an author?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your story has inspired many other adopted individuals.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost technology path, wishing you had pursued invention instead of writing.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 61,
+      "year": 1975,
+      "chapter": "The Adoption Path",
+      "title": "An Ordinary Clerk",
+      "playerFact": "Running from the past, you become a simple clerk in an office. Your life is quiet, but a sense of loss never leaves you.",
+      "historicalFact": "Some adopted individuals never found their roots and remained in obscurity.",
+      "question": "Are you satisfied with this anonymous life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live peacefully, but you know the world will never remember your name.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the past, wishing you had searched for your roots instead of running away.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 62,
+      "year": 1980,
+      "chapter": "The Solitary Path",
+      "title": "Folk Singer",
+      "playerFact": "Leaving electronics behind, you became a street musician in San Francisco. Your unique voice and deep lyrics caught the attention of a music producer, and you soon became a **well-known folk singer**.",
+      "historicalFact": "Some artists, by switching from technology to music, achieved success.",
+      "question": "Are you satisfied with this artistic life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you didn't build computers, your music touched thousands of hearts.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost technology, wishing you had pursued invention instead of music.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 63,
+      "year": 1980,
+      "chapter": "The Solitary Path",
+      "title": "The Unknown Lone Wolf",
+      "playerFact": "You continue with electronics but never achieve success. Your small projects never become great products, and your name fades into obscurity.",
+      "historicalFact": "The history of technology is full of unfulfilled talents who never achieved fame.",
+      "question": "Are you satisfied with this anonymity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live peacefully, but you know the world will never remember your name.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost opportunities, wishing you had sought partnership instead of going it alone.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 64,
+      "year": 1985,
+      "chapter": "The Academic Path",
+      "title": "Human Rights Activist",
+      "playerFact": "Entering politics, you became an influential human rights and environmental activist. You founded a non-profit organization that operates worldwide, and your name is recorded alongside history's greatest activists.",
+      "historicalFact": "Some intellectuals, by entering social activism, left a lasting impact on the world.",
+      "question": "Are you satisfied with this social impact?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you didn't build technology, you made the world a better place.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost technology, wishing you had pursued innovation instead of politics.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 65,
+      "year": 1985,
+      "chapter": "The Academic Path",
+      "title": "The Forgotten Professor",
+      "playerFact": "You teach for years and never leave a lasting impact. Your students remember you as an average professor.",
+      "historicalFact": "Some professors never achieved fame and remained in obscurity.",
+      "question": "Are you satisfied with this academic life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live peacefully, but you know you never made an impact on the world.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost opportunities, wishing you had pursued entrepreneurship instead of teaching.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 66,
+      "year": 1985,
+      "chapter": "The Aesthetics-Free Path",
+      "title": "Fashion Designer",
+      "playerFact": "Entering the fashion world, you created a minimalist, high-quality clothing brand that became recognized worldwide. Your name stands alongside the greatest fashion designers.",
+      "historicalFact": "Some entrepreneurs, by switching to the fashion industry, achieved global success.",
+      "question": "Are you satisfied with this artistic-commercial life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you didn't build computers, you changed the lifestyle of millions.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost technology, wishing you had pursued innovation instead of fashion.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 67,
+      "year": 1985,
+      "chapter": "The Aesthetics-Free Path",
+      "title": "The Designless Engineer",
+      "playerFact": "Your products never achieve good design and your company remains small. Your competitors, with beautiful products, capture the market and you are left behind.",
+      "historicalFact": "The history of technology is full of companies that failed due to poor design.",
+      "question": "Do you regret this design failure?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the lost days, wishing you had paid attention to aesthetics.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
@@ -354,43 +714,91 @@
       }
     },
     {
-      "id": 24,
-      "year": 1975,
+      "id": 68,
+      "year": 1990,
       "chapter": "The Materialistic Path",
-      "title": "The Soulless Entrepreneur",
-      "playerFact": "You reject the spiritual journey and focus entirely on business. You become wealthy, but your deep aesthetic and human sensibility never develops.",
-      "historicalFact": "Some successful entrepreneurs, by neglecting spirituality and art, never achieved true genius.",
-      "question": "Do you regret not going on the spiritual journey?",
-      "weight": 3,
+      "title": "Arms Dealer",
+      "playerFact": "With wealth and influence, you became an arms dealer in Africa. You have billion-dollar contracts with African governments, and your name is famous in the world of arms trading. Though your conscience is never at peace.",
+      "historicalFact": "The history of arms trading is full of controversial figures who used money to gain political power.",
+      "question": "Are you satisfied with this financial power, despite the guilt?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live wealthy but with an empty heart, wishing you had cared for your soul as well.",
+        "consequence": "You live with accumulated wealth but an empty heart, knowing your name will be recorded in history as a ruthless trader.",
         "historical": false,
-        "risk": 3,
-        "independence": 4,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live with pride, believing pragmatism is better than dreaming — though your products never have soul or unique appeal.",
+        "consequence": "Regretting the past, you leave the arms trade and turn to peaceful activities.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       }
     },
     {
-      "id": 25,
-      "year": 1975,
-      "chapter": "The Lost Opportunity Path",
-      "title": "Lost in the Industry",
-      "playerFact": "You turn down the game company job and drift into scattered work. You never enter the personal computing industry and miss the golden opportunity.",
-      "historicalFact": "The history of industry is full of those who ignored early opportunities and later regretted it.",
-      "question": "Do you regret turning down that job?",
-      "weight": 3,
+      "id": 69,
+      "year": 1990,
+      "chapter": "The Materialistic Path",
+      "title": "Successful Investor",
+      "playerFact": "You stay in business and die wealthy, but there was never any soul in your work. Your name is known in the investment world, but no one remembers you as an innovator.",
+      "historicalFact": "Some investors, despite their wealth, never left a lasting impact on the world.",
+      "question": "Are you satisfied with this wealth, despite the lack of innovation?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live with regret, wishing you had paid attention to that early opportunity.",
+        "consequence": "You live with wealth and comfort, but you know you never made an impact on the world.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost innovation, wishing you had pursued creativity instead of investment.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 70,
+      "year": 1985,
+      "chapter": "The Lost Opportunity Path",
+      "title": "Renowned Chef",
+      "playerFact": "With creative cooking, you became a renowned chef. Your restaurant is listed among the world's best, and your name stands alongside the greatest chefs in history.",
+      "historicalFact": "Some entrepreneurs who failed in technology, by switching to the food industry, achieved global success.",
+      "question": "Are you satisfied with this new life, despite leaving technology?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you didn't build computers, you showed your art in the kitchen.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost technology, wishing you had pursued innovation instead of cooking.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 71,
+      "year": 1985,
+      "chapter": "The Lost Opportunity Path",
+      "title": "The Industry Wanderer",
+      "playerFact": "You stay in scattered work and never achieve success. You spend years in different jobs, none of which lead anywhere.",
+      "historicalFact": "History is full of wasted talents who never reached their potential.",
+      "question": "Do you regret this wandering?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the lost days, wishing you had paid attention to that early opportunity.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
@@ -402,98 +810,194 @@
       }
     },
     {
-      "id": 26,
-      "year": 1976,
+      "id": 72,
+      "year": 1985,
+      "chapter": "The Hobbyist Path",
+      "title": "Hollywood Screenwriter",
+      "playerFact": "Writing science fiction screenplays, you became a famous Hollywood screenwriter. You've written several blockbuster films, and your name stands alongside the greatest screenwriters in history.",
+      "historicalFact": "Some people, by switching to cinema, achieved global success.",
+      "question": "Are you satisfied with this cinematic life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your stories have made millions think.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost technology, wishing you had pursued invention instead of screenwriting.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 73,
+      "year": 1985,
       "chapter": "The Hobbyist Path",
       "title": "The Unknown Inventor",
-      "playerFact": "You don't turn your friend's computing machine into a business. He develops it alone, but without your marketing and vision, it never achieves commercial success.",
-      "historicalFact": "Some great inventions never reached the market due to the lack of a proper entrepreneur.",
-      "question": "Do you regret not turning it into a business?",
-      "weight": 4,
+      "playerFact": "You remain in obscurity and never achieve success. Your inventions are never seen, and your name fades into the darkness of history.",
+      "historicalFact": "History is full of unknown inventors who never achieved fame.",
+      "question": "Are you satisfied with this anonymity?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live with regret, wishing you had had the courage to invest in it.",
+        "consequence": "You live peacefully, but you know the world will never remember your name.",
         "historical": false,
-        "risk": 3,
-        "independence": 4,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live peacefully, believing these machines were just hobbies — unaware they would change the world.",
+        "consequence": "You regret the lost days, wishing you had pursued entrepreneurship instead of hobbies.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       }
     },
     {
-      "id": 27,
-      "year": 1978,
+      "id": 74,
+      "year": 1990,
       "chapter": "The Enthusiast Path",
-      "title": "A Product for Elites",
-      "playerFact": "You keep your machine only for hobbyists and specialists. You never think about simplicity and beauty, and your competitors take the consumer market.",
-      "historicalFact": "Some technology companies, by focusing on specialists, lost the massive consumer market.",
-      "question": "Do you regret focusing only on hobbyists?",
-      "weight": 4,
+      "title": "Contemporary Art Collector",
+      "playerFact": "By opening a gallery, you became one of the largest contemporary art collectors. Your name is immortal in the art world, and your gallery is a destination for art lovers worldwide.",
+      "historicalFact": "Some entrepreneurs, by switching to art, achieved global success.",
+      "question": "Are you satisfied with this artistic-commercial life?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live with regret, wishing you had thought about ordinary people too.",
+        "consequence": "You live with pride, knowing that even if you didn't build technology, you brought art into people's homes.",
         "historical": false,
-        "risk": 3,
-        "independence": 4,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live with pride, believing your products were for the best — though your company stayed small and the world passed you by.",
+        "consequence": "You regret the lost technology, wishing you had pursued innovation instead of art.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       }
     },
     {
-      "id": 28,
-      "year": 1985,
+      "id": 75,
+      "year": 1990,
+      "chapter": "The Enthusiast Path",
+      "title": "Small Company Manager",
+      "playerFact": "You stay in technology but never grow, and your company remains small. Your competitors conquer the world and you are left on the sidelines.",
+      "historicalFact": "The history of technology is full of small companies that never achieved success.",
+      "question": "Do you regret this marginalization?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the lost days, wishing you had thought about ordinary people instead of focusing on specialists.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with pride, believing your products were for the best — though your company stayed small.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 76,
+      "year": 1995,
       "chapter": "The Power Struggle Path",
-      "title": "The Power Fight",
-      "playerFact": "You don't leave the company and fight to regain control. You spend years in political battles, draining your energy. Eventually, the company collapses, and you go down with it.",
-      "historicalFact": "Some founders, unable to let go, drove their companies to ruin.",
-      "question": "Do you regret fighting for power?",
-      "weight": 4,
+      "title": "Organic Farmer",
+      "playerFact": "Leaving the technology world, you became an organic farmer in California. You started a simple, peaceful life, and your organic products are recognized nationwide.",
+      "historicalFact": "Some entrepreneurs, by switching to organic farming, found late peace.",
+      "question": "Are you satisfied with this peaceful life?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live with regret, wishing you had gone your own way and started over instead of fighting.",
+        "consequence": "You live with pride, knowing that even if you left technology, you contributed to people's health.",
         "historical": false,
-        "risk": 5,
-        "independence": 4,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live bitterly, believing you were right — but the company lived, and you with it.",
+        "consequence": "You regret the lost technology, wishing you had returned to industry instead of farming.",
         "historical": false,
-        "risk": 4,
-        "independence": 3,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       }
     },
     {
-      "id": 29,
-      "year": 1986,
-      "chapter": "The Retirement Path",
-      "title": "A Quiet Life",
-      "playerFact": "After the ouster, you decide to retire from technology. You engage in quieter pursuits and never return to the industry. Years later, your competitors change the world, and you are just a spectator.",
-      "historicalFact": "Some great entrepreneurs, after a failure, never returned, and history passed them by.",
-      "question": "Do you regret retiring early?",
-      "weight": 4,
+      "id": 77,
+      "year": 1995,
+      "chapter": "The Power Struggle Path",
+      "title": "The Frustrated One",
+      "playerFact": "You remain in frustration and bitterness, never finding peace. You spend years regretting the lost power, never achieving new success.",
+      "historicalFact": "Some entrepreneurs, unable to let go, ended their lives in frustration.",
+      "question": "Do you regret this frustration?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live with regret, wishing you had had the courage to start over instead of withdrawing.",
+        "consequence": "You regret the lost days, wishing you had gone your own way instead of fighting.",
         "historical": false,
-        "risk": 3,
-        "independence": 4,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live peacefully, believing a quiet life is better than the stress of entrepreneurship — unaware that the world will never remember your name.",
+        "consequence": "You live bitterly, believing you were right — but the world passed you by.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 78,
+      "year": 1995,
+      "chapter": "The Retirement Path",
+      "title": "Travel Writer",
+      "playerFact": "Traveling to different countries, you became a travel writer. Your books are bestsellers and have made you a recognized figure in travel literature.",
+      "historicalFact": "Some retired entrepreneurs, by writing travel books, achieved new fame.",
+      "question": "Are you satisfied with this adventurous life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you left technology, you brought the world into people's homes.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost technology, wishing you had returned to industry instead of traveling.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 79,
+      "year": 1995,
+      "chapter": "The Retirement Path",
+      "title": "The Man at Home",
+      "playerFact": "You stay at home and live a quiet life, but never make an impact on the world. You spend your days in your garden and your nights with memories.",
+      "historicalFact": "Some entrepreneurs, with early retirement, never found a new life.",
+      "question": "Are you satisfied with this quiet life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live peacefully, but you know the world will never remember your name.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost days, wishing you had sought a new mission instead of retirement.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       }
     }

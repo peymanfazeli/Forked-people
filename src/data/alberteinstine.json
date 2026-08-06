@@ -13,7 +13,7 @@
     }
   },
   "ending": {
-    "title": "Your Fate: Seeker of Truth",
+    "title": "Your Fate as a Seeker of Truth",
     "revealName": true
   },
   "events": [
@@ -46,8 +46,8 @@
       "year": 1895,
       "chapter": "Finding a Path",
       "title": "Leaving Home",
-      "playerFact": "In your teens, you find the rigid, inflexible educational environment of your homeland suffocating. You consider leaving to continue your stulives in a neighboring country where the approach to learning is freer.",
-      "historicalFact": "In your teens, you left Germany and continued your stulives in Switzerland, where the educational environment was more compatible with your independent thinking.",
+      "playerFact": "In your teens, you find the rigid, inflexible educational environment of your homeland suffocating. You consider leaving to continue your studies in a neighboring country where the approach to learning is freer.",
+      "historicalFact": "In your teens, you left Germany and continued your studies in Switzerland, where the educational environment was more compatible with your independent thinking.",
       "question": "Despite your dissatisfaction, do you stay in your country and adapt to the traditional education system?",
       "weight": 4,
       "yes": {
@@ -71,7 +71,7 @@
       "chapter": "Finding a Path",
       "title": "The Polytechnic Institute",
       "playerFact": "You are accepted into a prestigious technical institute and devote yourself to mathematics and physics — the sciences that explain the natural world. You have prominent professors, but you find some of their teaching methods outdated.",
-      "historicalFact": "You entered the Swiss Federal Polytechnic in Zurich and stulived mathematics and physics with some of the best minds of that era.",
+      "historicalFact": "You entered the Swiss Federal Polytechnic in Zurich and studied mathematics and physics with some of the best minds of that era.",
       "question": "Despite disagreements with some professors, do you still pursue a deep understanding of nature with all your might?",
       "weight": 4,
       "yes": {
@@ -243,18 +243,18 @@
       "question": "Do you pursue this impossible dream until your last breath, or shift your focus to more practical work?",
       "weight": 4,
       "yes": {
-        "consequence": "You work on the unified theory until your final moment. Though you never reach your destination, the passion for discovery never lives within you.",
+        "consequence": "You work on the unified theory until your final moment. Though you never reach your destination, the passion for discovery never dies within you.",
         "historical": true,
         "risk": 6,
         "independence": 8,
-        "nextEvent": null
+        "nextEvent": 40
       },
       "no": {
         "consequence": "You abandon the dream of a unified theory and turn to teaching and popularizing science. You have a peaceful, productive life, but you always carry the regret of that unfinished dream.",
         "historical": false,
         "risk": 3,
         "independence": 5,
-        "nextEvent": null
+        "nextEvent": 41
       }
     },
     {
@@ -271,21 +271,261 @@
         "historical": false,
         "risk": 4,
         "independence": 3,
-        "nextEvent": 21
+        "nextEvent": 42
       },
       "no": {
         "consequence": "You cannot forget science, but there is no way back. You remain torn between two worlds and achieve neither.",
         "historical": false,
         "risk": 5,
         "independence": 4,
-        "nextEvent": 21
+        "nextEvent": 42
       }
     },
     {
-      "id": 21,
+      "id": 22,
+      "year": 1895,
+      "chapter": "The Traditional Path",
+      "title": "The Obedient Student",
+      "playerFact": "You stay within the rigid education system, memorize lessons, and get good grades, but you never dare to ask the big questions.",
+      "historicalFact": "Many talented students of that era, under the pressure of traditional education, lost their creativity and became ordinary clerks.",
+      "question": "Do you continue on this safe path?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You graduate and become an average teacher in a remote high school. Years later, your students do not remember you.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 43
+      },
+      "no": {
+        "consequence": "You want to rebel, but it is too late. You remain stuck in the middle and never reach the depth of your potential.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 43
+      }
+    },
+    {
+      "id": 24,
+      "year": 1900,
+      "chapter": "The Engineering Path",
+      "title": "A Creative Engineer",
+      "playerFact": "Instead of theorizing, you turn to building machines and practical tools. Your mathematical intelligence makes you a skilled engineer who registers useful inventions.",
+      "historicalFact": "Some of your fellow physicists turned to engineering and achieved remarkable industrial success.",
+      "question": "Are you satisfied with the engineering path?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You register several patents and achieve financial security, but you always know you could have done something greater.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 44
+      },
+      "no": {
+        "consequence": "You leave it halfway and return to university, but you have lost time and never reach the peak.",
+        "historical": false,
+        "risk": 5,
+        "independence": 5,
+        "nextEvent": 44
+      }
+    },
+    {
+      "id": 26,
+      "year": 1905,
+      "chapter": "The Academic Path",
+      "title": "The Frustrated Professor",
+      "playerFact": "After years of struggle and rejections from various universities, you finally secure a position at a small university. But the conservative atmosphere leaves no room for new ideas.",
+      "historicalFact": "Many talented physicists were never able to fulfill their potential due to the conservatism of academic institutions.",
+      "question": "Do you continue working in this limited space, or resign from the university?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You stay at the university for years, publish mediocre papers, and eventually retire. Your students remember you as a strict but uninspiring professor.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 45
+      },
+      "no": {
+        "consequence": "You resign and turn to independent research, but without the financial and intellectual backing of a university, you gradually fade from the scientific scene.",
+        "historical": false,
+        "risk": 7,
+        "independence": 8,
+        "nextEvent": 45
+      }
+    },
+    {
+      "id": 28,
+      "year": 1905,
+      "chapter": "The Conservative Path",
+      "title": "The Ordinary Physicist",
+      "playerFact": "You bury your revolutionary ideas and focus your research on safer areas of classical physics. You publish moderate papers that establish you as a respectable but not outstanding physicist.",
+      "historicalFact": "Many early 20th-century physicists, despite their talent, never dared to break from classical paradigms and remained unknown.",
+      "question": "Are you satisfied with this safe choice?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You retire as a professor at a mid-tier university. You have a good life, but you never came close to the frontiers of knowledge.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 46
+      },
+      "no": {
+        "consequence": "You constantly wrestle with yourself over why you never dared. This doubt robs you of peace for the rest of your life.",
+        "historical": false,
+        "risk": 5,
+        "independence": 5,
+        "nextEvent": 46
+      }
+    },
+    {
+      "id": 30,
+      "year": 1916,
+      "chapter": "The Lost Opportunity Path",
+      "title": "A Missed Chance",
+      "playerFact": "You do not publish the theory of spacetime curvature, and a few years later, a young physicist presents a similar idea, astonishing the world. You are merely a spectator.",
+      "historicalFact": "The history of science is full of rivalries where a physicist, due to hesitation, lost their chance to another.",
+      "question": "Do you feel bitter about someone else taking your place?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You become bitter and live your life in the shadow of that physicist. You never forgive yourself for lacking courage.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 47
+      },
+      "no": {
+        "consequence": "You pass by the matter indifferently and continue your superficial research. Your name is known only among close colleagues.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 47
+      }
+    },
+    {
+      "id": 32,
+      "year": 1919,
+      "chapter": "The Obscurity Path",
+      "title": "Avoiding Fame",
+      "playerFact": "You prevent the solar eclipse test. Your theory is never publicly confirmed, and you remain in obscurity. Years later, another physicist makes the same prediction and achieves fame.",
+      "historicalFact": "Some scientists, due to fear of failure, never put their theories to the test, and history passed them by.",
+      "question": "Do you regret losing your chance at fame?",
+      "weight": 4,
+      "yes": {
+        "consequence": "You die in obscurity, always wondering what would have happened if you had allowed the test.",
+        "historical": false,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 48
+      },
+      "no": {
+        "consequence": "You continue your work peacefully, fleeing the noise of fame. You live a quiet life, but leave no trace in history.",
+        "historical": false,
+        "risk": 2,
+        "independence": 5,
+        "nextEvent": 48
+      }
+    },
+    {
+      "id": 34,
+      "year": 1933,
+      "chapter": "The Resistance Path",
+      "title": "Standing Against Tyranny",
+      "playerFact": "Despite the dangers, you decide not to leave Germany. Soon, the regime arrests you, and you spend years in prison or house arrest. But your spirit is not broken, and you are recognized as a symbol of resistance among your compatriots.",
+      "historicalFact": "Some German intellectuals, despite the danger, stayed in the country and resisted; some died, and some became legends.",
+      "question": "Do you regret your choice to stay and resist?",
+      "weight": 5,
+      "yes": {
+        "consequence": "Despite the hardships, you never abandon your ideals. Your name is recorded in history as a brave figure who stood against tyranny.",
+        "historical": false,
+        "risk": 10,
+        "independence": 9,
+        "nextEvent": 49
+      },
+      "no": {
+        "consequence": "Under pressure from the regime, you back down from your positions and spend years in humiliation and regret.",
+        "historical": false,
+        "risk": 8,
+        "independence": 4,
+        "nextEvent": 49
+      }
+    },
+    {
+      "id": 36,
+      "year": 1945,
+      "chapter": "The Silence Path",
+      "title": "Witness to Catastrophe",
+      "playerFact": "You did not warn anyone. A few years later, atomic bombs fall on cities, killing hundreds of thousands. Your conscience torments you for remaining silent.",
+      "historicalFact": "Some scientists who knew about the possibility of the atomic bomb chose to remain silent and later expressed deep regret for their inaction.",
+      "question": "Do you carry this silence with you for the rest of your life?",
+      "weight": 5,
+      "yes": {
+        "consequence": "You become an active peace activist for the rest of your life, trying to atone for your mistake with speeches and advocacy, but you can never erase the images of Hiroshima from your mind.",
+        "historical": false,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 50
+      },
+      "no": {
+        "consequence": "You remain silent, burying yourself in routine scientific work to silence your conscience, but you never succeed.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 50
+      }
+    },
+    {
+      "id": 40,
+      "year": 1955,
+      "chapter": "The End of a Dream",
+      "title": "The Restless Seeker",
+      "playerFact": "Until your final moments, you chase the unified theory. Though you never reach it, the passion for discovery keeps you alive. On your deathbed, you gaze at the stars and smile.",
+      "historicalFact": "Einstein worked on the unified field theory until the end of his life and never reached it, but his love for knowledge never died.",
+      "question": "Do you regret a life devoted entirely to science?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with a bittersweet regret, wishing you could have found the final answer. But you know the path you took brought future generations closer to the truth.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with deep peace, knowing that the joy of questioning is itself the answer. Your name is immortalized in the history of science, and your legacy will inspire centuries.",
+        "historical": true,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 41,
+      "year": 1955,
+      "chapter": "The End of a Teaching Career",
+      "title": "The Mentor of Generations",
+      "playerFact": "You abandoned the dream of a unified theory and turned to teaching and popularizing science. You have nurtured many students, and your name is known as the greatest physics teacher of the century.",
+      "historicalFact": "Some great physicists, by setting aside complex research, turned to education and left a lasting impact on future generations.",
+      "question": "Are you satisfied with choosing teaching over research?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with pride, knowing your students will continue your path. Though you never found the final answer yourself, you prepared many minds to seek it.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting not reaching the unified theory, wishing you had continued the search instead of teaching.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 42,
       "year": 1920,
       "chapter": "The Practical Path",
-      "title": "Late Regret",
+      "title": "The Regretful Merchant",
       "playerFact": "You have accumulated great wealth, but when you look back, you realize you added nothing lasting to the world. Your name is not in the history of science, only in financial ledgers.",
       "historicalFact": "The great scientific figures of your time transformed the world, while your name remained only among businessmen.",
       "question": "Do you regret abandoning science?",
@@ -306,35 +546,11 @@
       }
     },
     {
-      "id": 22,
-      "year": 1895,
-      "chapter": "The Traditional Path",
-      "title": "The Obelivent Student",
-      "playerFact": "You stay within the rigid education system, memorize lessons, and get good grades, but you never dare to ask the big questions.",
-      "historicalFact": "Many talented students of that era, under the pressure of traditional education, lost their creativity and became ordinary clerks.",
-      "question": "Do you continue on this safe path?",
-      "weight": 3,
-      "yes": {
-        "consequence": "You graduate and become an average teacher in a remote high school. Years later, your students do not remember you.",
-        "historical": false,
-        "risk": 2,
-        "independence": 3,
-        "nextEvent": 23
-      },
-      "no": {
-        "consequence": "You want to rebel, but it is too late. You remain stuck in the middle and never reach the depth of your potential.",
-        "historical": false,
-        "risk": 4,
-        "independence": 5,
-        "nextEvent": 23
-      }
-    },
-    {
-      "id": 23,
+      "id": 43,
       "year": 1930,
       "chapter": "The Traditional Path",
-      "title": "Oblivion",
-      "playerFact": "You live a quiet life, but you leave no mark. You retire in a small village and spend your last days regretting the courage you never had.",
+      "title": "The Forgotten Teacher",
+      "playerFact": "For years, you taught as an average teacher in a remote high school. Your students do not remember you, and your name is recorded nowhere.",
       "historicalFact": "The history of science is filled with wasted talents who never dared to cross the boundaries of knowledge.",
       "question": "Do you regret never daring to think big?",
       "weight": 2,
@@ -354,47 +570,23 @@
       }
     },
     {
-      "id": 24,
-      "year": 1900,
-      "chapter": "The Engineering Path",
-      "title": "A Creative Engineer",
-      "playerFact": "Instead of theorizing, you turn to building machines and practical tools. Your mathematical intelligence makes you a skilled engineer who registers useful inventions.",
-      "historicalFact": "Some of your fellow physicists turned to engineering and achieved remarkable industrial success.",
-      "question": "Are you satisfied with the engineering path?",
-      "weight": 3,
-      "yes": {
-        "consequence": "You register several patents and achieve financial security, but you always know you could have done something greater.",
-        "historical": false,
-        "risk": 3,
-        "independence": 4,
-        "nextEvent": 25
-      },
-      "no": {
-        "consequence": "You leave it halfway and return to university, but you have lost time and never reach the peak.",
-        "historical": false,
-        "risk": 5,
-        "independence": 5,
-        "nextEvent": 25
-      }
-    },
-    {
-      "id": 25,
+      "id": 44,
       "year": 1940,
       "chapter": "The Engineering Path",
-      "title": "The Unknown Industrialist",
-      "playerFact": "Your inventions are used in industry, but your name is not recorded in the history of science. You are merely a successful engineer, not a great discoverer.",
-      "historicalFact": "Industrial history is full of capable engineers who changed the world but never achieved scientific fame.",
-      "question": "Are you proud of your position as a successful industrialist?",
+      "title": "The Green Tech Inventor",
+      "playerFact": "Your inventions are used in industry, but you have gone beyond ordinary machines. You have designed clean energy systems and pollution-reducing devices. Your name is known in environmental engineering circles.",
+      "historicalFact": "Some physicists of that era, by shifting toward sustainable technologies, left a lasting impact on the environment.",
+      "question": "Are you satisfied with solving practical problems of the Earth instead of theorizing?",
       "weight": 2,
       "yes": {
-        "consequence": "You live with pride, knowing your inventions made people's lives easier, even if your name was never placed alongside giants like Newton.",
+        "consequence": "You live with pride, knowing your inventions improved the lives of millions. Though your name is not next to Newton's, it lives in clean air and the health of the planet.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live with regret, wishing you had pursued the secrets of the cosmos instead of machines.",
+        "consequence": "You live regretting the unwritten theories, wishing you had pursued the secrets of the cosmos instead of machines.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -402,35 +594,11 @@
       }
     },
     {
-      "id": 26,
-      "year": 1905,
-      "chapter": "The Academic Path",
-      "title": "The Frustrated Professor",
-      "playerFact": "After years of struggle and rejections from various universities, you finally secure a position at a small university. But the conservative atmosphere leaves no room for new ideas.",
-      "historicalFact": "Many talented physicists were never able to fulfill their potential due to the conservatism of academic institutions.",
-      "question": "Do you continue working in this limited space, or resign from the university?",
-      "weight": 4,
-      "yes": {
-        "consequence": "You stay at the university for years, publish mediocre papers, and eventually retire. Your students remember you as a strict but uninspiring professor.",
-        "historical": false,
-        "risk": 3,
-        "independence": 4,
-        "nextEvent": 27
-      },
-      "no": {
-        "consequence": "You resign and turn to independent research, but without the financial and intellectual backing of a university, you gradually fade from the scientific scene.",
-        "historical": false,
-        "risk": 7,
-        "independence": 8,
-        "nextEvent": 27
-      }
-    },
-    {
-      "id": 27,
+      "id": 45,
       "year": 1950,
       "chapter": "The Academic Path",
       "title": "The Forgotten Professor",
-      "playerFact": "In your old age, you look at your library and see that none of your writings have been able to shake the world. Your name remains only in a few forgotten papers.",
+      "playerFact": "You taught at the university for years and published mediocre papers. None of your writings shook the world, and your name remains only in a few forgotten articles.",
       "historicalFact": "Many scientific figures were famous in their time but were quickly forgotten after their deaths.",
       "question": "Do you regret never taking the risk to publish radical ideas?",
       "weight": 2,
@@ -450,31 +618,7 @@
       }
     },
     {
-      "id": 28,
-      "year": 1905,
-      "chapter": "The Conservative Path",
-      "title": "The Ordinary Physicist",
-      "playerFact": "You bury your revolutionary ideas and focus your research on safer areas of classical physics. You publish moderate papers that establish you as a respectable but not outstanding physicist.",
-      "historicalFact": "Many early 20th-century physicists, despite their talent, never dared to break from classical paradigms and remained unknown.",
-      "question": "Are you satisfied with this safe choice?",
-      "weight": 4,
-      "yes": {
-        "consequence": "You retire as a professor at a mid-tier university. You have a good life, but you never came close to the frontiers of knowledge.",
-        "historical": false,
-        "risk": 3,
-        "independence": 4,
-        "nextEvent": 29
-      },
-      "no": {
-        "consequence": "You constantly wrestle with yourself over why you never dared. This doubt robs you of peace for the rest of your life.",
-        "historical": false,
-        "risk": 5,
-        "independence": 5,
-        "nextEvent": 29
-      }
-    },
-    {
-      "id": 29,
+      "id": 46,
       "year": 1955,
       "chapter": "The Conservative Path",
       "title": "The End of a Life of Caution",
@@ -498,35 +642,11 @@
       }
     },
     {
-      "id": 30,
-      "year": 1916,
-      "chapter": "The Lost Opportunity Path",
-      "title": "A Missed Chance",
-      "playerFact": "You do not publish the theory of spacetime curvature, and a few years later, a young physicist presents a similar idea, astonishing the world. You are merely a spectator.",
-      "historicalFact": "The history of science is full of rivalries where a physicist, due to hesitation, lost their chance to another.",
-      "question": "Do you feel bitter about someone else taking your place?",
-      "weight": 4,
-      "yes": {
-        "consequence": "You become bitter and live your life in the shadow of that physicist. You never forgive yourself for lacking courage.",
-        "historical": false,
-        "risk": 3,
-        "independence": 4,
-        "nextEvent": 31
-      },
-      "no": {
-        "consequence": "You pass by the matter indifferently and continue your superficial research. Your name is known only among close colleagues.",
-        "historical": false,
-        "risk": 2,
-        "independence": 3,
-        "nextEvent": 31
-      }
-    },
-    {
-      "id": 31,
+      "id": 47,
       "year": 1950,
       "chapter": "The Lost Opportunity Path",
-      "title": "Bitter Memories",
-      "playerFact": "Old age arrives. Every time you hear the name of that famous physicist, your heart sinks. You know you could have been in his place, but you weren't.",
+      "title": "Bitter Memories of a Missed Chance",
+      "playerFact": "Every time you hear the name of that famous physicist, your heart sinks. You know you could have been in their place, but you weren't.",
       "historicalFact": "History forgets hesitant people and remembers only those who took risks.",
       "question": "Do you carry this regret with you forever?",
       "weight": 2,
@@ -546,34 +666,10 @@
       }
     },
     {
-      "id": 32,
-      "year": 1919,
-      "chapter": "The Obscurity Path",
-      "title": "Avoiding Fame",
-      "playerFact": "You prevent the solar eclipse test. Your theory is never publicly confirmed, and you remain in obscurity. Years later, another physicist makes the same prediction and achieves fame.",
-      "historicalFact": "Some scientists, due to fear of failure, never put their theories to the test, and history passed them by.",
-      "question": "Do you regret losing your chance at fame?",
-      "weight": 4,
-      "yes": {
-        "consequence": "You live in obscurity, always wondering what would have happened if you had allowed the test.",
-        "historical": false,
-        "risk": 3,
-        "independence": 4,
-        "nextEvent": 33
-      },
-      "no": {
-        "consequence": "You continue your work peacefully, fleeing the noise of fame. You live a quiet life, but leave no trace in history.",
-        "historical": false,
-        "risk": 2,
-        "independence": 5,
-        "nextEvent": 33
-      }
-    },
-    {
-      "id": 33,
+      "id": 48,
       "year": 1955,
       "chapter": "The Obscurity Path",
-      "title": "A Shadow in History",
+      "title": "A Shadow in the Darkness of History",
       "playerFact": "You end your life in isolation. No one knows your name. You are buried in a simple grave, while your bolder contemporaries are immortalized in history books.",
       "historicalFact": "The history of science is a vast graveyard of unknown talent.",
       "question": "Are you satisfied with your anonymity?",
@@ -594,47 +690,23 @@
       }
     },
     {
-      "id": 34,
-      "year": 1933,
-      "chapter": "The Resistance Path",
-      "title": "Standing Against Tyranny",
-      "playerFact": "Despite the dangers, you decide not to leave Germany. Soon, the regime arrests you, and you spend years in prison or house arrest. But your spirit is not broken, and you are recognized as a symbol of resistance among your compatriots.",
-      "historicalFact": "Some German intellectuals, despite the danger, stayed in the country and resisted; some lived, and some became legends.",
-      "question": "Do you regret your choice to stay and resist?",
-      "weight": 5,
-      "yes": {
-        "consequence": "Despite the hardships, you never abandon your ideals. Your name is recorded in history as a brave figure who stood against tyranny.",
-        "historical": false,
-        "risk": 10,
-        "independence": 9,
-        "nextEvent": 35
-      },
-      "no": {
-        "consequence": "Under pressure from the regime, you back down from your positions and spend years in humiliation and regret.",
-        "historical": false,
-        "risk": 8,
-        "independence": 4,
-        "nextEvent": 35
-      }
-    },
-    {
-      "id": 35,
+      "id": 49,
       "year": 1950,
       "chapter": "The Resistance Path",
-      "title": "Myth or Victim",
-      "playerFact": "The war ends and you are freed. But years of captivity have taken your health and youth. If you stood firm, you are recognized as a national hero. If you broke, you are just another statistic in history.",
-      "historicalFact": "History always celebrates the survivors of resistance, but also buries its nameless victims.",
-      "question": "Was staying and resisting worth the price you paid?",
+      "title": "The Unsung Hero of Resistance",
+      "playerFact": "You spent years in prison and house arrest. Though your body is broken, your spirit never bent. After the war, you are recognized as a symbol of intellectual resistance against dictatorship.",
+      "historicalFact": "Some intellectuals who stood against Nazism, though they survived, never gained fame and remained in the shadows.",
+      "question": "Do you regret staying and resisting instead of fleeing?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with your head held high, knowing you did not remain silent in the face of tyranny, even though the cost was heavy.",
+        "consequence": "You live with your head held high, knowing you did not remain silent in the face of tyranny, even though the cost was heavy. Your name is recorded as a brave figure in history.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live with a mountain of regret, wishing you had saved your own life instead of resisting.",
+        "consequence": "You live with a mountain of regret, wishing you had saved your own life instead of resisting. But you know that if you could go back, you would make the same choice.",
         "historical": false,
         "risk": 2,
         "independence": 3,
@@ -642,48 +714,24 @@
       }
     },
     {
-      "id": 36,
-      "year": 1945,
-      "chapter": "The Silence Path",
-      "title": "Witness to Catastrophe",
-      "playerFact": "You did not warn anyone. A few years later, atomic bombs fall on cities, killing hundreds of thousands. Your conscience torments you for remaining silent.",
-      "historicalFact": "Some scientists who knew about the possibility of the atomic bomb chose to remain silent and later expressed deep regret for their inaction.",
-      "question": "Do you carry this silence with you for the rest of your life?",
-      "weight": 5,
-      "yes": {
-        "consequence": "You become an active peace activist for the rest of your life, trying to atone for your mistake with speeches and advocacy, but you can never erase the images of Hiroshima from your mind.",
-        "historical": false,
-        "risk": 6,
-        "independence": 7,
-        "nextEvent": 37
-      },
-      "no": {
-        "consequence": "You remain silent, burying yourself in routine scientific work to silence your conscience, but you never succeed.",
-        "historical": false,
-        "risk": 4,
-        "independence": 5,
-        "nextEvent": 37
-      }
-    },
-    {
-      "id": 37,
+      "id": 50,
       "year": 1955,
       "chapter": "The Silence Path",
-      "title": "The Heavy Burden of Silence",
-      "playerFact": "At the end of your life, you think to yourself: if you had written that letter, perhaps you could have prevented the catastrophe — or perhaps not. But that 'perhaps' will stay with you forever.",
-      "historicalFact": "Einstein later said that signing the letter to Roosevelt was the greatest mistake of his life. But absolute silence is an even greater mistake.",
-      "question": "Would you rather have given the warning and taken responsibility for the consequences, or remained silent and watched the catastrophe unfold?",
+      "title": "The Late Pacifist",
+      "playerFact": "Years after the Hiroshima catastrophe, you have become one of the world's most renowned peace activists. Your speeches at the United Nations have inspired millions to think about peace. Though you can never erase the images of the bombs from your mind.",
+      "historicalFact": "After World War II, Einstein became a prominent peace activist and repeatedly warned about the dangers of nuclear war.",
+      "question": "Do you regret coming to this path too late?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with a conscience full of torment, knowing your silence cost thousands of lives.",
+        "consequence": "You live with deep sorrow, wishing you had raised your voice earlier. But you know that every moment after is an opportunity for redemption.",
         "historical": false,
         "risk": 2,
         "independence": 3,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live telling yourself 'the war would have ended anyway,' but deep down, you know you were wrong.",
-        "historical": false,
+        "consequence": "You live with pride, knowing that even if you came late, you came to the right path. Your legacy lives not only in physics equations but in the hearts of those who hope for peace.",
+        "historical": true,
         "risk": 2,
         "independence": 3,
         "nextEvent": null

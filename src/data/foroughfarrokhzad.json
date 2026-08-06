@@ -96,21 +96,21 @@
       "title": "Journey to Europe",
       "playerFact": "After publishing your poems, you receive an invitation to travel to Europe. An opportunity to see a new world, meet artists, and breathe freer air.",
       "historicalFact": "Forough traveled to Italy, Germany, and England in 1958, meeting European artists and intellectuals.",
-      "question": "Do you travel to Europe to open new horizons?",
+      "question": "Do you decide not to travel to Europe and stay in Iran?",
       "weight": 4,
       "yes": {
-        "consequence": "Traveling to Europe broadens your worldview and gives your poetry new colors, though loneliness accompanies you.",
-        "historical": true,
-        "risk": 6,
-        "independence": 7,
-        "nextEvent": 5
-      },
-      "no": {
         "consequence": "You stay in Iran, never seeing those new horizons. Your poetry remains within the same repetitive space.",
         "historical": false,
         "risk": 3,
         "independence": 4,
         "nextEvent": 26
+      },
+      "no": {
+        "consequence": "Traveling to Europe broadens your worldview and gives your poetry new colors, though loneliness accompanies you.",
+        "historical": true,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 5
       }
     },
     {
@@ -143,22 +143,22 @@
       "chapter": "Love and Death",
       "title": "The Final Chapter",
       "playerFact": "Your final years are filled with unmatched passion. You write 'Another Birth' and 'Let Us Believe in the Beginning of the Cold Season'. A new love enters your life — a man as stormy as you. But life always has a bitter end for poets.",
-      "historicalFact": "Forough published 'Another Birth' in 1963 and had a romantic and artistic relationship with Ebrahim Golestan in later years. She lived in a car accident on February 13, 1967.",
-      "question": "Do you embrace love and continue writing until the bitter end, even knowing a harsh ending awaits you?",
+      "historicalFact": "Forough published 'Another Birth' in 1963 and had a romantic and artistic relationship with Ebrahim Golestan in later years. She died in a car accident on February 13, 1967.",
+      "question": "Do you choose to retreat from danger and live a quieter, longer life?",
       "weight": 5,
       "yes": {
+        "consequence": "You retreat from danger. You live a quiet, long life, but 'Another Birth' is never written, and your name remains as a mediocre poet in history.",
+        "historical": false,
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 35
+      },
+      "no": {
         "consequence": "You live fully, write, and love. Your early death immortalizes your name, and your poems shine forever in the history of Persian literature.",
         "historical": true,
         "risk": 10,
         "independence": 10,
-        "nextEvent": null
-      },
-      "no": {
-        "consequence": "You withdraw from danger. You live a quiet, long life, but 'Another Birth' is never written, and your name remains as a mediocre poet in history.",
-        "historical": false,
-        "risk": 4,
-        "independence": 5,
-        "nextEvent": null
+        "nextEvent": 40
       }
     },
     {
@@ -168,21 +168,21 @@
       "title": "A Faithful Wife",
       "playerFact": "You back out of the early marriage and stay in your family home. Years later, you marry a respectable man who knows nothing about poetry. Your life is calm, but empty of the passion that burns inside you.",
       "historicalFact": "Some women of Forough's era, by staying within tradition, led ordinary and uneventful lives.",
-      "question": "Do you regret your safe choice and long for a different life?",
+      "question": "In middle age, do you seek the poetry you never wrote in your youth?",
       "weight": 3,
       "yes": {
-        "consequence": "With regret for the lost poetry, you remain suffocated until the end and never become what you could have been.",
+        "consequence": "Seeing the void in your life, you turn to writing and read your poems in small literary gatherings. Gradually, you become a recognized poet in women's circles.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 30
       },
       "no": {
-        "consequence": "You live peacefully, content with your life, but your name is never recorded in literary history, and no one ever hears your voice.",
+        "consequence": "You continue your quiet, uneventful life and never pick up a pen. Your name is never recorded in literary history, and no one ever hears your voice.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 30
       }
     },
     {
@@ -192,21 +192,21 @@
       "title": "A Woman in a Cage",
       "playerFact": "You stay with your husband, even though the love of the early days is gone. Your poetry never reaches true rebellion and always remains on the margins of official literature.",
       "historicalFact": "Literary history is full of women who, by remaining in the cage, never reached their potential.",
-      "question": "Do you regret not writing those daring poems?",
+      "question": "In middle age, do you try to find a new voice by writing short stories?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with deep regret, wishing you had had the courage to let go of everything.",
+        "consequence": "By writing short stories, you gradually become a recognized writer in literary circles. Though you never published your bold poems, your stories carry your feminine voice to society.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 31
       },
       "no": {
-        "consequence": "You live with apparent peace, telling yourself a quiet life was better than poetic controversy — but you know you silenced a scream.",
+        "consequence": "You stay in the cage and never write. You live with apparent peace, but you know you silenced a scream.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 31
       }
     },
     {
@@ -214,23 +214,23 @@
       "year": 1957,
       "chapter": "The Silence Path",
       "title": "The Unknown Poet",
-      "playerFact": "You don't publish your controversial poems and spend years in silence. Sometimes you write for yourself, but you never dare to share. When you live, no one knows what treasure you carried in your chest.",
+      "playerFact": "You don't publish your controversial poems and spend years in silence. Sometimes you write for yourself, but you never dare to share. No one knows what treasure you carried in your chest.",
       "historicalFact": "Literary history is full of poets who buried their talent in silence.",
-      "question": "Do you regret your silence and muteness?",
+      "question": "After years of silence, do you meet a young publisher and decide to publish your poems?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with an agonizing regret, wishing you had had the courage to publish instead of fearing.",
+        "consequence": "With the young publisher's help, you publish your poems and receive unexpected acclaim. Your name joins the history of Persian literature, though late.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 32
       },
       "no": {
-        "consequence": "You live in peace of mind, but the world never learns of your existence, and your name fades into the darkness of history.",
+        "consequence": "You remain silent until the end and never let your voice be heard. You tell yourself peace is better than controversy — but the world never learns of your existence.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 32
       }
     },
     {
@@ -240,21 +240,21 @@
       "title": "The Homebound Poet",
       "playerFact": "You don't go to Europe and stay in Iran. Although your poems are read inside the country, you never achieve the global depth you could have reached.",
       "historicalFact": "Some poets of Forough's era, by not going to Europe, never achieved global fame.",
-      "question": "Do you regret not going to Europe?",
+      "question": "Do you decide to teach literature at university instead of writing poetry, leaving a lasting impact on the next generation?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret for the unseen horizons, wishing you had had the courage to travel.",
+        "consequence": "You become a university professor and teach Persian literature for years. Your students read your poems in class, and your name remains as an influential teacher in literary history.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 33
       },
       "no": {
-        "consequence": "You live with pride, saying you remained loyal to your homeland — but you know the world never heard your voice.",
+        "consequence": "You continue your limited poetry and never achieve global fame. You live regretting the unseen horizons.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 33
       }
     },
     {
@@ -264,17 +264,185 @@
       "title": "The Artist Who Didn't Go",
       "playerFact": "You give up on making the film about lepers and turn to simpler, less risky work. You never make that lasting film, and your name is never recorded in cinema history.",
       "historicalFact": "Some filmmakers of that era, due to fear of controversy, never completed their grand projects.",
-      "question": "Do you regret the unmade film?",
+      "question": "Years later, seeing influential documentaries, do you regret your decision and return to filmmaking?",
       "weight": 4,
       "yes": {
-        "consequence": "You spend your days regretting the lost work, wishing you had had the courage to make it.",
+        "consequence": "Regretting the past, you pick up the camera again and this time make a documentary about rural Iranian women. Your film gains attention in domestic festivals.",
+        "historical": false,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 34
+      },
+      "no": {
+        "consequence": "You never return to filmmaking, living with the thought that you 'avoided danger' — but you know the world lost a great film.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 34
+      }
+    },
+    {
+      "id": 30,
+      "year": 1971,
+      "chapter": "The Traditional Path",
+      "title": "Poet of Women's Circles",
+      "playerFact": "Despite your traditional marriage, you turned to poetry in middle age. Now you read your poems in women's literary gatherings and have become a known figure in these circles. Though you lack national fame, your impact on young women is profound.",
+      "historicalFact": "Some women poets of that era, despite social limitations, created art in private circles.",
+      "question": "Are you satisfied with this deep impact on young women, despite your national anonymity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if your name isn't in textbooks, you are immortal in the hearts of the women you inspired.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live peacefully, saying you avoided danger — but you know the world lost a great film.",
+        "consequence": "You live regretting the lack of national fame, wishing you had pursued wider publication instead of private circles.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 31,
+      "year": 1976,
+      "chapter": "The Compromise Path",
+      "title": "Short Story Writer",
+      "playerFact": "Despite staying in your marriage, you have become a recognized writer in literary circles through your short stories. Your stories tell of Iranian women's lives and give voice to the silenced.",
+      "historicalFact": "Some women writers of that era used short stories to express their experiences.",
+      "question": "Are you satisfied with this new literary path, even though you never became a controversial poet?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your stories gave voice to women who never dared to speak.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting your unpublished poems, wishing you had pursued your bold poetry instead of stories.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 32,
+      "year": 1966,
+      "chapter": "The Silence Path",
+      "title": "Late-Blooming Poet",
+      "playerFact": "After years of silence, with a young publisher's help, you publish your poems. The book receives unexpected acclaim, and your name becomes known as a newly discovered poet.",
+      "historicalFact": "Some poets, by publishing late, achieved sudden fame.",
+      "question": "Are you satisfied with this late fame, despite the lost years?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if late, your voice finally reached the world. Your poems inspire a new generation of women poets.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost years, wishing you had raised your voice in your youth instead of staying silent.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 33,
+      "year": 1971,
+      "chapter": "The Homeland Path",
+      "title": "Literature Professor",
+      "playerFact": "Through university teaching, you have become one of the most beloved Persian literature professors. Your students read your poems in class and admire you as a teacher who is also a poet.",
+      "historicalFact": "Some contemporary poets, through university teaching, left a lasting impact on the next generation.",
+      "question": "Are you satisfied with this educational impact, despite lacking global fame?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your students will continue your path and your name will be recorded in Iranian literary history as a great teacher.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lack of global fame, wishing you had pursued international publication instead of teaching.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 34,
+      "year": 1976,
+      "chapter": "The Withdrawal Path",
+      "title": "Late Filmmaker",
+      "playerFact": "After years of regret, you pick up the camera again and make a documentary about rural Iranian women. Your film gains attention in domestic festivals and introduces you as a late but impactful filmmaker.",
+      "historicalFact": "Some filmmakers, by starting late, achieved notable success.",
+      "question": "Are you satisfied with this late return to cinema?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if late, you finally created a lasting work. Your film gave voice to women who were never heard.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost years, wishing you had made the leper film from the start instead of withdrawing.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 35,
+      "year": 1971,
+      "chapter": "The Retreat Path",
+      "title": "A Long Life on the Margins",
+      "playerFact": "By retreating from danger, you live a long and peaceful life. Though 'Another Birth' was never written, you become one of the influential figures in Iran's literary society — not as a poet, but as a critic and intellectual.",
+      "historicalFact": "Some poets of that era, by choosing a safe life, became influential cultural figures.",
+      "question": "Are you satisfied with this long life and cultural impact, despite not writing the masterpieces?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you didn't write great poems, your impact on Iran's intellectual life was deep and lasting.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the unwritten masterpieces, wishing you had continued love and poetry to the bitter end instead of retreating.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 40,
+      "year": 1967,
+      "chapter": "The Immortal Ending",
+      "title": "The Poet Who Became Immortal",
+      "playerFact": "With your early death, your name becomes immortal in Persian literary history. 'Another Birth' and 'Let Us Believe' are recognized as masterpieces of modern Persian poetry, and future generations know you as the feminine voice that never fell silent.",
+      "historicalFact": "Forough Farrokhzad died in a car accident on February 13, 1967, and after her death, she became one of Iran's most influential poets.",
+      "question": "Are you satisfied with this posthumous immortality, achieved at the cost of a short life?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with deep peace, knowing your name will shine forever in literary history and your poems will guide generations toward freedom and truth.",
+        "historical": true,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost life, wishing you had lived longer to create more masterpieces instead of dying young.",
         "historical": false,
         "risk": 1,
         "independence": 2,

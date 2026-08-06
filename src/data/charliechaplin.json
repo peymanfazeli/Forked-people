@@ -2,7 +2,7 @@
   "id": "charlie-chaplin",
   "name": "Charlie Chaplin",
   "birthYear": 1889,
-  "description": "A journey through the life of cinema's comedian — from the poor streets to the heights of Hollywood and exile.",
+  "description": "A journey through the life of a comedian — from the poor streets of London to the heights of Hollywood and bitter exile.",
   "scoring": {
     "historicalSimilarity": "sum of weight for historically matching choices / sum of all event weights * 100",
     "risk": "average risk score of selected choices",
@@ -13,7 +13,7 @@
     }
   },
   "ending": {
-    "title": "Your Fate: Immortal Comedian or Forgotten Artist",
+    "title": "Your Fate: Immortal Comedian or Traveler of Other Lands",
     "revealName": true
   },
   "events": [
@@ -106,7 +106,7 @@
         "nextEvent": 5
       },
       "no": {
-        "consequence": "You refrain from making a political film and continue with harmless comelives. You never achieve that high artistic and human stature, and history remembers you only as an entertaining comedian.",
+        "consequence": "You refrain from making a political film and continue with harmless comedies. You never achieve that high artistic and human stature, and history remembers you only as an entertaining comedian.",
         "historical": false,
         "risk": 3,
         "independence": 4,
@@ -120,7 +120,7 @@
       "title": "Accusations and Escape",
       "playerFact": "Political and moral accusations pile up against you. McCarthyism is at its peak in America, and you are accused of espionage and communism. You can stay and fight, or leave everything behind and flee to Europe.",
       "historicalFact": "During the McCarthy era, Chaplin was accused of communist activities. He left America in 1952 and moved to Switzerland.",
-      "question": "Do you stay in America and fight the accusations, or do you leave everything behind and go to Europe?",
+      "question": "Do you decide to stay in America and fight the accusations?",
       "weight": 5,
       "yes": {
         "consequence": "You stay in America and spend years in court battles. Though eventually acquitted, you lose your peak creative years.",
@@ -144,21 +144,21 @@
       "title": "Triumphant Return",
       "playerFact": "Decades have passed since your exile. Now old and weary, you are invited to return to America to receive an honorary Oscar. This return could be the brilliant ending to a lifetime of art.",
       "historicalFact": "Chaplin returned to America in 1972 to receive an honorary Academy Award, receiving an unprecedented welcome from the public and artists.",
-      "question": "Do you return to America to accept the Oscar and be welcomed with open arms, or do you stay in Europe and decline the return?",
+      "question": "Do you return to America to accept the Oscar?",
       "weight": 4,
       "yes": {
         "consequence": "You return to America and receive the longest standing ovation in Oscar history. This return is the crown of victory over your turbulent life.",
         "historical": true,
         "risk": 4,
         "independence": 5,
-        "nextEvent": null
+        "nextEvent": 45
       },
       "no": {
         "consequence": "You stay in Switzerland and never experience that glorious applause. You live with an incomplete ending, and the world never shares that historic moment with you.",
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": null
+        "nextEvent": 46
       }
     },
     {
@@ -168,21 +168,21 @@
       "title": "A Simple Worker",
       "playerFact": "You give up on art and take a simple job. You spend years in factories and shops, never becoming what you could have been.",
       "historicalFact": "Many poor children of Chaplin's era never escaped the cycle of poverty and remained in obscurity.",
-      "question": "Do you regret abandoning art?",
+      "question": "In the factory, do you become a **union leader** and fight for workers' rights?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret for the lost life, wishing you had pursued your dreams instead of giving up.",
+        "consequence": "Becoming a **union leader**, you become the voice of poor workers and create major reforms in labor laws.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 50
       },
       "no": {
-        "consequence": "You live peacefully, telling yourself a simple life is better — but the world never remembers your name.",
+        "consequence": "You remain a simple worker, never leaving a mark. Your life passes in obscurity.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 51
       }
     },
     {
@@ -192,21 +192,21 @@
       "title": "A London Theatre Actor",
       "playerFact": "You don't go to America and stay in London's theatres. You become a good actor, but you never become a global star.",
       "historicalFact": "Some of Chaplin's contemporaries stayed in London theatre and never achieved Hollywood fame.",
-      "question": "Do you regret not going to America?",
+      "question": "Do you decide to enter politics and become a **Member of Parliament** representing the working class?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret for the unseen horizons, wishing you had had the courage to travel.",
+        "consequence": "Entering politics, you become an **influential Member of Parliament** and implement major social reforms in Britain.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 52
       },
       "no": {
-        "consequence": "You live with pride, saying you remained loyal to your homeland — but the world never heard your voice.",
+        "consequence": "You stay in theatre and never achieve fame. Your name is only known among London theatre circles.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 53
       }
     },
     {
@@ -215,11 +215,251 @@
       "chapter": "The Serious Path",
       "title": "The Comedian Who Turned Serious",
       "playerFact": "You abandon the Tramp and move toward serious roles. Though you are a good actor, you never achieve the popularity of that unforgettable character.",
-      "historicalFact": "Some comedians who changed their style lost their aulivences and never returned to their former status.",
-      "question": "Do you regret abandoning the Tramp character?",
+      "historicalFact": "Some comedians who changed their style lost their audiences and never returned to their former status.",
+      "question": "Do you decide to become a **drama director** and make serious films instead?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret for the lost popularity, wishing you had stayed loyal to that unique character.",
+        "consequence": "By directing drama films, you become one of **cinema's greatest directors**, winning multiple Academy Awards.",
+        "historical": false,
+        "risk": 5,
+        "independence": 6,
+        "nextEvent": 54
+      },
+      "no": {
+        "consequence": "You continue acting but never reach the peak, remaining on the margins.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 55
+      }
+    },
+    {
+      "id": 26,
+      "year": 1941,
+      "chapter": "The Safe Path",
+      "title": "A Risk-Free Comedian",
+      "playerFact": "You give up on making a political film and continue with harmless comedies. Your films are entertaining but none leave a lasting mark on history.",
+      "historicalFact": "Some artists, by censoring themselves, never expressed their true opinions and never reached the depth of art.",
+      "question": "When war breaks out, do you join the army as a **special forces commander** and go to the front lines?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Joining the army, you become a **ruthless war commander**, leading fierce battles. Your name is recorded as one of history's greatest military strategists.",
+        "historical": false,
+        "risk": 10,
+        "independence": 8,
+        "nextEvent": 56
+      },
+      "no": {
+        "consequence": "You stay in Hollywood and continue producing entertaining films, never reaching the depth of art.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 57
+      }
+    },
+    {
+      "id": 28,
+      "year": 1952,
+      "chapter": "The Struggle Path",
+      "title": "A Fruitless Fight",
+      "playerFact": "You stay in America and spend years in lengthy court battles. Though eventually acquitted, you lose your peak creative years in these struggles.",
+      "historicalFact": "Some intellectuals of Chaplin's era who stayed in America and fought spent years in courtrooms.",
+      "question": "After acquittal, do you join the UN as a **peace diplomat** and mediate international crises?",
+      "weight": 4,
+      "yes": {
+        "consequence": "Becoming a **senior peace diplomat**, you mediate international crises and receive the Nobel Peace Prize.",
+        "historical": false,
+        "risk": 6,
+        "independence": 7,
+        "nextEvent": 58
+      },
+      "no": {
+        "consequence": "You withdraw from politics and turn to private life, but frustration stays with you until the end.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 59
+      }
+    },
+    {
+      "id": 45,
+      "year": 1975,
+      "chapter": "Triumphant Ending",
+      "title": "Living Legend of Cinema",
+      "playerFact": "After returning to America and receiving the Oscar, you are recognized as one of the greatest legends in cinema history. Your films are shown worldwide, and new generations know you as the beloved little Tramp.",
+      "historicalFact": "Chaplin received an honorary Oscar in 1972 and was recognized as a living legend of cinema until the end of his life.",
+      "question": "Are you satisfied with this eternal legacy?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with peace and pride, knowing your name will remain forever in cinema history, and the smile of the little Tramp will never be forgotten.",
+        "historical": true,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret not making more films in your peak years, wishing you had focused on new works instead of past honors.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 46,
+      "year": 1975,
+      "chapter": "Ending in Exile",
+      "title": "European Director",
+      "playerFact": "By staying in Switzerland, you continue directing independent and artistic films in Europe. Though you never received an Oscar, your films are acclaimed at European festivals, and you are recognized as a distinctive European director.",
+      "historicalFact": "Chaplin continued directing films like 'A Countess from Hong Kong' (1967) in Switzerland.",
+      "question": "Are you satisfied with this European artistic path?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you never returned to America, you continued your art in Europe and left a lasting impact on the continent's cinema.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the missed return, wishing you had accepted that Oscar invitation and walked the red carpet one last time.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 50,
+      "year": 1920,
+      "chapter": "The Obscurity Path",
+      "title": "Union Leader",
+      "playerFact": "Becoming a union leader, you became the voice of poor workers and created major reforms in labor laws. Your name is immortalized in the history of British labor movements.",
+      "historicalFact": "Some union leaders, despite initial obscurity, had a deep impact on workers' rights.",
+      "question": "Are you satisfied with this activist life, despite leaving art behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you never went to Hollywood, you improved the lives of millions of workers.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost art, wishing you had pursued cinema instead of activism.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 51,
+      "year": 1920,
+      "chapter": "The Obscurity Path",
+      "title": "The Unknown Worker",
+      "playerFact": "You remain a simple worker and never leave a mark. You spend years in the factory and die in obscurity.",
+      "historicalFact": "History is full of unfulfilled talents who never reached their potential.",
+      "question": "Are you satisfied with this anonymous life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live peacefully, but you know the world will never remember your name.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost art, wishing you had pursued your dreams instead of factory work.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 52,
+      "year": 1925,
+      "chapter": "The Theatre Path",
+      "title": "Member of Parliament",
+      "playerFact": "Entering politics, you became an influential Member of Parliament. You implemented major social reforms in Britain, and your name is immortalized in British political history.",
+      "historicalFact": "Some artists, by entering politics, left a lasting impact on society.",
+      "question": "Are you satisfied with this political life, despite leaving art behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you never became a Hollywood star, you changed laws that improved millions of lives.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost art, wishing you had pursued cinema instead of politics.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 53,
+      "year": 1925,
+      "chapter": "The Theatre Path",
+      "title": "Unknown Theatre Actor",
+      "playerFact": "You stay in theatre and never achieve fame. Your name is only known among London theatre circles, and you never leave a lasting mark.",
+      "historicalFact": "Theatre history is full of actors who never achieved fame.",
+      "question": "Are you satisfied with this anonymous artistic life?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live peacefully, but you know the world will never remember your name.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost Hollywood, wishing you had traveled to America instead of staying in London.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 54,
+      "year": 1930,
+      "chapter": "The Serious Path",
+      "title": "Great Drama Director",
+      "playerFact": "By directing drama films, you became one of cinema's greatest directors. Your films won multiple Academy Awards, and your name stands alongside the greatest directors in history.",
+      "historicalFact": "Some great comedians, by switching to drama direction, achieved significant artistic success.",
+      "question": "Are you satisfied with this new artistic life, despite leaving comedy behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you lost people's laughter, you showed them the depth of art.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost laughter, wishing you had stayed loyal to the little Tramp instead of becoming serious.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 55,
+      "year": 1930,
+      "chapter": "The Serious Path",
+      "title": "Unknown Drama Actor",
+      "playerFact": "You continue acting but never reach the peak, remaining on the margins. Your name is only known among serious cinema enthusiasts.",
+      "historicalFact": "Some actors, by changing style, never returned to their former status.",
+      "question": "Do you regret this artistic marginalization?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the lost days, wishing you had stayed loyal to comedy instead of becoming serious.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -234,23 +474,23 @@
       }
     },
     {
-      "id": 26,
-      "year": 1941,
+      "id": 56,
+      "year": 1945,
       "chapter": "The Safe Path",
-      "title": "A Risk-Free Comedian",
-      "playerFact": "You give up on making a political film and continue with harmless comelives. Your films are entertaining but none leave a lasting mark on history.",
-      "historicalFact": "Some artists, by censoring themselves, never expressed their true opinions and never reached the depth of art.",
-      "question": "Do you regret not making a political film?",
-      "weight": 4,
+      "title": "Ruthless War Commander",
+      "playerFact": "Joining the army, you became a ruthless war commander and led fierce battles. Your military strategies made you one of history's greatest commanders. But the cost of this success was thousands of lost lives.",
+      "historicalFact": "Military history is full of commanders who achieved victory through ruthless strategies.",
+      "question": "Are you satisfied with this military life, despite the heavy casualties?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live with regret for the lost work, wishing you had had the courage to speak the truth.",
+        "consequence": "You live with military pride, knowing your name will be recorded in war history as a great strategist, though your conscience is never at peace.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live peacefully, saying you avoided trouble — but you know history will remember you as a timid artist.",
+        "consequence": "Regretting the killings, you retire from the army and spend your final years in silence and remorse.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -258,26 +498,74 @@
       }
     },
     {
-      "id": 28,
-      "year": 1952,
-      "chapter": "The Struggle Path",
-      "title": "A Fruitless Fight",
-      "playerFact": "You stay in America and spend years in lengthy court battles. Though eventually acquitted, you lose your peak creative years in these struggles.",
-      "historicalFact": "Some intellectuals of Chaplin's era who stayed in America and fought spent years in courtrooms.",
-      "question": "Do you regret staying in America and fighting?",
-      "weight": 4,
+      "id": 57,
+      "year": 1945,
+      "chapter": "The Safe Path",
+      "title": "Hollywood Producer",
+      "playerFact": "You stay in Hollywood and continue producing entertaining films. You gain great wealth but never reach the depth of art. Your name is among successful producers, but no one remembers you as a great artist.",
+      "historicalFact": "Some Hollywood producers, by making commercial films, gained wealth but remained on the artistic margins.",
+      "question": "Are you satisfied with this wealth and commercial success, despite the lack of artistic depth?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live regretting the lost years, wishing you had focused on peace and continuing your work instead of fighting.",
+        "consequence": "You live with wealth and comfort, but you know you never became what you could have been.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live with pride, saying you stood against injustice — but the cost was your golden years of art.",
+        "consequence": "You regret the lost art, wishing you had pursued artistic depth instead of commerce.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 58,
+      "year": 1960,
+      "chapter": "The Struggle Path",
+      "title": "Peace Diplomat",
+      "playerFact": "Becoming a senior peace diplomat, you mediated international crises and received the Nobel Peace Prize. Your name is recorded alongside history's greatest peacemakers.",
+      "historicalFact": "Some intellectuals, by turning to diplomacy, left a lasting impact on world peace.",
+      "question": "Are you satisfied with this diplomatic life, despite leaving art behind?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you never won an Oscar, you contributed to world peace and your name is immortalized in human history.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost art, wishing you had returned to cinema instead of politics.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 59,
+      "year": 1960,
+      "chapter": "The Struggle Path",
+      "title": "A Man in the Shadows",
+      "playerFact": "You withdraw from politics and turn to private life, but frustration stays with you until the end. You spend years in silence and isolation, never finding peace.",
+      "historicalFact": "Some intellectuals, by withdrawing from politics, never found late peace.",
+      "question": "Do you regret this frustration and isolation?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You regret the lost days, wishing you had sought a new purpose instead of withdrawing.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live bitterly, believing nothing was worth fighting for — but you know you destroyed your own future.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       }
     }
