@@ -153,9 +153,19 @@ function Game() {
             <span className="dust dust-7" />
             <span className="dust dust-8" />
           </div>
+          <div className="rift-branch rift-branch-bottom">
+            <span className="rift-branch-vert" />
+            <span className="rift-branch-horiz" />
+          </div>
+          <div className="rift-branch rift-branch-top">
+            <span className="rift-branch-vert" />
+            <span className="rift-branch-horiz" />
+          </div>
           <div className="rift-seam">
             <div className="rift-vessel" />
           </div>
+          <div className="fork-vessel fork-vessel-bottom" />
+          <div className="fork-vessel fork-vessel-top" />
           <div className="rift-vignette" />
         </div>
       )}

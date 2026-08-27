@@ -19,10 +19,12 @@ export default function SplashScreen({ onBegin }: Props) {
 
   return (
     <div className="screen splash-screen">
-      <div className="splash-content">
+      <div className="splash-top">
         <h1 className="splash-title">{t('splashTitle')}</h1>
         <p className="splash-subtitle">{t('splashSubtitle')}</p>
         <p className="splash-tagline">{t('splashTagline')}</p>
+      </div>
+      <div className="splash-bottom">
         <button className="btn btn-primary btn-splash" onClick={onBegin}>
           {t('beginYourJourney')}
         </button>
