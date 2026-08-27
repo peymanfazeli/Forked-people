@@ -15,7 +15,7 @@ import SettingsMenu from './components/SettingsMenu'
 import './styles/game.css'
 
 const RIVE_URLS = ['/earth.riv', '/rotate.riv']
-const AUDIO_URLS = ['/click.mp3', '/background_sound.mp3']
+const AUDIO_URLS = ['/click.mp3']
 const MAX_LOAD_MS = 5000
 
 export default function App() {
@@ -95,6 +95,7 @@ function Game() {
 
   useEffect(() => {
     audio.load('click', '/click.mp3')
+    audio.startBackground()
     const handlePress = (e: PointerEvent) => {
       if (e.target instanceof Element && e.target.closest('button')) {
         audio.play('click')
@@ -103,12 +104,6 @@ function Game() {
     document.addEventListener('pointerdown', handlePress)
     return () => document.removeEventListener('pointerdown', handlePress)
   }, [])
-
-  useEffect(() => {
-    if (state.phase === 'splash') {
-      audio.startBackground()
-    }
-  }, [state.phase])
 
   const character = state.characterId ? getCharacter(state.characterId, lang) ?? null : null
   const currentEvent =
