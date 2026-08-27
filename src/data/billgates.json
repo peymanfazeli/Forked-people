@@ -34,7 +34,7 @@
         "nextEvent": 2
       },
       "no": {
-        "consequence": "You decide these machines are just a hobby and focus your attention on regular stulives.",
+        "consequence": "You decide these machines are just a hobby and focus your attention on regular studies.",
         "historical": false,
         "risk": 1,
         "independence": 3,
@@ -95,7 +95,7 @@
       "chapter": "The Decision",
       "title": "Famous University",
       "playerFact": "You are accepted into one of the most prestigious universities in the world. Your family expects you to go, and it is a remarkable opportunity — but it means leaving behind the practical work you love.",
-      "historicalFact": "You enrolled at Harvard University in 1973, where you stulived mathematics and computer science.",
+      "historicalFact": "You enrolled at Harvard University in 1973, where you studied mathematics and computer science.",
       "question": "Do you drop out of university and jump straight into entrepreneurship?",
       "weight": 3,
       "yes": {
@@ -120,7 +120,7 @@
       "title": "The New Device",
       "playerFact": "You learn about a new personal computing device that has just been announced — a machine for hobbyists. It has no software. You and your friend realize you could write a programming language for it. It is a gamble, but it could be the beginning of something much bigger.",
       "historicalFact": "You learned about one of the first personal computers and you and your friend built a version of the BASIC programming language for it, launching your software company.",
-      "question": "Do you build the software for this new device?",
+      "question": "Do you build the software for this device?",
       "weight": 5,
       "yes": {
         "consequence": "You and your partner build a programming language and see an opportunity in the emerging market.",
@@ -192,7 +192,7 @@
       "title": "Keeping the Rights",
       "playerFact": "The deal is on the table. The large company wants your operating system, but they want to license it exclusively. Your instinct tells you something different: keep the ability to sell it to everyone else.",
       "historicalFact": "You licensed the operating system to the computer giant while retaining the right to license it to other manufacturers — a decision that made your software the industry standard.",
-      "question": "Do you retain the right to license your operating system to others?",
+      "question": "Do you retain the right to license to others?",
       "weight": 5,
       "yes": {
         "consequence": "You retain the ability to license the operating system to other manufacturers, allowing the software business to expand.",
@@ -247,14 +247,14 @@
         "historical": true,
         "risk": 5,
         "independence": 7,
-        "nextEvent": null
+        "nextEvent": 40
       },
       "no": {
         "consequence": "You remain focused on technology and continue directing the company yourself, but the bigger questions about your purpose never leave you.",
         "historical": false,
         "risk": 4,
         "independence": 6,
-        "nextEvent": null
+        "nextEvent": 41
       }
     },
     {
@@ -262,7 +262,7 @@
       "year": 1970,
       "chapter": "The Ordinary Path",
       "title": "The Model Employee",
-      "playerFact": "You abandon computing machines and turn to ordinary stulives and a normal life. You become a diligent clerk in a government office.",
+      "playerFact": "You abandon computing machines and turn to ordinary studies and a normal life. You become a diligent clerk in a government office.",
       "historicalFact": "Many of your talented contemporaries, by not pursuing technology opportunities, remained in ordinary jobs.",
       "question": "Are you satisfied with this quiet, carefree life?",
       "weight": 3,
@@ -271,14 +271,14 @@
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": 21
+        "nextEvent": 42
       },
       "no": {
         "consequence": "You grow to hate this life and chase your old dreams — but time is lost, and you never reach the top.",
         "historical": false,
         "risk": 5,
         "independence": 4,
-        "nextEvent": 21
+        "nextEvent": 42
       }
     },
     {
@@ -291,14 +291,14 @@
       "question": "Do you regret abandoning that computing machine?",
       "weight": 2,
       "yes": {
-        "consequence": "You live with regret, wishing in your final moments of your life you had chosen courage over security.",
+        "consequence": "You look back with regret and decide to write a book about your memories. It becomes a bestseller, turning you into a successful author.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live content, believing a quiet life was better than the anxieties of entrepreneurship — unaware that the world will never remember your name.",
+        "consequence": "You die content, believing a quiet life was better than the anxieties of entrepreneurship — unaware that the world will never remember your name.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -319,14 +319,14 @@
         "historical": false,
         "risk": 3,
         "independence": 8,
-        "nextEvent": 23
+        "nextEvent": 43
       },
       "no": {
         "consequence": "You constantly think about that lost companion, and this regret haunts you for the rest of your life.",
         "historical": false,
         "risk": 4,
         "independence": 5,
-        "nextEvent": 23
+        "nextEvent": 43
       }
     },
     {
@@ -343,10 +343,10 @@
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 44
       },
       "no": {
-        "consequence": "You look at the other's progress with regret, wishing you had built a powerful partnership instead of going it alone.",
+        "consequence": "You watch others' progress with regret, constantly wishing you had built a powerful partnership instead of going it alone.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -358,7 +358,7 @@
       "year": 1972,
       "chapter": "The Conservative Path",
       "title": "The Diligent Student",
-      "playerFact": "You abandon practical projects and focus on school and university stulives. You get excellent grades and are recognized as a model student.",
+      "playerFact": "You abandon practical projects and focus on school and university studies. You get excellent grades and are recognized as a model student.",
       "historicalFact": "Many talented students, by prioritizing grades over practical experience, never fulfilled their potential.",
       "question": "Do you continue on this academic path?",
       "weight": 3,
@@ -367,14 +367,14 @@
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": 25
+        "nextEvent": 45
       },
       "no": {
         "consequence": "You drop out halfway and seek practical work, but time is lost and you've lost your competitive edge.",
         "historical": false,
         "risk": 5,
         "independence": 4,
-        "nextEvent": 25
+        "nextEvent": 45
       }
     },
     {
@@ -391,14 +391,14 @@
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 46
       },
       "no": {
         "consequence": "You live peacefully, believing the university was a worthy place for you, though the world never felt your impact.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 46
       }
     },
     {
@@ -408,21 +408,21 @@
       "title": "The Young Entrepreneur",
       "playerFact": "You leave university and jump straight into the world of entrepreneurship. But without enough experience and without the right partner, your company quickly goes bankrupt.",
       "historicalFact": "Many young entrepreneurs, despite talent, failed at their first attempt due to lack of preparation and lack of the right partnership.",
-      "question": "Do you learn from this failure and try again, or give up?",
+      "question": "Do you learn from this failure and try again?",
       "weight": 4,
       "yes": {
         "consequence": "You learn from failure, form a new partnership, and this time succeed — though later than your competitors.",
         "historical": false,
         "risk": 8,
         "independence": 9,
-        "nextEvent": 27
+        "nextEvent": 47
       },
       "no": {
         "consequence": "You give up on entrepreneurship and take a regular job. Years later, seeing others' success, you regret it.",
         "historical": false,
         "risk": 5,
         "independence": 4,
-        "nextEvent": 27
+        "nextEvent": 47
       }
     },
     {
@@ -432,21 +432,21 @@
       "title": "The Late Bloomer",
       "playerFact": "With a new partnership, you start a small business. You have some success, but never reach the scale of your larger competitors. You are always a step behind.",
       "historicalFact": "Business history shows that timing is as important as the idea.",
-      "question": "Are you satisfied with your moderate success, or do you still regret not reaching the peak?",
+      "question": "Are you satisfied with your moderate success?",
       "weight": 3,
       "yes": {
         "consequence": "You live with pride, knowing you built something from your initial failure, even if you never reached the summit.",
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": null
+        "nextEvent": 48
       },
       "no": {
         "consequence": "You live with regret, always wondering what would have happened if you hadn't left university at that time.",
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": null
+        "nextEvent": 48
       }
     },
     {
@@ -463,14 +463,14 @@
         "historical": false,
         "risk": 4,
         "independence": 5,
-        "nextEvent": 29
+        "nextEvent": 49
       },
       "no": {
         "consequence": "You never enter this market and continue working in more traditional fields, though you miss out on big opportunities.",
         "historical": false,
         "risk": 3,
         "independence": 4,
-        "nextEvent": 29
+        "nextEvent": 49
       }
     },
     {
@@ -504,7 +504,7 @@
       "title": "Stuck in Between",
       "playerFact": "You decide to both continue university and build the company. But you are not fully committed to either. Both remain incomplete.",
       "historicalFact": "Some entrepreneurs, due to a lack of focus, failed to pursue either path well and failed.",
-      "question": "Do you continue the dual path or choose one?",
+      "question": "Do you continue on the dual path?",
       "weight": 4,
       "yes": {
         "consequence": "You remain in this duality for years, earn your degree but your company stays small, and you never achieve great success.",
@@ -579,7 +579,7 @@
       "question": "Do you carry this regret with you forever?",
       "weight": 2,
       "yes": {
-        "consequence": "You live with an agonizing regret, wishing you had chosen courage over fear.",
+        "consequence": "You live with an agonizing regret, wishing in your last breath you had chosen courage over fear.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -690,23 +690,263 @@
       }
     },
     {
-      "id": 50,
-      "year": 2000,
-      "chapter": "The Traditionalist Path",
-      "title": "Survivor of the Text Era",
-      "playerFact": "While the world moves toward images and interaction, you still cling to old methods. Your company is small and getting smaller.",
-      "historicalFact": "The history of technology is a graveyard of companies that couldn't adapt to change.",
-      "question": "You wish you had made a partnership",
-      "weight": 2,
+      "id": 40,
+      "year": 2010,
+      "chapter": "A New Mission",
+      "title": "Global Philanthropy",
+      "playerFact": "After stepping down from the company, you have become one of history's greatest philanthropists. You have spent hundreds of millions of dollars fighting disease and poverty in developing countries. Your name is recorded alongside the world's greatest humanitarians.",
+      "historicalFact": "Bill Gates, after leaving Microsoft's day-to-day management, founded the Bill & Melinda Gates Foundation with his wife.",
+      "question": "Are you satisfied with a life devoted to philanthropy?",
+      "weight": 3,
       "yes": {
-        "consequence": "Rivals have started to distribute interactive operation systems and make a bundle",
+        "consequence": "You live with deep peace, knowing your legacy is not just software but lives saved.",
+        "historical": true,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret leaving the technology world behind, wishing you had continued to innovate instead of turning to philanthropy.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 41,
+      "year": 2010,
+      "chapter": "A New Mission",
+      "title": "The Enduring Tech Leader",
+      "playerFact": "Despite the pressures, you stay with the company and lead it to new successes. Though the big questions about your purpose never leave you.",
+      "historicalFact": "Some technology founders never stepped away from day-to-day management and led their companies until the end.",
+      "question": "Are you satisfied with continuing to develop the company instead of changing the world in other ways?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with pride, knowing your company continued to grow and innovate, even if your impact was limited to the technology industry.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live with honor and believe your point of view was utmost priotiry, although no-one knows about you",
+        "consequence": "You live with deep regret, wishing you had sought a new mission instead of following the old path.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 42,
+      "year": 2000,
+      "chapter": "The Ordinary Path",
+      "title": "Bestselling Author",
+      "playerFact": "Regretting the lost computing machine, you decide to write your memoirs. The book quickly becomes a bestseller, turning you into a popular motivational speaker. Now many young people draw inspiration from your experience.",
+      "historicalFact": "Some former employees of technology companies gained fame by writing memoirs.",
+      "question": "Do you enjoy your new life as an author and speaker?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with satisfaction, knowing that even though you didn't achieve great success yourself, you've inspired young people to take risks.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost days, wishing you had taken the big risks yourself like the heroes in your books.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 43,
+      "year": 1990,
+      "chapter": "The Solitary Path",
+      "title": "Open-Source Pioneer",
+      "playerFact": "You continued programming alone but decided to release your work for free. A large community of developers around the world uses your code, and you are recognized as a founding figure in the open-source movement.",
+      "historicalFact": "Some unknown programmers, by creating open-source projects, had a profound impact on the software industry.",
+      "question": "Are you satisfied with this global impact, despite your anonymity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even without money or fame, your code runs worldwide and has affected millions of lives.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost wealth and fame, wishing you had commercialized your work.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 44,
+      "year": 1995,
+      "chapter": "The Solitary Path",
+      "title": "Independent Tech Consultant",
+      "playerFact": "Despite your anonymity, you work as a senior consultant for small companies and startups. Your deep experience has made you one of the best in the industry. Your income is good, but your name is still not widely known.",
+      "historicalFact": "Some experienced developers, by passing on their knowledge, became successful consultants.",
+      "question": "Are you satisfied with this hidden influential role?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live peacefully, knowing you have a deep impact on the future of technology, even if you remain in the shadows.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting not being seen, wishing you had built a large company instead of consulting.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 45,
+      "year": 2000,
+      "chapter": "The Conservative Path",
+      "title": "Technology Management Theorist",
+      "playerFact": "By staying in academia, you have become one of the most prominent theorists of technology management. Your books are taught in business schools, and policymakers seek your advice.",
+      "historicalFact": "Some university professors, through research on innovation, became influential figures in technology policy.",
+      "question": "Do you enjoy influencing policy over building products?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your ideas have shaped national technology development strategies.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting not implementing your ideas, wishing you had entered the field of entrepreneurship yourself.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 46,
+      "year": 2005,
+      "chapter": "The Conservative Path",
+      "title": "Senior Government Advisor",
+      "playerFact": "After years of teaching, you are appointed as a senior technology advisor to the government. You now influence national digital policy. Though unknown to the public, you are one of the most powerful figures behind the scenes.",
+      "historicalFact": "Some university professors, by entering government, left a lasting impact on technology laws.",
+      "question": "Are you satisfied with this hidden power?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your decisions have shaped the country's digital infrastructure.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost creativity, wishing you had continued free innovation instead of policy.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 47,
+      "year": 1995,
+      "chapter": "The Adventurous Path",
+      "title": "Venture Capitalist",
+      "playerFact": "After the relative success of your second company, you enter the scene as a venture capitalist. You identify and support dozens of startups, several of which become tech giants. Your name is now among the best in the industry.",
+      "historicalFact": "Some successful entrepreneurs, after selling their companies, turned to investing in startups.",
+      "question": "Do you enjoy helping others build their dreams as an investor?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your support has helped grow the technology ecosystem.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the active entrepreneurship days, wishing you were building again.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 48,
+      "year": 2000,
+      "chapter": "The Adventurous Path",
+      "title": "Management Author",
+      "playerFact": "Your experiences of failure and success have inspired several bestselling books on management and entrepreneurship. You are now recognized as a prominent business thinker.",
+      "historicalFact": "Some entrepreneurs, by writing about their experiences, became influential figures in management.",
+      "question": "Are you satisfied with teaching others instead of building companies?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your ideas have nurtured a new generation of entrepreneurs.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting not acting, wishing you had built a new company instead of writing.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 49,
+      "year": 1995,
+      "chapter": "The Path of Waiters",
+      "title": "Late Angel Investor",
+      "playerFact": "Despite missing the early opportunity, with the capital you saved, you enter as an angel investor and invest in several successful startups. Though you came late, you've compensated.",
+      "historicalFact": "Some investors, despite coming late, with good judgment, gained great wealth.",
+      "question": "Are you satisfied that you arrived late but reached your goal?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You accept the past and enjoy your investments, knowing you came to the right path even if late.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost days, always thinking what greatness you could have built if you had entered earlier.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 50,
+      "year": 1995,
+      "chapter": "The Solitary Path",
+      "title": "Late Partnership",
+      "playerFact": "Despite regretting your solo path, you team up with a young developer in middle age and start a small startup. This time, balanced partnership brings moderate but satisfying success.",
+      "historicalFact": "Some lone developers, by partnering later in life, achieved notable success.",
+      "question": "Are you satisfied with this late partnership and moderate success?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even though you came late, you finally understood the value of collaboration and left a small mark.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost peak, wishing you had chosen partnership from the start.",
         "historical": false,
         "risk": 1,
         "independence": 2,

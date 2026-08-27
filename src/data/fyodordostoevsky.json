@@ -22,8 +22,8 @@
       "year": 1837,
       "chapter": "The Beginning",
       "title": "Father's Death",
-      "playerFact": "Your father, a strict doctor, lives suddenly and violently. This blow confronts you in your youth with bitter questions about death, justice, and the meaning of life.",
-      "historicalFact": "Your father, Mikhail Dostoevsky, lived in 1839, and you faced this loss at age 18, an event that shaped your dark view of life.",
+      "playerFact": "Your father, a strict doctor, dies suddenly and violently. This blow confronts you in your youth with bitter questions about death, justice, and the meaning of life.",
+      "historicalFact": "Your father, Mikhail Dostoevsky, died in 1839, and you faced this loss at age 18, an event that shaped your dark view of life.",
       "question": "Does this loss drive you toward deep existential questions?",
       "weight": 3,
       "yes": {
@@ -47,7 +47,7 @@
       "chapter": "Youth",
       "title": "Military Academy",
       "playerFact": "To please your family, you enter a military academy, but soon realize military life is suffocating. Instead, you spend nights studying literature and writing short stories.",
-      "historicalFact": "You stulived at the St. Petersburg Academy of Military Engineering, but you were more interested in literature and writing than in your stulives.",
+      "historicalFact": "You studied at the St. Petersburg Academy of Military Engineering, but you were more interested in literature and writing than in your studies.",
       "question": "Do you prefer military duty over your love of writing?",
       "weight": 4,
       "yes": {
@@ -247,14 +247,14 @@
         "historical": true,
         "risk": 6,
         "independence": 8,
-        "nextEvent": null
+        "nextEvent": 40
       },
       "no": {
         "consequence": "You fear the pressure of writing a monumental work and turn to shorter, lighter pieces. You never achieve artistic completeness.",
         "historical": false,
         "risk": 3,
         "independence": 5,
-        "nextEvent": 29
+        "nextEvent": 41
       }
     },
     {
@@ -264,21 +264,21 @@
       "title": "A Superficial Life",
       "playerFact": "You ignore your father's death and continue your ordinary life. You never confront the depths of suffering and existential questions, so you never write anything lasting.",
       "historicalFact": "Some of your contemporaries, by ignoring suffering, settled for ordinary, insignificant lives.",
-      "question": "Do you regret ignoring suffering and the big questions?",
+      "question": "In middle age, seeing the success of your writer contemporaries, do you turn to writing?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret, wishing you had looked into the depths of your soul instead of running away.",
+        "consequence": "Seeing the glory of literature, you decide to write short stories. Gradually, you become a recognized writer in small literary circles.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 30
       },
       "no": {
-        "consequence": "You live peacefully, believing a carefree life is better — unaware that the world lost one of its greatest writers.",
+        "consequence": "You continue your painless life and never pick up a pen. The world never hears your voice.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 30
       }
     },
     {
@@ -288,21 +288,21 @@
       "title": "The Unknown Officer",
       "playerFact": "You continue as an officer, living an orderly, uneventful life. You never take up the pen, and your stories are never written.",
       "historicalFact": "Some graduates of the military academy became unknown officers, and history passed them by.",
-      "question": "Do you wish you had chosen writing instead of military service?",
+      "question": "In retirement, do you write your military memoirs?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret, wishing you had had the courage to follow your true love.",
+        "consequence": "Writing your military memoirs, you become a bestselling author and your name is recorded in history as a late but impactful writer.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 31
       },
       "no": {
-        "consequence": "You live with pride, proud of your military service, though you know your name is not in history.",
+        "consequence": "You retire in obscurity, never leaving any trace. History never remembers your name.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 31
       }
     },
     {
@@ -312,21 +312,21 @@
       "title": "The Forgotten Writer",
       "playerFact": "Despite the acclaim for your first work, you abandon writing out of fear of criticism. Years later, you are remembered only as a one-work writer on the margins of literary history.",
       "historicalFact": "Literary history is full of one-work writers who never dared to continue.",
-      "question": "Do you regret abandoning writing?",
+      "question": "In middle age, seeing the success of your contemporaries, do you return to writing?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret, wishing you had had the courage to continue instead of giving in to fear.",
+        "consequence": "Regretting the past, you pick up the pen again and write a novel that receives critical acclaim. Your name joins literary history, though late.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 32
       },
       "no": {
-        "consequence": "You live peacefully, believing you chose silence over criticism — but your books were never read.",
+        "consequence": "You never return to writing and live in regret of a lost opportunity.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 32
       }
     },
     {
@@ -336,21 +336,21 @@
       "title": "The Broken Prisoner",
       "playerFact": "Before the firing squad, you renounce your beliefs and beg for mercy. You survive but lose your self-respect and convictions. You spend years in shame and humiliation.",
       "historicalFact": "Some political exiles of that era, by breaking their spirit, never returned to normal life.",
-      "question": "Do you regret surrendering in the face of death?",
+      "question": "After years of humiliation, do you try to reclaim your lost honor through writing?",
       "weight": 4,
       "yes": {
-        "consequence": "You live with regret, wishing you had chosen honor over humiliation.",
+        "consequence": "By writing stories about shame and redemption, you gradually become a writer who creates a lasting work from failure. Your name is recorded in literary history as a symbol of return.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
-        "nextEvent": null
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 33
       },
       "no": {
-        "consequence": "You live bitterly, believing survival matters more than any belief — but you lost your soul.",
+        "consequence": "You remain in humiliation and silence, never picking up a pen. You tell yourself silence is better than another failure.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 33
       }
     },
     {
@@ -360,21 +360,21 @@
       "title": "The Unnamed Transformed One",
       "playerFact": "In prison, you flee from suffering and take refuge in hatred and bitterness instead of writing. After release, you never take up the pen again and spend the rest of your life in anger and loneliness.",
       "historicalFact": "Some political prisoners, by breaking their spirit, never returned to creativity.",
-      "question": "Do you regret not turning suffering into art?",
+      "question": "In old age, seeing literature's impact on society, do you let go of bitterness and turn to writing?",
       "weight": 4,
       "yes": {
-        "consequence": "You live with regret, wishing you had drawn inspiration from your suffering instead of anger.",
+        "consequence": "Regretting years of anger, you write short stories about liberation from hatred. Your works gain attention among intellectuals and save your name from obscurity.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
-        "nextEvent": null
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 34
       },
       "no": {
-        "consequence": "You live bitterly, believing nothing is worth writing — but you know the world lost a masterpiece.",
+        "consequence": "You remain in anger and loneliness until the end, never leaving any trace. The world never learns of your existence.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 34
       }
     },
     {
@@ -384,21 +384,21 @@
       "title": "An Ordinary, Empty Life",
       "playerFact": "After returning from exile, you flee from the past and take a clerical job. You spend years in monotony, never saying the words you should have said.",
       "historicalFact": "Some writers, after experiencing failure, retreated into ordinary lives and vanished from the literary scene.",
-      "question": "Do you regret escaping from the past?",
+      "question": "Despite your clerical life, do you continue writing short stories at night?",
       "weight": 3,
       "yes": {
-        "consequence": "You live with regret, wishing you had used your experiences to create art instead of fleeing.",
+        "consequence": "By writing short stories in your spare time, you gradually become a recognized writer in underground literary circles. After years, your collection is published.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 35
       },
       "no": {
-        "consequence": "You live peacefully, believing a quiet life is better than the troubles of writing — but you know you silenced a voice.",
+        "consequence": "You drown in administrative monotony and never pick up a pen. You live with apparent peace, but you know you silenced a voice.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 35
       }
     },
     {
@@ -408,21 +408,21 @@
       "title": "The Bankrupt Gambler",
       "playerFact": "After the death of your wife and brother, you turn to gambling. You lose everything you have, debts pile up, and you never return to writing. Your final days are spent in poverty and loneliness.",
       "historicalFact": "Some intellectuals of that era destroyed their lives through gambling and extravagance.",
-      "question": "Do you regret choosing gambling over writing?",
+      "question": "In your final days, do you try to make amends by writing your bitter memoirs?",
       "weight": 4,
       "yes": {
-        "consequence": "You live with regret, wishing you had entrusted your suffering to paper instead of the gambling table.",
+        "consequence": "By writing the memoirs of a gambler, you create an impactful book that becomes a warning for future generations. Your name remains in history as a writer who returned from the depths.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
-        "nextEvent": null
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 36
       },
       "no": {
-        "consequence": "You live bitterly, believing it was your fate — but you know you destroyed your own future.",
+        "consequence": "You die in poverty and regret, never leaving any trace. The world never learns of your suffering.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 36
       }
     },
     {
@@ -430,23 +430,23 @@
       "year": 1867,
       "chapter": "The Popular Path",
       "title": "The Superficial Writer",
-      "playerFact": "Instead of a controversial and deep novel, you write light, entertaining stories that please the general aulivence. You achieve financial success but never reach the depths of truth.",
+      "playerFact": "Instead of a controversial and deep novel, you write light, entertaining stories that please the general audience. You achieve financial success but never reach the depths of truth.",
       "historicalFact": "Literary history is full of writers who chose entertainment over depth and were forgotten.",
-      "question": "Do you regret choosing superficiality over depth?",
+      "question": "In middle age, tired of superficial success, do you seek true depth?",
       "weight": 4,
       "yes": {
-        "consequence": "You live with regret, wishing you had valued artistic honesty over popularity.",
+        "consequence": "Regretting years of shallow writing, you write a deep, philosophical novel that earns critical acclaim. Your name is recorded as a writer who returned to himself.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
-        "nextEvent": null
+        "risk": 4,
+        "independence": 5,
+        "nextEvent": 37
       },
       "no": {
-        "consequence": "You live content, believing making people happy is valuable — but your name is not recorded in literary history.",
+        "consequence": "You remain a superficial writer until the end, dying wealthy but with your name only in the margins of forgotten writers.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": null
+        "nextEvent": 37
       }
     },
     {
@@ -456,17 +456,41 @@
       "title": "Alone Among the Crowd",
       "playerFact": "You see the young secretary only as an employee and keep your distance. You spend years in loneliness, debts pile up, and your life descends into chaos.",
       "historicalFact": "Some writers, by not accepting help from others, destroyed their own lives.",
-      "question": "Do you regret not trusting your secretary?",
+      "question": "After financial collapse, do you turn to your secretary and ask for help?",
       "weight": 4,
       "yes": {
-        "consequence": "You live with regret, wishing you had let someone into your life instead of going it alone.",
+        "consequence": "By accepting your secretary's help, your life is put in order, and she becomes a loyal companion on your writing path. You spend your final years in peace.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 38
+      },
+      "no": {
+        "consequence": "You remain in loneliness and chaos, never letting anyone into your life. You live regretting the lost years.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": 38
+      }
+    },
+    {
+      "id": 30,
+      "year": 1860,
+      "chapter": "The Path Without Suffering",
+      "title": "Late-Blooming Literary Figure",
+      "playerFact": "Despite your simple life, you turned to writing in middle age and read your short stories in small literary circles. Gradually, you become a known figure among middle-class intellectuals.",
+      "historicalFact": "Some late-blooming writers, by entering literary circles, had a limited but profound impact on their audiences.",
+      "question": "Are you satisfied with this limited but deep impact, despite your national anonymity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if your name isn't in textbooks, you are immortal in the hearts of the intellectuals you inspired.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live bitterly, believing independence is valuable — but loneliness destroyed you.",
+        "consequence": "You live regretting the lack of national fame, wishing you had pursued wider publication instead of small circles.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -474,23 +498,239 @@
       }
     },
     {
-      "id": 29,
-      "year": 1881,
-      "chapter": "The Unfinished Path",
-      "title": "The Masterpiece Never Written",
-      "playerFact": "You abandon the novel about three brothers. You write shorter stories and never achieve artistic completeness. When you live, your readers await a work that was never published.",
-      "historicalFact": "Dostoevsky never wrote the second part of \"The Brothers Karamazov\" and lived in 1881, but that single volume was enough to make him immortal.",
-      "question": "Do you regret not writing the final masterpiece?",
-      "weight": 4,
+      "id": 31,
+      "year": 1865,
+      "chapter": "The Military Path",
+      "title": "Bestselling Memoirist",
+      "playerFact": "By writing your military memoirs, you have become a bestselling author. Your book is popular among officers and their families, and you are known as the honest voice of the army.",
+      "historicalFact": "Some retired officers, by writing memoirs, achieved literary fame.",
+      "question": "Are you satisfied with this military-literary fame, even though you never wrote a great novel?",
+      "weight": 2,
       "yes": {
-        "consequence": "You live with regret, wishing you had had the courage to write that great work.",
+        "consequence": "You live with pride, knowing your memoirs captured a truth about war and peace that no one else has written.",
         "historical": false,
-        "risk": 2,
-        "independence": 3,
+        "risk": 1,
+        "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live peacefully, believing what you wrote was enough — but you know the world lost something great.",
+        "consequence": "You live regretting the unwritten novel, wishing you had created fictional stories instead of memoirs.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 32,
+      "year": 1870,
+      "chapter": "The Conservative Path",
+      "title": "Late Return",
+      "playerFact": "Regretting years of silence, you have written a novel that has been critically acclaimed. Though late, your name has joined literary history as a writer who returned from failure.",
+      "historicalFact": "Some writers, by returning late, achieved notable success.",
+      "question": "Are you satisfied with this late return, despite the lost years?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if late, your voice finally reached the world. Your novel inspires a new generation of writers.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost years, wishing you had taken up the pen in your youth instead of staying silent.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 33,
+      "year": 1865,
+      "chapter": "The Surrender Path",
+      "title": "Return from Shame",
+      "playerFact": "By writing stories about shame and redemption, you have become a writer who created a lasting work from failure. Your name is recorded in literary history as a symbol of return.",
+      "historicalFact": "Some writers, by turning failure into art, became influential figures.",
+      "question": "Are you satisfied with this honorable return, despite the years of shame?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing you brought light out of the darkest moments, and your name will shine forever.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost years, wishing you had chosen honor from the start instead of shame.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 34,
+      "year": 1870,
+      "chapter": "The Bitter Path",
+      "title": "Liberation from Hatred",
+      "playerFact": "Regretting years of anger, you have written short stories about liberation from hatred. Your works have gained attention among intellectuals and saved your name from obscurity.",
+      "historicalFact": "Some writers, by turning bitterness into art, achieved impactful works.",
+      "question": "Are you satisfied with this late liberation, despite the years of bitterness?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if late, you were able to escape the darkness of hatred and see the light of art.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost years, wishing you had pursued art from the start instead of anger.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 35,
+      "year": 1875,
+      "chapter": "The Escape Path",
+      "title": "Underground Writer",
+      "playerFact": "By writing short stories in your spare time, you have become a recognized writer in underground literary circles. Your collection has been published after years and has been well received.",
+      "historicalFact": "Some writers, by publishing in underground circles, achieved late fame.",
+      "question": "Are you satisfied with this hidden literary path, despite your public anonymity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your stories gave voice to intellectuals who never dared to speak.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lack of public fame, wishing you had pursued wider publication instead of the underground.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 36,
+      "year": 1875,
+      "chapter": "The Self-Destructive Path",
+      "title": "Memoirs of a Gambler",
+      "playerFact": "By writing your bitter gambling memoirs, you have created an impactful book that has become a warning for future generations. Your name remains in history as a writer who returned from the depths.",
+      "historicalFact": "Some writers, by writing about their bitter experiences, achieved lasting works.",
+      "question": "Are you satisfied that you were able to create a lasting work from the depths of destruction?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you lost years to gambling, you ultimately built something that will never be destroyed.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost years, wishing you had written instead of gambling from the start.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 37,
+      "year": 1875,
+      "chapter": "The Popular Path",
+      "title": "Return to Depth",
+      "playerFact": "Regretting years of shallow writing, you have written a deep, philosophical novel that has earned critical acclaim. Your name is recorded as a writer who returned to himself.",
+      "historicalFact": "Some writers, by returning from shallowness to depth, achieved artistic success.",
+      "question": "Are you satisfied with this return to depth, despite the lost years?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if late, you reached the truth of art and created a work that will last forever.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost years, wishing you had pursued depth from the start instead of shallow writing.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 38,
+      "year": 1870,
+      "chapter": "The Loneliness Path",
+      "title": "Late Companionship",
+      "playerFact": "By accepting your secretary's help, your life has been put in order, and she has become a loyal companion on your writing path. You spend your final years in peace and with her companionship.",
+      "historicalFact": "Some writers, by accepting help from others, achieved late peace.",
+      "question": "Are you satisfied with this late companionship, despite the years of loneliness?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if late, you finally allowed someone into your life, and this companionship enriched your work.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the years of loneliness, wishing you had trusted others from the start.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 40,
+      "year": 1881,
+      "chapter": "The Immortal Ending",
+      "title": "The Writer Who Became Immortal",
+      "playerFact": "By writing your final masterpiece, you have immortalized your name in literary history. 'The Brothers Karamazov' is recognized as one of history's greatest novels, and future generations know you as the explorer of the human soul's depths.",
+      "historicalFact": "Dostoevsky died in 1881, and after his death, he became one of the most influential writers in history.",
+      "question": "Are you satisfied with this literary immortality, achieved at the cost of a lifetime of suffering?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with deep peace, knowing that your sufferings were the seeds of masterpieces that will shine forever in history.",
+        "historical": true,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You regret the lost life, wishing you had experienced more joy instead of suffering. But you know that without suffering, you would never have reached such depth.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 41,
+      "year": 1881,
+      "chapter": "The Unfinished Ending",
+      "title": "The Writer Who Never Achieved Completeness",
+      "playerFact": "By not writing the final masterpiece, you never achieved artistic completeness. Your short stories remain on the margins of literary history, and your name is recorded as a writer who could have been great but wasn't.",
+      "historicalFact": "Some writers, by not writing great works, remained on the margins of history.",
+      "question": "Do you regret not writing the final masterpiece?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with deep regret, wishing you had had the courage to write that great work. But deep down, you know that fear held you back.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live with apparent peace, telling yourself what you wrote was enough — but you know the world lost something great.",
         "historical": false,
         "risk": 1,
         "independence": 2,

@@ -24,7 +24,7 @@
       "title": "The Curious Child",
       "playerFact": "From the very start of your life, you possess an extraordinary ability to visualize machines in your mind. You can imagine complex inventions in full detail before ever building them. This gift both fascinates and isolates you.",
       "historicalFact": "You were born in 1856 in Smiljan. From an early age, you showed remarkable memory and a fascination with machines, often visualizing inventions with astonishing clarity in your mind.",
-      "question": "You have a child who spends most of their time imagining machines. Do you encourage their unusual curiosity?",
+      "question": "Do you encourage the child's unusual curiosity?",
       "weight": 3,
       "yes": {
         "consequence": "You encourage the child to explore their imagination and fascination with machines.",
@@ -47,8 +47,8 @@
       "chapter": "The Inventor",
       "title": "Technical University",
       "playerFact": "You have been accepted to study electrical engineering at a prestigious technical university. This field could lead you to a deep understanding of electricity, but some friends say it's a difficult and unrewarding path.",
-      "historicalFact": "You stulived electrical engineering at the Austrian Polytechnic in Graz and became deeply interested in the problems of electrical machines and their limitations.",
-      "question": "Do you give up on studying electrical engineering at the university and choose another path?",
+      "historicalFact": "You studied electrical engineering at the Austrian Polytechnic in Graz and became deeply interested in the problems of electrical machines and their limitations.",
+      "question": "Do you give up on studying electrical engineering and choose another path?",
       "weight": 4,
       "yes": {
         "consequence": "You abandon electrical engineering and turn to more traditional fields like civil engineering.",
@@ -72,7 +72,7 @@
       "title": "The Rotating Magnetic Field",
       "playerFact": "While walking in a city park, a complete vision comes to you: a way to run an electric motor using a rotating magnetic field instead of today's inefficient methods. The solution is so clear in your mind that you draw it in the dirt with a stick.",
       "historicalFact": "While working in Budapest, you conceived the idea of the rotating magnetic field — a breakthrough that would become the foundation of alternating current motors and change the world.",
-      "question": "You suddenly imagine a completely different way to run an electric motor. Will you pursue this idea?",
+      "question": "Do you pursue this revolutionary idea?",
       "weight": 5,
       "yes": {
         "consequence": "You become obsessed with this idea and begin developing a new approach to electric motors.",
@@ -120,7 +120,7 @@
       "title": "Working for the Great Inventor",
       "playerFact": "Your new employer prefers direct current — electricity that flows in only one direction. Your vision is alternating current, which can travel much farther. These two approaches represent fundamentally different philosophies, and your relationship gradually becomes tense.",
       "historicalFact": "You worked for Thomas Edison, but the two of you had fundamentally different approaches to electrical systems. Edison championed direct current, while you believed alternating current was the future.",
-      "question": "Your employer strongly disagrees with your ideas. Will you leave and pursue your own vision?",
+      "question": "Do you leave your employer and pursue your own vision?",
       "weight": 5,
       "yes": {
         "consequence": "You leave your employer and decide to pursue your ideas independently.",
@@ -144,7 +144,7 @@
       "title": "Alternating Current",
       "playerFact": "You perfect a system of alternating current that can transmit electrical power over vast distances — something direct current cannot do. You develop motors, transformers, and the entire infrastructure for a new electrical world.",
       "historicalFact": "You developed and patented alternating current technologies, including induction motors and polyphase systems, which made long-distance power distribution possible.",
-      "question": "You believe alternating current can revolutionize power distribution. Will you dedicate your entire career to it?",
+      "question": "Do you dedicate your entire career to alternating current?",
       "weight": 5,
       "yes": {
         "consequence": "You focus on alternating current and develop technologies for large-scale power distribution.",
@@ -168,7 +168,7 @@
       "title": "The Powerful Industrialist",
       "playerFact": "A powerful industrialist recognizes the potential of your electrical system and offers to license your technology and support it with his resources. This means your ideas can reach the world — but you share control.",
       "historicalFact": "George Westinghouse acquired the rights to your alternating current patents and provided resources to develop and deploy your technology on a massive scale.",
-      "question": "Do you reject this partnership with the powerful industrialist to maintain your independence?",
+      "question": "Do you reject this partnership to maintain your independence?",
       "weight": 5,
       "yes": {
         "consequence": "You reject the partnership and try to develop the technology independently — but your funds quickly run out.",
@@ -192,7 +192,7 @@
       "title": "The World's Fair",
       "playerFact": "You have the opportunity to showcase your electrical system at a world's fair — the biggest stage possible. Millions will see your technology lighting up an entire exhibition hall. It could prove once and for all that your system works.",
       "historicalFact": "Your alternating current system, backed by Westinghouse, illuminated the 1893 World's Columbian Exposition in Chicago — a stunning public demonstration that proved AC's superiority.",
-      "question": "You can show your electrical system to millions. Will you take this risk?",
+      "question": "Do you take this risk and demonstrate your system publicly?",
       "weight": 5,
       "yes": {
         "consequence": "You demonstrate the technology publicly, helping prove that alternating current can illuminate an entire exhibition.",
@@ -216,7 +216,7 @@
       "title": "The Remote Laboratory",
       "playerFact": "You become convinced that electricity can travel through the air itself — without any wires. You build a laboratory in a remote location and conduct experiments with voltages so high that lightning flashes across the plains for miles.",
       "historicalFact": "You conducted high-voltage experiments in Colorado Springs, producing artificial lightning and investigating wireless transmission of electrical power over distances.",
-      "question": "Do you give up on investing in wireless experiments and turn toward more profitable technologies?",
+      "question": "Do you give up on investing in wireless experiments?",
       "weight": 5,
       "yes": {
         "consequence": "You abandon the risky experiments and focus on technologies that generate reliable income — but the wireless dream never releases its hold on you.",
@@ -240,21 +240,21 @@
       "title": "The Final Tower",
       "playerFact": "You have one last chance to build the dream that has consumed you: a tower that can transmit wireless power and communication across the entire world. It takes everything you have — your money, your reputation, your future. A final gamble.",
       "historicalFact": "You began construction of the Wardenclyffe Tower on Long Island — an ambitious facility to demonstrate wireless communication and power transmission on a global scale.",
-      "question": "You have one last opportunity to build a system for wireless power and communication. Will you bet everything on the dream?",
+      "question": "Do you bet everything on this dream?",
       "weight": 5,
       "yes": {
         "consequence": "You pour massive resources into the tower and pursue your vision of a wireless future, though you never see it completed.",
         "historical": true,
         "risk": 10,
         "independence": 10,
-        "nextEvent": null
+        "nextEvent": 40
       },
       "no": {
         "consequence": "You abandon the project before it consumes more resources and turn to more practical work, but the wireless dream haunts you for the rest of your life.",
         "historical": false,
         "risk": 5,
         "independence": 6,
-        "nextEvent": null
+        "nextEvent": 41
       }
     },
     {
@@ -264,21 +264,21 @@
       "title": "The Normal Child",
       "playerFact": "You suppress your child's imagination and steer them toward ordinary lessons and normal play. They grow up but never show any special talent.",
       "historicalFact": "History is full of unfulfilled talents who never reached their potential due to early suppression.",
-      "question": "Do you regret stifling the child's curiosity?",
+      "question": "Years later, seeing others' genius, do you regret stifling your child's curiosity?",
       "weight": 3,
       "yes": {
-        "consequence": "As the child grows up you understand his dejection, and take it as lame excuses.",
+        "consequence": "Regretting the past, you decide to study science in your free time and gradually become a dedicated teacher at a local school.",
         "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": 21
+        "risk": 3,
+        "independence": 4,
+        "nextEvent": 42
       },
       "no": {
-        "consequence": "You live peacefully, believing you did the best for your child and if he wanted to do something extraordinary he could — unaware that the world lost a genius.",
+        "consequence": "You live peacefully, believing you did the best for your child — unaware that the world lost a genius.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": 21
+        "nextEvent": 42
       }
     },
     {
@@ -286,23 +286,23 @@
       "year": 1900,
       "chapter": "The Ordinary Path",
       "title": "A Life Without Impact",
-      "playerFact": "Your child grows up and becomes an ordinary clerk. They never invent anything and never leave a mark.",
+      "playerFact": "Your child grows up and becomes an ordinary clerk. They never invent anything and never leave a mark, always looking at life with disappointment.",
       "historicalFact": "Many families lost great talents by suppressing children's creativity.",
-      "question": "Do you wish you had encouraged them instead of suppressing them?",
+      "question": "Do you talk to your child about their confusion in life?",
       "weight": 2,
       "yes": {
-        "consequence": "You are on your last leg and wish your child could find his Path",
+        "consequence": "By talking to your child, you encourage them to pursue their true interests. Though late, they start a new path and become a creative artist.",
+        "historical": false,
+        "risk": 2,
+        "independence": 3,
+        "nextEvent": 50
+      },
+      "no": {
+        "consequence": "You remain silent, and your child stays in confusion. You grow old content, believing your child had a good life — but their name is recorded in no history book.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": 50
-      },
-      "no": {
-        "consequence": "You live content, thinking your child had a good life — but your name is recorded in no history book.",
-        "historical": false,
-        "risk": 1,
-        "independence": 2,
-        "nextEvent": null
       }
     },
     {
@@ -319,14 +319,14 @@
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": 23
+        "nextEvent": 43
       },
       "no": {
         "consequence": "You constantly regret missing electricity and pursue it in middle age, but it's too late.",
         "historical": false,
         "risk": 4,
         "independence": 5,
-        "nextEvent": 23
+        "nextEvent": 43
       }
     },
     {
@@ -360,21 +360,21 @@
       "title": "A Missed Chance",
       "playerFact": "You do not pursue the rotating magnetic field idea. A few years later, another inventor with a similar idea transforms the world. You are merely a spectator.",
       "historicalFact": "The history of science is full of rivalries where an inventor, due to hesitation, lost their chance to another.",
-      "question": "Do you feel bitter about someone else taking your place?",
+      "question": "Do you feel upset that someone else took your place?",
       "weight": 4,
       "yes": {
         "consequence": "You become bitter and live your life in the shadow of that inventor, never forgiving yourself.",
         "historical": false,
         "risk": 3,
         "independence": 4,
-        "nextEvent": 25
+        "nextEvent": 44
       },
       "no": {
         "consequence": "You pass by the matter indifferently and occupy yourself with other work, but you know you lost a great opportunity.",
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": 25
+        "nextEvent": 44
       }
     },
     {
@@ -415,14 +415,14 @@
         "historical": false,
         "risk": 3,
         "independence": 4,
-        "nextEvent": 27
+        "nextEvent": 45
       },
       "no": {
         "consequence": "You stay in Europe with pride and continue your work, but you never become as great as your American rivals.",
         "historical": false,
         "risk": 2,
         "independence": 5,
-        "nextEvent": 27
+        "nextEvent": 45
       }
     },
     {
@@ -463,14 +463,14 @@
         "historical": false,
         "risk": 3,
         "independence": 4,
-        "nextEvent": 29
+        "nextEvent": 46
       },
       "no": {
         "consequence": "You live peacefully, believing that collaborating with your employer was the wise choice, though you never reached the peak.",
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": 29
+        "nextEvent": 46
       }
     },
     {
@@ -511,14 +511,14 @@
         "historical": false,
         "risk": 3,
         "independence": 4,
-        "nextEvent": 31
+        "nextEvent": 47
       },
       "no": {
         "consequence": "You live peacefully, believing variety made your life interesting, though you added nothing important to the world.",
         "historical": false,
         "risk": 2,
         "independence": 5,
-        "nextEvent": 31
+        "nextEvent": 47
       }
     },
     {
@@ -559,14 +559,14 @@
         "historical": false,
         "risk": 7,
         "independence": 8,
-        "nextEvent": 33
+        "nextEvent": 48
       },
       "no": {
         "consequence": "Despite the failure, you don't blame yourself, believing independence was more valuable than any partnership — even though it led to ruin.",
         "historical": false,
         "risk": 5,
         "independence": 9,
-        "nextEvent": 33
+        "nextEvent": 48
       }
     },
     {
@@ -607,14 +607,14 @@
         "historical": false,
         "risk": 3,
         "independence": 4,
-        "nextEvent": 35
+        "nextEvent": 49
       },
       "no": {
-        "consequence": "You never make your technology public and live in isolation, while the world never knows who you were.",
+        "consequence": "You never make your technology public and die in isolation, while the world never knows who you were.",
         "historical": false,
         "risk": 2,
         "independence": 5,
-        "nextEvent": 35
+        "nextEvent": 49
       }
     },
     {
@@ -634,7 +634,7 @@
         "nextEvent": null
       },
       "no": {
-        "consequence": "You live peacefully, believing your ideas live with you — but you know the world lost something it will never find.",
+        "consequence": "You live peacefully, believing your ideas die with you — but you know the world lost something it will never find.",
         "historical": false,
         "risk": 1,
         "independence": 2,
@@ -655,14 +655,14 @@
         "historical": false,
         "risk": 3,
         "independence": 4,
-        "nextEvent": 37
+        "nextEvent": 51
       },
       "no": {
         "consequence": "You live satisfied with your wealth, believing rationality is better than dreaming — but you know you never came close to the frontiers of knowledge.",
         "historical": false,
         "risk": 2,
         "independence": 3,
-        "nextEvent": 37
+        "nextEvent": 51
       }
     },
     {
@@ -690,28 +690,292 @@
       }
     },
     {
-      "id": 50,
+      "id": 40,
       "year": 1910,
-      "chapter": "مسیر عادی",
-      "title": "زندگی بی‌اثر",
-      "playerFact": "After talking to your dad, You make effort work round the clock to get to success but It is a farfetched goal",
-      "historicalFact": "بسیاری از خانواده‌ها با سرکوب خلاقیت کودکان، استعدادهای بزرگ را از دست دادند.",
-      "question": "Would you give up by facing the other's success while for you every thing was steady?",
-      "weight": 2,
+      "chapter": "The End of a Dream",
+      "title": "The Restless Dreamer",
+      "playerFact": "By betting everything on the final tower, you lost all your wealth. Though the tower was never completed, the wireless dream stayed alive in your heart until your last breath. In your final days, the pigeons that took shelter in your room were your only companions.",
+      "historicalFact": "Tesla spent his final years in poverty and loneliness, but never gave up on his dream of wireless energy transmission.",
+      "question": "Do you regret a life devoted to a dream, despite financial failure?",
+      "weight": 3,
       "yes": {
-        "consequence": " Give up and make your Earning to live like before.",
+        "consequence": "You live with a bittersweet regret, wishing you could have completed the dream. But you know your ideas guided future generations toward wireless technologies.",
         "historical": false,
         "risk": 1,
         "independence": 2,
         "nextEvent": null
       },
       "no": {
-        "consequence": "Although you are aged, but the Progress is too slow.",
+        "consequence": "You live with deep peace, knowing that dreaming itself was the goal. Your name is immortalized in the history of science, and future generations know you as a genius who thought beyond his time.",
+        "historical": true,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 41,
+      "year": 1910,
+      "chapter": "The End of a Pragmatic Life",
+      "title": "The Practical Inventor",
+      "playerFact": "By abandoning the wireless dream, you turned to designing practical devices. Your inventions are used in various industries, making you a successful engineer. Though the wireless dream never leaves you.",
+      "historicalFact": "Some of Tesla's inventions, like induction motors, were used in industry and left a lasting impact.",
+      "question": "Are you satisfied with this practical path, despite the regret of the lost dream?",
+      "weight": 3,
+      "yes": {
+        "consequence": "You live with pride, knowing your inventions improved the lives of millions, even if you never reached your ultimate dream.",
         "historical": false,
         "risk": 1,
         "independence": 2,
-        "nextEvent": 34
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost dream, wishing you had pursued wireless to the end instead of pragmatism.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
       }
-    }    
+    },
+    {
+      "id": 42,
+      "year": 1900,
+      "chapter": "The Ordinary Path",
+      "title": "A Dedicated Teacher",
+      "playerFact": "After regretting suppressing your child, you became a teacher at a local school. With curious students, you conduct simple science experiments and ignite a love for science in their hearts. Though you never became an inventor, you nurtured a new generation of inventors.",
+      "historicalFact": "Some influential teachers, despite their anonymity, played a key role in nurturing great talents.",
+      "question": "Are you satisfied with this hidden educational role, despite your anonymity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if your name isn't in history books, you are immortal in the hearts of your students.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost genius, wishing you had pursued invention instead of teaching.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 43,
+      "year": 1910,
+      "chapter": "The Traditional Path",
+      "title": "Consultant of Grand Structures",
+      "playerFact": "With extensive experience in structural engineering, you became a senior consultant for major bridge projects. Your designed bridges are symbols of modern engineering. Though your name isn't in the history of science, it remains in architectural history.",
+      "historicalFact": "Some structural engineers, by designing great bridges, left their mark on architectural history.",
+      "question": "Are you satisfied with this lasting engineering legacy, despite scientific anonymity?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your structures will stand for generations and impact the lives of millions.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the overlooked electrical ideas, wishing you had pursued electricity instead of bridges.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 44,
+      "year": 1910,
+      "chapter": "The Lost Opportunity Path",
+      "title": "Philosopher of Science",
+      "playerFact": "Regretting the lost opportunity, you turned to the philosophy of science. You wrote articles about the nature of invention and innovation, gaining attention among intellectuals. Though you never became an inventor yourself, you inspired other inventors.",
+      "historicalFact": "Some unrecognized geniuses, by writing philosophical theories, left a lasting impact on science.",
+      "question": "Are you satisfied with this philosophical role, despite never inventing?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your ideas have inspired other creative minds.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost invention, wishing you had pursued practical implementation instead of philosophy.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 45,
+      "year": 1910,
+      "chapter": "The European Path",
+      "title": "Recognized European Inventor",
+      "playerFact": "Despite staying in Europe, you became a recognized inventor on the continent. Your inventions are used in European industries, and your name is respected among European engineers, though the American world doesn't know you.",
+      "historicalFact": "Some European inventors, despite lacking global fame, had a deep impact on European industry.",
+      "question": "Are you satisfied with this European standing, despite lacking global fame?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your inventions shaped Europe's industrial infrastructure.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the Hollywood of technology, wishing you had gone to America instead of Europe.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 46,
+      "year": 1910,
+      "chapter": "The Alignment Path",
+      "title": "Technical Manager",
+      "playerFact": "By staying with your employer's company, you became a senior technical manager. Though you never achieved independent genius, you played a key role in the company's progress and are financially secure.",
+      "historicalFact": "Some of Edison's colleagues, by staying with the company, reached management positions.",
+      "question": "Are you satisfied with this financial and managerial success, despite lacking independence?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live peacefully, knowing that even if you never became an independent genius, you played an important role in the industry.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost independence, wishing you had pursued your own vision instead of obeying.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 47,
+      "year": 1910,
+      "chapter": "The Scattered Path",
+      "title": "Science Writer",
+      "playerFact": "Despite scattered work, you became a writer in the field of popular science. Your articles are published in popular science magazines, making you a familiar face of science among the public.",
+      "historicalFact": "Some unsuccessful inventors, by writing scientific articles, gained public recognition.",
+      "question": "Are you satisfied with this public role, despite never making a great invention?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you didn't make a great invention, you kept the love of science alive in people's hearts.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lack of practical invention, wishing you had built products instead of writing.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 48,
+      "year": 1910,
+      "chapter": "The Independent Path",
+      "title": "Sustainable Energy Consultant",
+      "playerFact": "Despite initial failure, your experience in energy made you a senior consultant for governments on sustainable energy. Your ideas became the foundation of modern energy systems.",
+      "historicalFact": "Some engineers, after failing in entrepreneurship, became influential policy consultants.",
+      "question": "Are you satisfied with this political-technical influence, despite lacking wealth?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing your ideas changed the world's energy path.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost wealth, wishing you had continued entrepreneurship instead of consulting.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 49,
+      "year": 1910,
+      "chapter": "The Conservative Path",
+      "title": "Keeper of Ideas",
+      "playerFact": "By hiding your inventions, you became a keeper of pure ideas. After your death, your notebooks are discovered, and the world learns what a genius lived in silence.",
+      "historicalFact": "Some inventors, by hiding their ideas, were discovered after death.",
+      "question": "Are you satisfied with this posthumous fame, despite a life of silence?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live in peace, knowing your ideas will transform the world after your death.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting your unseen life, wishing you had shared your ideas during your lifetime instead of staying silent.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 50,
+      "year": 1920,
+      "chapter": "The Ordinary Path",
+      "title": "Late-Blooming Artist",
+      "playerFact": "By encouraging your child, they became a creative artist. Though late, you also turned to painting alongside them and are now known in local art circles. Your life has taken on a new color.",
+      "historicalFact": "Some people, by changing paths in middle age, found new creativity.",
+      "question": "Are you satisfied with this new life, despite the late start?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if late, you finally found the path of creativity.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost years, wishing you had pursued art from the start.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    },
+    {
+      "id": 51,
+      "year": 1910,
+      "chapter": "The Practical Path",
+      "title": "Medical Technology Inventor",
+      "playerFact": "By abandoning wireless, you turned to designing medical devices. Your inventions are used in hospitals and have saved many lives. Though the wireless dream was never realized, your impact on human health is lasting.",
+      "historicalFact": "Some electrical engineers, by shifting to medicine, had a deep impact on public health.",
+      "question": "Are you satisfied with this medical path, despite abandoning the dream?",
+      "weight": 2,
+      "yes": {
+        "consequence": "You live with pride, knowing that even if you didn't reach wireless, you saved many lives.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      },
+      "no": {
+        "consequence": "You live regretting the lost dream, wishing you had pursued wireless instead of medicine.",
+        "historical": false,
+        "risk": 1,
+        "independence": 2,
+        "nextEvent": null
+      }
+    }
   ]
 }
