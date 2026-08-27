@@ -1,7 +1,7 @@
 import type { GameState, GameAction } from '../types'
 
 export const initialGameState: GameState = {
-  phase: 'splash',
+  phase: 'loading',
   characterId: null,
   currentEventId: null,
   completedEvents: [],
@@ -11,6 +11,12 @@ export const initialGameState: GameState = {
 
 export function gameReducer(state: GameState, action: GameAction): GameState {
   switch (action.type) {
+    case 'LOADING_COMPLETE':
+      return {
+        ...state,
+        phase: 'splash',
+      }
+
     case 'SELECT_CHARACTER':
       return {
         ...state,
