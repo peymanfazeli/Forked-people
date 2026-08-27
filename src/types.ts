@@ -40,6 +40,7 @@ export interface Character {
 }
 
 export type GamePhase =
+  | 'loading'
   | 'splash'
   | 'intro'
   | 'question'
@@ -62,6 +63,7 @@ export interface GameState {
 }
 
 export type GameAction =
+  | { type: 'LOADING_COMPLETE' }
   | { type: 'SELECT_CHARACTER'; characterId: string }
   | { type: 'START_GAME' }
   | { type: 'MAKE_CHOICE'; choice: 'yes' | 'no' }

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useLanguage } from '../i18n/useLanguage'
 import type { Language } from '../i18n/ui'
-import RiveBackground from './RiveBackground'
 
 interface Props {
   onBegin: () => void
@@ -20,26 +19,6 @@ export default function SplashScreen({ onBegin }: Props) {
 
   return (
     <div className="screen splash-screen">
-      <div className="rift-scene" aria-hidden="true">
-        <RiveBackground key="earth" src="/earth.riv" />
-        <div className="rift-past" />
-        <div className="rift-present" />
-        <div className="rift-grain" />
-        <div className="rift-dust">
-          <span className="dust dust-1" />
-          <span className="dust dust-2" />
-          <span className="dust dust-3" />
-          <span className="dust dust-4" />
-          <span className="dust dust-5" />
-          <span className="dust dust-6" />
-          <span className="dust dust-7" />
-          <span className="dust dust-8" />
-        </div>
-        <div className="rift-seam">
-          <div className="rift-vessel" />
-        </div>
-        <div className="rift-vignette" />
-      </div>
       <div className="splash-content">
         <h1 className="splash-title">{t('splashTitle')}</h1>
         <p className="splash-subtitle">{t('splashSubtitle')}</p>

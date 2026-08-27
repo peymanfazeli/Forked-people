@@ -1,6 +1,7 @@
 export type Language = 'en' | 'fa'
 
 export interface UiDictionary {
+  loading: string
   splashTitle: string
   splashSubtitle: string
   splashTagline: string
@@ -34,6 +35,7 @@ export interface UiDictionary {
 
 export const ui: Record<Language, UiDictionary> = {
   en: {
+    loading: 'assembling',
     splashTitle: 'Fork',
     splashSubtitle: 'Live another life. Make the choices that shape history.',
     splashTagline: 'The past. The present. Your life to live.',
@@ -65,6 +67,7 @@ export const ui: Record<Language, UiDictionary> = {
     persian: 'فارسی',
   },
   fa: {
+    loading: 'در حال آماده‌سازی',
     splashTitle: 'شاخه‌ها',
     splashSubtitle: 'یک زندگی دیگر را تجربه کن. انتخاب‌هایی که تاریخ را می‌سازند.',
     splashTagline: 'گذشته. امروز. زندگی‌ای که باید زندگی کنی.',
